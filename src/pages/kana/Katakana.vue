@@ -31,45 +31,45 @@ const handleCardClick = (char: CharData) => {
 </script>
 
 <template>
-    <TabSwitcher :tabs="katakanaTabs" v-model="activeTab" :theme="themeName" />
+    <div class="max-w-4xl mx-auto px-4">
+        <TabSwitcher :tabs="katakanaTabs" v-model="activeTab" :theme="themeName" />
 
-    <div v-show="activeTab === 'seion'" class="animate-fade-in">
-        <div class="bg-white border-4 border-slate-800 rounded-[32px] p-6 md:p-8 shadow-card">
-            <div class="grid grid-cols-5 gap-3 md:gap-4">
-                <CharCard v-for="(item, index) in seion" :key="index" :data="item" :theme="themeName"
-                    @click="handleCardClick(item)" />
+        <div v-show="activeTab === 'seion'" class="animate-fade-in">
+            <div class="bg-white border-4 border-slate-800 rounded-[32px] p-6 md:p-8 shadow-card">
+                <div class="grid grid-cols-5 gap-3 md:gap-4">
+                    <CharCard v-for="(item, index) in seion" :key="index" :data="item" :theme="themeName"
+                        @click="handleCardClick(item)" />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div v-show="activeTab === 'dakuten'" class="animate-fade-in">
-        <div class="bg-white border-4 border-slate-800 rounded-[32px] p-6 md:p-8 shadow-card">
-            <div class="grid grid-cols-5 gap-3 md:gap-4">
-                <CharCard v-for="(item, index) in dakuten" :key="index" :data="item" :theme="themeName"
-                    @click="handleCardClick(item)" />
+        <div v-show="activeTab === 'dakuten'" class="animate-fade-in">
+            <div class="bg-white border-4 border-slate-800 rounded-[32px] p-6 md:p-8 shadow-card">
+                <div class="grid grid-cols-5 gap-3 md:gap-4">
+                    <CharCard v-for="(item, index) in dakuten" :key="index" :data="item" :theme="themeName"
+                        @click="handleCardClick(item)" />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div v-show="activeTab === 'yoon'" class="animate-fade-in">
-        <div class="bg-white border-4 border-slate-800 rounded-[32px] p-6 md:p-8 shadow-card">
-            <div class="grid grid-cols-3 gap-3 md:gap-4">
-                <CharCard v-for="(item, index) in yoon" :key="index" :data="item" :theme="themeName"
-                    @click="handleCardClick(item)" />
+        <div v-show="activeTab === 'yoon'" class="animate-fade-in">
+            <div class="bg-white border-4 border-slate-800 rounded-[32px] p-6 md:p-8 shadow-card">
+                <div class="grid grid-cols-3 gap-3 md:gap-4">
+                    <CharCard v-for="(item, index) in yoon" :key="index" :data="item" :theme="themeName"
+                        @click="handleCardClick(item)" />
+                </div>
             </div>
         </div>
-    </div>
 
-    <div v-show="activeTab === 'tokushuon'" class="animate-fade-in">
-        <div class="bg-white border-4 border-slate-800 rounded-[32px] p-6 md:p-8 shadow-card">
-            <div class="grid grid-cols-4 gap-3 md:gap-4">
-                <CharCard v-for="(item, index) in tokushuon" :key="index" :data="item" :theme="themeName"
-                    @click="handleCardClick(item)" />
+        <div v-show="activeTab === 'tokushuon'" class="animate-fade-in">
+            <div class="bg-white border-4 border-slate-800 rounded-[32px] p-6 md:p-8 shadow-card">
+                <div class="grid grid-cols-4 gap-3 md:gap-4">
+                    <CharCard v-for="(item, index) in tokushuon" :key="index" :data="item" :theme="themeName"
+                        @click="handleCardClick(item)" />
+                </div>
             </div>
         </div>
-    </div>
 
-    <CharModal :is-open="isModalOpen" :data="selectedChar" :theme="themeName" @close="isModalOpen = false" />
+        <CharModal :is-open="isModalOpen" :data="selectedChar" :theme="themeName" @close="isModalOpen = false" />
+    </div>
 </template>
-
-<style scoped></style>

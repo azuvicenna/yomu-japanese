@@ -105,7 +105,7 @@ const pageTitle = computed(() => (route.meta.title as string) || '');
 
         <SecNavbar :title="pageTitle" :hover-class="currentTheme.hover" />
 
-        <main class="max-w-4xl mx-auto px-4">
+        <main>
             <router-view v-slot="{ Component }">
                 <keep-alive>
                     <component :is="Component" :key="route.fullPath" />

@@ -24,7 +24,7 @@ const router = createRouter({
           component: () => import("@/pages/kana/Katakana.vue"),
           meta: {
             title: "Katakana",
-            bgClass: "ice"
+            bgClass: "ice",
           },
         },
         {
@@ -33,6 +33,7 @@ const router = createRouter({
           component: () => import("@/pages/kana/Kanji.vue"),
           meta: {
             title: "Kanji",
+            bgClass: "lavender",
           },
         },
         {
