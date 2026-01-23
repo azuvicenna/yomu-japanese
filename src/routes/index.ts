@@ -24,6 +24,7 @@ const router = createRouter({
           component: () => import("@/pages/kana/Katakana.vue"),
           meta: {
             title: "Katakana",
+            bgClass: "ice"
           },
         },
         {

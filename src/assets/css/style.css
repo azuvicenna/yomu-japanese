@@ -7,8 +7,9 @@
     /* --- Global Color --- */
 
     /* warna teks */
-    --color-dark: #334155; 
-    
+    --color-dark: #334155;
+    --color-light: #ffffff;
+
     /* halaman hiragana */
     --color-peach: #ffdecc;
     --color-peach-accent: #ff6b6b;
@@ -88,13 +89,12 @@
     --shadow-modal: 12px 12px 0px rgba(0, 0, 0, 0.15);
     --shadow-key: 0px 6px 0px #b45309;
     --shadow-key-active: 0px 2px 0px #b45309;
-    --shadow-block: 4px 4px 0px rgba(0,0,0,0.15);
+    --shadow-block: 4px 4px 0px rgba(0, 0, 0, 0.15);
     --shadow-menu: 8px 8px 0px #9a3412;
-    --shadow-inset: inset 0 2px 4px 0 rgba(0,0,0,0.05);
+    --shadow-inset: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
     --shadow-bubble: 4px 4px 0px #14532d;
     --shadow-bubble-l: 4px 4px 0px rgba(0, 0, 0, 0.1);
     --shadow-bubble-r: -4px 4px 0px rgba(0, 0, 0, 0.1);
-    --shadow-badge: 2px 2px 0px rgba(0,0,0,0.1);
+    --shadow-badge: 2px 2px 0px rgba(0, 0, 0, 0.1);
     --shadow-action: 0px 4px 0px #9f1239;
 }
-
