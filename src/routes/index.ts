@@ -113,6 +113,15 @@ const router = createRouter({
             bgClass: "sky",
           },
         },
+        {
+          path: "bunpou",
+          name: "Bunpou",
+          component: () => import("@/pages/grammar/Bunpou.vue"),
+          meta: {
+            title: "Bunpou",
+            bgClass: "cool",
+          },
+        },
       ],
     },
   ],
