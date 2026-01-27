@@ -99,6 +99,22 @@ const router = createRouter({
         },
       ],
     },
+    {
+      path: "/grammar",
+      name: "Grammar",
+      component: MainLayout,
+      children: [
+        {
+          path: "aisatsu",
+          name: "Aisatsu",
+          component: () => import("@/pages/grammar/Aisatsu.vue"),
+          meta: {
+            title: "Aisatsu",
+            bgClass: "sky",
+          },
+        },
+      ],
+    },
   ],
 });
 
