@@ -47,13 +47,22 @@ const menuItems = [
     // SECTION 2: KOSAKATA
     // ==========================================
     {
-        to: '/vocabulary/mono',
+        to: '/vocabulary/kotoba',
         icon: '🍱',
         title: 'Kotoba',
         desc: 'Warna, Hari, dll',
         tag: 'Bento',
         hoverColor: 'var(--color-indigo-accent)',
         theme: 'indigo'
+    },
+    {
+        to: '/vocabulary/mono',
+        icon: '📦',
+        title: 'Mono',
+        desc: 'Objek benda',
+        tag: 'Objek',
+        hoverColor: 'var(--color-ghost-accent)',
+        theme: 'ghost'
     },
     {
         to: '/vocabulary/doushi',
@@ -219,7 +228,7 @@ const menuItems = [
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <PopMenuCard v-for="item in menuItems.slice(4, 14)" :key="item.title" v-bind="item" />
+                    <PopMenuCard v-for="item in menuItems.slice(4, 15)" :key="item.title" v-bind="item" />
                 </div>
             </section>
 
@@ -232,7 +241,7 @@ const menuItems = [
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <PopMenuCard v-for="item in menuItems.slice(14)" :key="item.title" v-bind="item" />
+                    <PopMenuCard v-for="item in menuItems.slice(15)" :key="item.title" v-bind="item" />
                 </div>
             </section>
 
