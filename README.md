@@ -1,38 +1,68 @@
-# .
+<div align="center">
+  <img src="public/pwa-192x192.png" alt="Yomu Japanese" width="120" height="120">
 
-This template should help get you started developing with Vue 3 in Vite.
+  <h1>Yomu Japanese (読む)</h1>
 
-## Recommended IDE Setup
+  <h3>Aplikasi Belajar Bahasa Jepang Interaktif dengan UI Ceria & Modern</h3>
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+  <a href="https://github.com/reezecodee/yomu-japanese/stargazers">
+    <img src="https://img.shields.io/github/stars/reezecodee/yomu-japanese?style=social" alt="Stars">
+  </a>
+  <a href="https://github.com/reezecodee/yomu-japanese/network/members">
+    <img src="https://img.shields.io/github/forks/reezecodee/yomu-japanese?style=social" alt="Forks">
+  </a>
+</div>
 
-## Recommended Browser Setup
+<hr>
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+<h2>🌸 Deskripsi</h2>
+<div align="center">
+  <img src="public/images/preview.png" alt="Tampilan Yomu Japanese" width="100%" style="border-radius: 10px; margin-top: 10px;">
+</div>
+<p>
+  <strong>Yomu Japanese</strong> adalah teman belajar bahasa Jepang yang dirancang agar <em>fun</em> dan jauh dari kata membosankan. Lupakan buku tebal yang kaku! Di sini, kamu akan diajak bertualang secara visual mulai dari mengenal huruf dasar (Hiragana & Katakana), menghafal Kanji N5-N1, hingga menguasai ribuan kosakata tematik—mulai dari "Isi Bento" hingga "Safari Hewan".
+</p>
+<p>
+  Dibangun sebagai <strong>PWA (Progressive Web App)</strong>, Yomu bisa langsung di-install di HP kamu tanpa ribet, siap menemani belajar kapan saja dan di mana saja, bahkan saat offline sekalipun!
+</p>
 
-## Customize configuration
+<h2>📚 Daftar Materi (Page List)</h2>
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+<h3>1. Huruf & Angka (Kana)</h3>
+<ul>
+  <li>あ <strong>Hiragana</strong> — Huruf dasar Jepang</li>
+  <li>ア <strong>Katakana</strong> — Huruf kata asing</li>
+  <li>山 <strong>Kanji</strong> — Kartu N5 - N1</li>
+  <li>123 <strong>Angka (Suuji)</strong> — Hitungan & Uang</li>
+</ul>
 
-## Project Setup
+<h3>2. Kosakata (Vocabulary)</h3>
+<ul>
+  <li>🍱 <strong>Kotoba</strong> — Warna, Hari, Keluarga</li>
+  <li>📦 <strong>Mono</strong> — Objek & Benda mati</li>
+  <li>🏃 <strong>Kata Kerja (Doushi)</strong> — Konjugasi dasar</li>
+  <li>✨ <strong>Kata Sifat (Keiyoushi)</strong> — Kata sifat-i & na</li>
+  <li>💼 <strong>Profesi (Shigoto)</strong> — Pekerjaan & Karir</li>
+  <li>🍜 <strong>Makanan (Tabemono)</strong> — Minuman & Rasa</li>
+  <li>🐯 <strong>Hewan (Doubutsu)</strong> — Darat, Air, Terbang</li>
+  <li>🚄 <strong>Transportasi (Norimono)</strong> — Kendaraan & Lalu lintas</li>
+  <li>🏢 <strong>Bangunan (Tatemono)</strong> — Gedung & Fasilitas</li>
+  <li>🍓 <strong>Buah (Kudamono)</strong> — Buah-buahan segar</li>
+  <li>🌿 <strong>Tanaman (Shokubutsu)</strong> — Pohon & Bunga</li>
+</ul>
 
-```sh
-npm install
-```
+<h3>3. Grammar (Tata Bahasa)</h3>
+<ul>
+  <li>🏗️ <strong>Bunpou</strong> — Pola Kalimat Dasar</li>
+  <li>🔗 <strong>Partikel (Joshi)</strong> — Wa, Ga, Wo, Ni, De</li>
+  <li>💬 <strong>Salam (Aisatsu)</strong> — Percakapan Sehari-hari</li>
+</ul>
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+<h2>🛠️ Tech Stack</h2>
+<ul>
+  <li><strong>Framework:</strong> Vue 3 (Composition API)</li>
+  <li><strong>Build Tool:</strong> Vite</li>
+  <li><strong>Styling:</strong> Tailwind CSS v4</li>
+  <li><strong>PWA:</strong> Vite Plugin PWA</li>
+  <li><strong>Routing:</strong> Vue Router</li>
+</ul>
