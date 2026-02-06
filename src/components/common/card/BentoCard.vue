@@ -2,7 +2,7 @@
 import { computed } from 'vue';
 
 const props = defineProps<{
-    theme: 'hero' | 'iro' | 'youbi' | 'nature' | 'season' | 'dir' | 'month' | 'family';
+    theme: 'hero' | 'iro' | 'youbi' | 'nature' | 'season' | 'dir' | 'month' | 'family' | 'weather' | 'time' | 'pos' | 'demo' | 'element';
     title?: string;
     icon?: string;
     subTitle?: string;
@@ -20,6 +20,15 @@ const THEME_MAP: Record<string, { bg: string, border: string, text: string }> = 
     dir: { bg: 'var(--color-bento-dir)', border: 'var(--color-bento-dir-border)', text: 'var(--color-bento-dir-text)' },
     month: { bg: 'var(--color-bento-month)', border: 'var(--color-bento-month-border)', text: 'var(--color-bento-month-text)' },
     family: { bg: 'var(--color-bento-family)', border: 'var(--color-bento-family-border)', text: 'var(--color-bento-family-text)' },
+    weather: { bg: 'var(--color-bento-weather, #e0f2fe)', border: 'var(--color-bento-weather-border, #bae6fd)', text: 'var(--color-bento-weather-text, #0369a1)' },
+    time: { bg: 'var(--color-bento-time, #eef2ff)', border: 'var(--color-bento-time-border, #e0e7ff)', text: 'var(--color-bento-time-text, #4338ca)' },
+    pos: { bg: 'var(--color-bento-pos, #fff7ed)', border: 'var(--color-bento-pos-border, #ffedd5)', text: 'var(--color-bento-pos-text, #c2410c)' },
+    demo: { bg: 'var(--color-bento-demo, #f0fdfa)', border: 'var(--color-bento-demo-border, #ccfbf1)', text: 'var(--color-bento-demo-text, #0f766e)' },
+    element: {
+        bg: 'var(--color-bento-element, #f8fafc)',
+        border: 'var(--color-bento-element-border, #e2e8f0)',
+        text: 'var(--color-bento-element-text, #475569)'
+    },
 };
 
 const styleVars = computed(() => {
@@ -35,7 +44,7 @@ const styleVars = computed(() => {
 
 <template>
     <div class="bento-card" :class="[colSpan, rowSpan]" :style="styleVars">
-        <div v-if="title" class="flex justify-between items-center mb-3">
+        <div v-if="title" class="flex mb-3" :class="subTitle ? 'justify-between items-center' : 'justify-start'">
             <h3 class="text-lg font-black" style="color: var(--card-text)">
                 {{ icon }} {{ title }}
             </h3>
