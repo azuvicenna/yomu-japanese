@@ -39,17 +39,6 @@ export const days = [
   { kanji: "日曜日", romaji: "Nichi", mean: "Minggu", special: "text-red-500" },
 ];
 
-export const nature = [
-  { kanji: "花", romaji: "Hana", mean: "Bunga" },
-  { kanji: "雨", romaji: "Ame", mean: "Hujan" },
-  { kanji: "空", romaji: "Sora", mean: "Langit" },
-  { kanji: "海", romaji: "Umi", mean: "Laut" },
-  { kanji: "山", romaji: "Yama", mean: "Gunung" },
-  { kanji: "川", romaji: "Kawa", mean: "Sungai" },
-  { kanji: "星", romaji: "Hoshi", mean: "Bintang" },
-  { kanji: "森", romaji: "Mori", mean: "Hutan" },
-];
-
 export const seasons = [
   {
     kanji: "春",

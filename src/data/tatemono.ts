@@ -10,6 +10,51 @@ export const PublicBuildings: Tatemono[] = [
   { icon: "👮", kanji: "交番", romaji: "Kouban", meaning: "Pos Polisi" },
   { icon: "⛲", kanji: "公園", romaji: "Kouen", meaning: "Taman" },
   { icon: "🏢", kanji: "会社", romaji: "Kaisha", meaning: "Perusahaan" },
+  { icon: "🚉", kanji: "駅", romaji: "Eki", meaning: "Stasiun" },
+  { icon: "✈️", kanji: "空港", romaji: "Kuukou", meaning: "Bandara" },
+  {
+    icon: "🏛️",
+    kanji: "市役所",
+    romaji: "Shiyakusho",
+    meaning: "Balai Kota / Kantor Walikota",
+  },
+  {
+    icon: "🚒",
+    kanji: "消防署",
+    romaji: "Shoubousho",
+    meaning: "Pemadam Kebakaran",
+  },
+  {
+    icon: "🚔",
+    kanji: "警察署",
+    romaji: "Keisatsusho",
+    meaning: "Kantor Polisi (Pusat)",
+  },
+  { icon: "🦖", kanji: "博物館", romaji: "Hakubutsukan", meaning: "Museum" },
+  {
+    icon: "🎨",
+    kanji: "美術館",
+    romaji: "Bijutsukan",
+    meaning: "Galeri Seni / Museum Seni",
+  },
+  {
+    icon: "🏟️",
+    kanji: "体育館",
+    romaji: "Taiikukan",
+    meaning: "Gedung Olahraga (GOR)",
+  },
+  {
+    icon: "🎌",
+    kanji: "大使館",
+    romaji: "Taishikan",
+    meaning: "Kedutaan Besar",
+  },
+  { icon: "⛩️", kanji: "神社", romaji: "Jinja", meaning: "Kuil Shinto" },
+  { icon: "🏯", kanji: "お寺", romaji: "Otera", meaning: "Kuil Buddha" },
+  { icon: "⛪", kanji: "教会", romaji: "Kyoukai", meaning: "Gereja" },
+  { icon: "🛁", kanji: "銭湯", romaji: "Sentou", meaning: "Pemandian Umum" },
+  { icon: "🕌", kanji: "モスク", romaji: "Mosuku", meaning: "Masjid" },
+  { icon: "⚓", kanji: "港", romaji: "Minato", meaning: "Pelabuhan" },
 ];
 
 // 2. Toko & Komersial (Mise)
@@ -27,6 +72,41 @@ export const Shops: Tatemono[] = [
   { icon: "🍽️", kanji: "レストラン", romaji: "Resutoran", meaning: "Restoran" },
   { icon: "☕", kanji: "喫茶店", romaji: "Kissaten", meaning: "Kafe" },
   { icon: "💊", kanji: "薬局", romaji: "Yakkyoku", meaning: "Apotek" },
+  { icon: "📚", kanji: "本屋", romaji: "Honya", meaning: "Toko Buku" },
+  { icon: "🐟", kanji: "魚屋", romaji: "Sakanaya", meaning: "Toko Ikan" },
+  { icon: "🥩", kanji: "肉屋", romaji: "Nikuya", meaning: "Toko Daging" },
+  { icon: "🥦", kanji: "八百屋", romaji: "Yaoya", meaning: "Toko Sayur" },
+  {
+    icon: "💈",
+    kanji: "床屋",
+    romaji: "Tokoya",
+    meaning: "Tukang Cukur / Barbershop",
+  },
+  {
+    icon: "💇‍♀️",
+    kanji: "美容院",
+    romaji: "Biyouin",
+    meaning: "Salon Kecantikan",
+  },
+  {
+    icon: "🍶",
+    kanji: "居酒屋",
+    romaji: "Izakaya",
+    meaning: "Kedai Minum (Pub Jepang)",
+  },
+  {
+    icon: "⚡",
+    kanji: "電気屋",
+    romaji: "Denkiya",
+    meaning: "Toko Elektronik",
+  },
+  { icon: "👞", kanji: "靴屋", romaji: "Kutsuya", meaning: "Toko Sepatu" },
+  {
+    icon: "🏷️",
+    kanji: "100円ショップ",
+    romaji: "Hyakuen Shoppu",
+    meaning: "Toko Serba 100 Yen",
+  },
 ];
 
 // 3. Rumah & Bagiannya (Ie)
@@ -39,4 +119,14 @@ export const Housing: Tatemono[] = [
   { icon: "🛁", kanji: "お風呂", romaji: "Ofuro", meaning: "Kamar Mandi" },
   { icon: "🌳", kanji: "庭", romaji: "Niwa", meaning: "Halaman" },
   { icon: "🪜", kanji: "階段", romaji: "Kaidan", meaning: "Tangga" },
+  { icon: "👞", kanji: "玄関", romaji: "Genkan", meaning: "Area Pintu Masuk (Lepas Sepatu)" },
+  { icon: "🏢", kanji: "マンション", romaji: "Manshon", meaning: "Kondominium / Apartemen Beton" },
+  { icon: "🛋️", kanji: "居間", romaji: "Ima", meaning: "Ruang Keluarga" },
+  { icon: "🛏️", kanji: "寝室", romaji: "Shinshitsu", meaning: "Kamar Tidur" },
+  { icon: "🍵", kanji: "和室", romaji: "Washitsu", meaning: "Kamar ala Jepang (Tatami)" },
+  { icon: "🚶", kanji: "廊下", romaji: "Rouka", meaning: "Lorong / Koridor" },
+  { icon: "🌤️", kanji: "ベランダ", romaji: "Beranda", meaning: "Balkon" },
+  { icon: "🧱", kanji: "壁", romaji: "Kabe", meaning: "Dinding" },
+  { icon: "🏠", kanji: "屋根", romaji: "Yane", meaning: "Atap" },
+  { icon: "☝️", kanji: "天井", romaji: "Tenjou", meaning: "Langit-langit" },
 ];

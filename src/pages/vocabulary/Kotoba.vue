@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import BentoCard from '@/components/common/card/BentoCard.vue';
 // Pastikan path import ini sesuai dengan file data Anda
-import { 
-    colors, days, directions, familyMembers, months, nature, seasons, 
-    dayTime, weather, positions, demonstratives, elements 
+import {
+    colors, days, directions, familyMembers, months, seasons,
+    dayTime, weather, positions, demonstratives, elements
 } from '@/data/kotoba';
 </script>
 
@@ -21,7 +21,8 @@ import {
                 <div class="absolute -right-4 -bottom-4 text-8xl opacity-10 font-black rotate-12 text-white">辞書</div>
             </BentoCard>
 
-            <BentoCard theme="youbi" title="曜日 (Youbi) - Hari" icon="📅" row-span="md:row-span-2" col-span="md:col-span-1">
+            <BentoCard theme="youbi" title="曜日 (Youbi) - Hari" icon="📅" row-span="md:row-span-2"
+                col-span="md:col-span-1">
                 <div class="space-y-2 flex-grow overflow-y-auto pr-1 text-sm mt-2 scrollbar-hide">
                     <div v-for="(d, i) in days" :key="i"
                         class="flex justify-between items-center border-b border-yellow-200 pb-1 last:border-0">
@@ -57,7 +58,8 @@ import {
                 </div>
             </BentoCard>
 
-            <BentoCard theme="dir" class="items-center justify-center relative p-1" title="方向 (Houkou) - Arah" icon="🧭">
+            <BentoCard theme="dir" class="items-center justify-center relative p-1" title="方向 (Houkou) - Arah"
+                icon="🧭">
                 <div class="grid grid-cols-3 grid-rows-3 gap-1 w-full h-full">
                     <div v-for="(dir, index) in directions" :key="index"
                         class="flex flex-col items-center justify-center">
@@ -83,7 +85,8 @@ import {
                 col-span="md:col-span-2" row-span="md:row-span-2">
                 <div class="grid grid-cols-2 gap-4 h-full items-center mt-2">
                     <div class="bg-white p-3 rounded-xl border-2 border-pink-100 h-full flex flex-col justify-center">
-                        <p class="text-[10px] font-bold text-slate-400 uppercase mb-2 text-center tracking-widest border-b border-pink-50 pb-1">
+                        <p
+                            class="text-[10px] font-bold text-slate-400 uppercase mb-2 text-center tracking-widest border-b border-pink-50 pb-1">
                             Saya (Uchi)</p>
                         <div class="space-y-2">
                             <div v-for="f in familyMembers" :key="f.label"
@@ -97,29 +100,20 @@ import {
                         </div>
                     </div>
                     <div class="bg-white p-3 rounded-xl border-2 border-pink-100 h-full flex flex-col justify-center">
-                        <p class="text-[10px] font-bold text-slate-400 uppercase mb-2 text-center tracking-widest border-b border-pink-50 pb-1">
+                        <p
+                            class="text-[10px] font-bold text-slate-400 uppercase mb-2 text-center tracking-widest border-b border-pink-50 pb-1">
                             Orang (Soto)</p>
                         <div class="space-y-2">
                             <div v-for="f in familyMembers" :key="f.label"
                                 class="flex justify-between items-center border-b border-gray-50 pb-1">
                                 <div class="flex flex-col">
-                                    <span class="text-sm font-bold text-pink-600 leading-none">{{ f.other.romaji }}</span>
+                                    <span class="text-sm font-bold text-pink-600 leading-none">{{ f.other.romaji
+                                        }}</span>
                                     <span class="text-[12px] text-pink-400 font-japanese">{{ f.other.kanji }}</span>
                                 </div>
                                 <span class="text-[10px] text-slate-400 bg-slate-50 px-1 rounded">{{ f.label }}</span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </BentoCard>
-
-            <BentoCard theme="nature" title="自然 (Shizen) - Alam" icon="🌳" col-span="md:col-span-2">
-                <div class="grid grid-cols-4 gap-2 mt-auto">
-                    <div v-for="n in nature" :key="n.romaji"
-                        class="bg-white p-2 rounded-lg border border-green-200 text-center flex flex-col justify-center h-full">
-                        <div class="text-xl leading-none mb-1">{{ n.kanji }}</div>
-                        <div class="text-[9px] font-bold text-green-700 uppercase leading-none">{{ n.romaji }}</div>
-                        <div class="text-[8px] text-gray-500 italic leading-none mt-1">{{ n.mean }}</div>
                     </div>
                 </div>
             </BentoCard>
@@ -177,7 +171,8 @@ import {
                 </div>
             </BentoCard>
 
-            <BentoCard theme="demo" title="指示語 (Shijigo) - Kata Tunjuk" icon="👉" subTitle="Ko-So-A-Do" col-span="md:col-span-2">
+            <BentoCard theme="demo" title="指示語 (Shijigo) - Kata Tunjuk" icon="👉" subTitle="Ko-So-A-Do"
+                col-span="md:col-span-2">
                 <div class="grid grid-cols-2 gap-2 mt-auto">
                     <div v-for="d in demonstratives" :key="d.romaji"
                         class="flex flex-col justify-center px-3 py-1 bg-white border border-slate-200 rounded-lg">
@@ -190,13 +185,17 @@ import {
                 </div>
             </BentoCard>
 
-            <BentoCard theme="element" title="元素 (Genso) - Elemen Alam" icon="⚡" col-span="md:col-span-2" row-span="md:row-span-1">
-                <div class="grid grid-cols-4 gap-2 mt-auto">
-                    <div v-for="e in elements" :key="e.romaji"
-                        :class="[e.bg, 'p-2 rounded-lg border border-opacity-30 border-black/10 flex flex-col justify-center items-center h-20']">
-                        <div :class="[e.color, 'text-2xl font-black leading-none mb-1']">{{ e.kanji }}</div>
-                        <div class="text-[10px] font-bold text-slate-600 uppercase leading-none">{{ e.romaji }}</div>
-                        <div class="text-[8px] text-slate-400 italic leading-none mt-1">{{ e.mean }}</div>
+            <BentoCard theme="element" title="元素 (Genso) - Elemen Alam" icon="⚡" col-span="md:col-span-2"
+                row-span="md:row-span-1">
+                <div class="flex flex-col justify-center h-full">
+                    <div class="grid grid-cols-4 gap-2">
+                        <div v-for="e in elements" :key="e.romaji"
+                            :class="[e.bg, 'p-2 rounded-lg border border-opacity-30 border-black/10 flex flex-col justify-center items-center h-20']">
+                            <div :class="[e.color, 'text-2xl font-black leading-none mb-1']">{{ e.kanji }}</div>
+                            <div class="text-[10px] font-bold text-slate-600 uppercase leading-none">{{ e.romaji }}
+                            </div>
+                            <div class="text-[8px] text-slate-400 italic leading-none mt-1">{{ e.mean }}</div>
+                        </div>
                     </div>
                 </div>
             </BentoCard>

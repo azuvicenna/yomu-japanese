@@ -45,12 +45,11 @@ export const AirTransport: Norimono[] = [
   },
 ];
 
-// 3. Transportasi Laut (Umi) - PENGGANTI TRAFFIC
+// 3. Transportasi Laut (Umi)
 export const SeaTransport: Norimono[] = [
   { icon: "🚢", kanji: "船", romaji: "Fune", meaning: "Kapal Laut" },
   { icon: "⛵", kanji: "ヨット", romaji: "Yotto", meaning: "Perahu Layar" },
   { icon: "🚤", kanji: "ボート", romaji: "Booto", meaning: "Perahu Motor" },
   { icon: "⛴️", kanji: "フェリー", romaji: "Ferii", meaning: "Kapal Feri" },
   { icon: "🛥️", kanji: "潜水艦", romaji: "Sensuikan", meaning: "Kapal Selam" },
-  { icon: "⚓", kanji: "港", romaji: "Minato", meaning: "Pelabuhan" },
 ];

@@ -10,6 +10,7 @@ const props = withDefaults(defineProps<{
 });
 
 const THEME_MAP: Record<string, { dark: string, accent: string }> = {
+    ghost: { dark: 'var(--color-ghost-dark)', accent: 'var(--color-ghost-accent)' },
     apricot: { dark: 'var(--color-apricot-dark)', accent: 'var(--color-apricot-accent)' },
     safari: { dark: 'var(--color-safari-dark)', accent: 'var(--color-safari-accent)' },
     metro: { dark: 'var(--color-metro-dark)', accent: 'var(--color-metro-accent)' },

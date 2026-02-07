@@ -175,6 +175,16 @@ const router = createRouter({
             themeColor: "#f0fdf4",
           },
         },
+        {
+          path: "byouki",
+          name: "Byouki",
+          component: () => import("@/pages/vocabulary/Byouki.vue"),
+          meta: {
+            title: "Penyakit (Byouki)",
+            bgClass: "rose",
+            themeColor: "#fff1f2",
+          },
+        },
       ],
     },
     {

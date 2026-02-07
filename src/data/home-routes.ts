@@ -52,15 +52,6 @@ export const menuItems = [
     theme: "indigo",
   },
   {
-    to: "/vocabulary/mono",
-    icon: "📦",
-    title: "Mono",
-    desc: "Objek benda",
-    tag: "Objek",
-    hoverColor: "var(--color-ghost-accent)",
-    theme: "zinc",
-  },
-  {
     to: "/vocabulary/doushi",
     icon: "🏃",
     title: "Kata Kerja",
@@ -77,6 +68,15 @@ export const menuItems = [
     tag: "Deskripsi",
     hoverColor: "var(--color-aqua-accent)",
     theme: "cyan",
+  },
+  {
+    to: "/vocabulary/mono",
+    icon: "📦",
+    title: "Benda",
+    desc: "Objek benda",
+    tag: "Objek",
+    hoverColor: "var(--color-ghost-accent)",
+    theme: "zinc",
   },
   {
     to: "/vocabulary/shigoto",
@@ -141,6 +141,15 @@ export const menuItems = [
     hoverColor: "var(--color-forest-accent)",
     theme: "emerald",
   },
+  {
+    to: "/vocabulary/byouki",
+    icon: "🤒",
+    title: "Penyakit",
+    desc: "Gejala & Cedera",
+    tag: "Medis",
+    hoverColor: "var(--color-rose-accent)",
+    theme: "rose",
+  },
 
   // ==========================================
   // SECTION 3: GRAMMAR
@@ -171,5 +180,14 @@ export const menuItems = [
     tag: "Komik",
     hoverColor: "var(--color-sky-accent)",
     theme: "sky",
+  },
+  {
+    to: "/grammar/kanyouku",
+    icon: "📜",
+    title: "Idiom",
+    desc: "Kanyouku & Yojijukugo",
+    tag: "Sastra",
+    hoverColor: "var(--color-indigo-accent)",
+    theme: "indigo",
   },
 ];

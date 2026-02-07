@@ -2,6 +2,45 @@
 import HomeLayout from '@/components/layouts/HomeLayout.vue';
 import PopMenuCard from '@/components/common/card/PopMenuCard.vue';
 import { menuItems } from '@/data/home-routes';
+import { onMounted, onUnmounted } from 'vue';
+
+let lastBackTime = 0;
+
+const showToast = (msg: string) => {
+  const toast = document.createElement('div');
+  toast.innerText = msg;
+  Object.assign(toast.style, {
+    position: 'fixed', bottom: '80px', left: '50%', transform: 'translateX(-50%)',
+    backgroundColor: '#333', color: '#fff', padding: '10px 20px', borderRadius: '50px',
+    zIndex: '9999', fontSize: '14px', opacity: '0.9'
+  });
+  document.body.appendChild(toast);
+  setTimeout(() => toast.remove(), 2000);
+};
+
+const handleBackButton = (event: PopStateEvent) => {
+  const now = new Date().getTime();
+
+  if (now - lastBackTime < 2000) {
+    window.history.back(); 
+  } else {
+    lastBackTime = now;
+
+    showToast("Tekan sekali lagi untuk keluar");
+
+    window.history.pushState(null, '', window.location.href);
+  }
+};
+
+onMounted(() => {
+  window.history.pushState(null, '', window.location.href);
+  
+  window.addEventListener('popstate', handleBackButton);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('popstate', handleBackButton);
+});
 </script>
 
 <template>
@@ -49,11 +88,11 @@ import { menuItems } from '@/data/home-routes';
                     <span class="text-3xl">📚</span>
                     <h2
                         class="text-2xl font-black text-slate-700 uppercase tracking-wider border-b-4 border-white pb-1">
-                        Kosakata (Vocabulary)</h2>
+                        Kosakata</h2>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <PopMenuCard v-for="item in menuItems.slice(4, 15)" :key="item.title" v-bind="item" />
+                    <PopMenuCard v-for="item in menuItems.slice(4, 16)" :key="item.title" v-bind="item" />
                 </div>
             </section>
 
@@ -62,11 +101,11 @@ import { menuItems } from '@/data/home-routes';
                     <span class="text-3xl">🧩</span>
                     <h2
                         class="text-2xl font-black text-slate-700 uppercase tracking-wider border-b-4 border-white pb-1">
-                        Tata Bahasa</h2>
+                        Tata Bahasa & Idiom</h2>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <PopMenuCard v-for="item in menuItems.slice(15)" :key="item.title" v-bind="item" />
+                    <PopMenuCard v-for="item in menuItems.slice(16)" :key="item.title" v-bind="item" />
                 </div>
             </section>
 

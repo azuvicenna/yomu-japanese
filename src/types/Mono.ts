@@ -1,4 +1,4 @@
-export type LocationType = "home" | "school" | "nature" | "hospital" | "sport";
+export type LocationType = "home" | "school" | "nature" | "hospital" | "sport" | "restaurant";
 
 export interface MonoItem {
   icon: string; 

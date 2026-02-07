@@ -27,9 +27,12 @@ export const SeasonalFruits: Kudamono[] = [
     meaning: "Blueberry",
   },
   { icon: "🥥", kanji: "ココナッツ", romaji: "Kokonattsu", meaning: "Kelapa" },
+  { icon: "🟧", kanji: "柿", romaji: "Kaki", meaning: "Kesemek" },
+  { icon: "🍋", kanji: "柚子", romaji: "Yuzu", meaning: "Jeruk Yuzu" },
+  { icon: "🌰", kanji: "栗", romaji: "Kuri", meaning: "Kastanye" },
 ];
 
-// 3. Sayuran (Yasai) - Bonus Tab
+// 3. Sayuran (Yasai)
 export const Vegetables: Kudamono[] = [
   { icon: "🥕", kanji: "人参", romaji: "Ninjin", meaning: "Wortel" },
   { icon: "🥔", kanji: "ジャガイモ", romaji: "Jagaimo", meaning: "Kentang" },
@@ -44,4 +47,24 @@ export const Vegetables: Kudamono[] = [
     romaji: "Burokkorii",
     meaning: "Brokoli",
   },
+  { icon: "🥬", kanji: "大根", romaji: "Daikon", meaning: "Lobak Putih" },
+  { icon: "🧅", kanji: "葱", romaji: "Negi", meaning: "Daun Bawang" },
+  {
+    icon: "🍠",
+    kanji: "サツマイモ",
+    romaji: "Satsumaimo",
+    meaning: "Ubi Jalar",
+  },
+  { icon: "🫑", kanji: "ピーマン", romaji: "Piiman", meaning: "Paprika Hijau" },
+  { icon: "🍃", kanji: "ほうれん草", romaji: "Hourensou", meaning: "Bayam" },
+  { icon: "🎃", kanji: "南瓜", romaji: "Kabocha", meaning: "Labu Kuning" },
+  {
+    icon: "🌽",
+    kanji: "トウモロコシ",
+    romaji: "Toumorokoshi",
+    meaning: "Jagung",
+  },
+  { icon: "🪷", kanji: "蓮根", romaji: "Renkon", meaning: "Akar Teratai" },
+  { icon: "🍄", kanji: "キノコ", romaji: "Kinoko", meaning: "Jamur (Umum)" },
+  { icon: "🫘", kanji: "枝豆", romaji: "Edamame", meaning: "Kedelai Jepang" },
 ];

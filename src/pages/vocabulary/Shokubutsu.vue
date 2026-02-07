@@ -3,17 +3,18 @@ import MenuCard from '@/components/common/card/MenuCard.vue';
 import TabSwitcher from '@/components/common/nav/TabSwitcher.vue';
 import { computed, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import { Trees, Flowers, NatureParts } from '@/data/shokubutsu';
+import { Trees, Flowers, Herbs, NatureParts } from '@/data/shokubutsu';
 
 const plantTabs = [
-    { label: 'Pohon (Ki)', value: 'trees' },
-    { label: 'Bunga (Hana)', value: 'flowers' },
+    { label: 'Pohon', value: 'trees' },
+    { label: 'Bunga', value: 'flowers' },
+    { label: 'Herbal & Rempah', value: 'herbs' },
     { label: 'Bagian & Alam', value: 'parts' },
 ]
 
 const route = useRoute();
 const themeName = computed(() => route.meta.bgClass as string);
-const activeTab = ref<'trees' | 'flowers' | 'parts'>('trees');
+const activeTab = ref<'trees' | 'flowers' | 'herbs' | 'parts'>('trees');
 
 // --- LOGIC PAGINATION (STANDAR BOS) ---
 const currentPage = ref(1);
@@ -22,6 +23,7 @@ const itemsPerPage = 8;
 const currentData = computed(() => {
     if (activeTab.value === 'trees') return Trees;
     if (activeTab.value === 'flowers') return Flowers;
+    if (activeTab.value === 'herbs') return Herbs;
     return NatureParts;
 });
 
@@ -55,6 +57,7 @@ const btnStyle = computed(() => ({
                     class="text-xl sm:text-3xl font-black text-forest-accent mb-4 sm:mb-6 border-b-2 border-green-100 pb-2">
                     <span v-if="activeTab === 'trees'">Pohon & Hutan 🌳</span>
                     <span v-else-if="activeTab === 'flowers'">Bunga-bungaan 🌻</span>
+                    <span v-else-if="activeTab === 'herbs'">Herbal & Rempah 🫚</span>
                     <span v-else>Bagian Tanaman & Alam 🌿</span>
                 </h2>
 

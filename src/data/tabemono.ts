@@ -16,6 +16,54 @@ export const FoodItems: MenuItem[] = [
   { icon: "🍣", kanji: "寿司", romaji: "Sushi", meaning: "Sushi" },
   { icon: "🍤", kanji: "天ぷら", romaji: "Tenpura", meaning: "Tempura" },
   { icon: "🍛", kanji: "カレー", romaji: "Karee", meaning: "Kari" },
+  { icon: "🍙", kanji: "おにぎり", romaji: "Onigiri", meaning: "Nasi Kepal" },
+  { icon: "🥣", kanji: "味噌汁", romaji: "Misoshiru", meaning: "Sup Miso" },
+  { icon: "🍲", kanji: "うどん", romaji: "Udon", meaning: "Mie Udon (Tebal)" },
+  {
+    icon: "🍜",
+    kanji: "そば",
+    romaji: "Soba",
+    meaning: "Mie Soba (Gandum Hitam)",
+  },
+  { icon: "🥟", kanji: "餃子", romaji: "Gyouza", meaning: "Pangsit Goreng" },
+  { icon: "🐙", kanji: "たこ焼き", romaji: "Takoyaki", meaning: "Bola Gurita" },
+  {
+    icon: "🥞",
+    kanji: "お好み焼き",
+    romaji: "Okonomiyaki",
+    meaning: "Panekuk Jepang (Pizza Jepang)",
+  },
+  { icon: "🍢", kanji: "おでん", romaji: "Oden", meaning: "Rebusan" },
+  {
+    icon: "🍗",
+    kanji: "唐揚げ",
+    romaji: "Karaage",
+    meaning: "Ayam Goreng Jepang",
+  },
+  {
+    icon: "🐖",
+    kanji: "豚カツ",
+    romaji: "Tonkatsu",
+    meaning: "Katsu Babi Goreng",
+  },
+  {
+    icon: "🐂",
+    kanji: "牛丼",
+    romaji: "Gyudon",
+    meaning: "Rice Bowl Daging Sapi",
+  },
+  {
+    icon: "🐡",
+    kanji: "刺身",
+    romaji: "Sashimi",
+    meaning: "Irisan Ikan Mentah",
+  },
+  {
+    icon: "🥢",
+    kanji: "納豆",
+    romaji: "Nattou",
+    meaning: "Fermentasi Kedelai",
+  },
 ];
 
 // ==========================================
@@ -35,6 +83,24 @@ export const DrinkItems: MenuItem[] = [
     romaji: "Osake",
     meaning: "Minuman Beralkohol (Sake)",
   },
+  { icon: "🥤", kanji: "コーラ", romaji: "Koora", meaning: "Cola" },
+  {
+    icon: "🍂",
+    kanji: "ウーロン茶",
+    romaji: "Uuroncha",
+    meaning: "Teh Oolong",
+  },
+  { icon: "♨️", kanji: "お湯", romaji: "Oyu", meaning: "Air Panas" },
+  { icon: "🥛", kanji: "豆乳", romaji: "Tounyuu", meaning: "Susu Kedelai" },
+  { icon: "🍾", kanji: "ワイン", romaji: "Wain", meaning: "Anggur (Wine)" },
+  { icon: "🥃", kanji: "ウイスキー", romaji: "Uisukii", meaning: "Whisky" },
+  {
+    icon: "🍶",
+    kanji: "甘酒",
+    romaji: "Amazake",
+    meaning: "Sake Manis (Non/Rendah Alkohol)",
+  },
+  { icon: "🧊", kanji: "氷", romaji: "Koori", meaning: "Es Batu" },
 ];
 
 // ==========================================

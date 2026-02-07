@@ -1,110 +1,132 @@
 <script setup lang="ts">
-import ObjectCard from '@/components/common/card/ObjectCard.vue';
+import MenuCard from '@/components/common/card/MenuCard.vue';
 import TabSwitcher from '@/components/common/nav/TabSwitcher.vue';
-import { computed, ref } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import { HomeItems, SchoolItems, NatureItems, HospitalItems, SportItems } from '@/data/mono'
+import { 
+  HomeItems, 
+  SchoolItems, 
+  NatureItems, 
+  HospitalItems, 
+  SportItems, 
+  RestaurantItems 
+} from '@/data/mono';
 
+// Tab Categories (Manual list)
 const monoTabs = [
-    { label: 'Rumah', value: 'rumah' },
-    { label: 'Sekolah', value: 'sekolah' },
-    { label: 'Alam', value: 'alam' },
-    { label: 'RS', value: 'rs' },
-    { label: 'Olahraga', value: 'olahraga' },
+  { label: 'Rumah', value: 'home' },
+  { label: 'Sekolah', value: 'school' },
+  { label: 'Alam', value: 'nature' },
+  { label: 'RS', value: 'hospital' },
+  { label: 'Olahraga', value: 'sport' },
+  { label: 'Restoran', value: 'restaurant' },
 ]
 
 const route = useRoute();
 const themeName = computed(() => route.meta.bgClass as string);
+const activeTab = ref<'home' | 'school' | 'nature' | 'hospital' | 'sport' | 'restaurant'>('home');
 
-const activeTab = ref('rumah')
+// --- LOGIC PAGINATION (Sama persis dengan Referensi) ---
+const currentPage = ref(1);
+const itemsPerPage = 8;
+
+const currentData = computed(() => {
+  if (activeTab.value === 'home') return HomeItems;
+  if (activeTab.value === 'school') return SchoolItems;
+  if (activeTab.value === 'nature') return NatureItems;
+  if (activeTab.value === 'hospital') return HospitalItems;
+  if (activeTab.value === 'sport') return SportItems;
+  return RestaurantItems;
+});
+
+const totalPages = computed(() => Math.ceil(currentData.value.length / itemsPerPage));
+
+const paginatedData = computed(() => {
+  const start = (currentPage.value - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+  return currentData.value.slice(start, end);
+});
+
+watch(activeTab, () => {
+  currentPage.value = 1;
+});
+
+const btnStyle = computed(() => ({
+  '--btn-bg': `var(--color-${themeName.value}-accent, #6366f1)`, 
+}));
 </script>
 
 <template>
-    <div class="max-w-6xl mx-auto px-4 pb-12">
+    <div class="max-w-6xl mx-auto px-3 sm:px-4 pb-12">
 
         <TabSwitcher :tabs="monoTabs" v-model="activeTab" :theme="themeName" class="mb-6" />
 
-        <div v-show="activeTab === 'rumah'" class="animate-fade-in">
-            <div class="bg-orange-50 border-4 border-orange-200 rounded-[32px] p-6 md:p-8">
-                <h2 class="text-2xl font-black text-orange-800 mb-6 flex items-center gap-2">
-                    <span
-                        class="bg-white w-10 h-10 rounded-full flex items-center justify-center border-2 border-orange-300">🏠</span>
-                    Benda di Rumah (Ie)
+        <div class="animate-fade-in">
+            <div
+                class="bg-white border-4 border-ghost-accent rounded-2xl sm:rounded-[32px] p-4 sm:p-8 shadow-[6px_6px_0px_theme('colors.ghost-accent')] sm:shadow-[8px_8px_0px_theme('colors.ghost-accent')]">
+
+                <h2
+                    class="text-xl sm:text-3xl font-black text-ghost-accent mb-4 sm:mb-6 border-b-2 border-ghost-200 pb-2">
+                    <span v-if="activeTab === 'home'">Benda di Rumah 🏠</span>
+                    <span v-else-if="activeTab === 'school'">Benda di Sekolah 🏫</span>
+                    <span v-else-if="activeTab === 'nature'">Alam & Lingkungan 🌳</span>
+                    <span v-else-if="activeTab === 'hospital'">Fasilitas Medis 🏥</span>
+                    <span v-else-if="activeTab === 'sport'">Alat Olahraga ⚽</span>
+                    <span v-else>Restoran & Makanan 🍱</span>
                 </h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <ObjectCard v-for="(item, index) in HomeItems" :key="index" :item="item" variant="home" />
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+                    <MenuCard v-for="(item, i) in paginatedData" :key="activeTab + i" :item="item" :theme="themeName" />
+                </div>
+
+                <div v-if="totalPages > 1" class="flex items-center justify-center gap-2 sm:gap-4 mt-8 w-full"
+                    :style="btnStyle">
+
+                    <button @click="currentPage--" :disabled="currentPage === 1"
+                        class="flex-1 sm:flex-none px-4 sm:px-8 py-2 rounded-xl font-bold border-2 border-slate-800 shadow-[4px_4px_0px_#1e293b] active:translate-y-1 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed bg-white text-slate-800 cursor-pointer">
+                        ← <span class="ml-1">Prev</span>
+                    </button>
+
+                    <div class="flex items-center justify-center min-w-[70px] sm:min-w-[120px]">
+                        <span class="font-black text-slate-800 text-sm sm:text-lg">
+                            {{ currentPage }} / {{ totalPages }}
+                        </span>
+                    </div>
+
+                    <button @click="currentPage++" :disabled="currentPage === totalPages"
+                        class="flex-1 sm:flex-none px-4 sm:px-8 py-2 rounded-xl font-bold border-2 border-slate-800 shadow-[4px_4px_0px_#1e293b] active:translate-y-1 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed bg-[var(--btn-bg)] text-white cursor-pointer">
+                        <span class="mr-1">Next</span> →
+                    </button>
                 </div>
             </div>
         </div>
 
-        <div v-show="activeTab === 'sekolah'" class="animate-fade-in">
-            <div class="bg-blue-50 border-4 border-blue-200 rounded-[32px] p-6 md:p-8">
-                <h2 class="text-2xl font-black text-blue-800 mb-6 flex items-center gap-2">
-                    <span
-                        class="bg-white w-10 h-10 rounded-full flex items-center justify-center border-2 border-blue-300">🏫</span>
-                    Benda di Sekolah (Gakkou)
-                </h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <ObjectCard v-for="(item, index) in SchoolItems" :key="index" :item="item" variant="school" />
+        <div class="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <div
+                class="bg-ghost-accent text-white p-5 rounded-2xl border-4 border-ghost-dark shadow-card flex items-center gap-4">
+                <div class="text-4xl shrink-0">📦</div>
+                <div>
+                    <h4 class="font-black text-lg sm:text-xl leading-tight">~Tsu (つ)</h4>
+                    <p class="text-indigo-100 font-bold text-xs sm:text-sm">Satuan benda umum (Hitotsu, Futatsu)</p>
                 </div>
             </div>
-        </div>
 
-        <div v-show="activeTab === 'alam'" class="animate-fade-in">
-            <div class="bg-green-50 border-4 border-green-200 rounded-[32px] p-6 md:p-8">
-                <h2 class="text-2xl font-black text-green-800 mb-6 flex items-center gap-2">
-                    <span
-                        class="bg-white w-10 h-10 rounded-full flex items-center justify-center border-2 border-green-300">🌳</span>
-                    Benda di Alam (Shizen)
-                </h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <ObjectCard v-for="(item, index) in NatureItems" :key="index" :item="item" variant="nature" />
+            <div
+                class="bg-slate-800 text-white p-5 rounded-2xl border-4 border-slate-900 shadow-card flex items-center gap-4">
+                <div class="text-4xl shrink-0">🍎</div>
+                <div>
+                    <h4 class="font-black text-lg sm:text-xl leading-tight">~Ko (個)</h4>
+                    <p class="text-slate-300 font-bold text-xs sm:text-sm">Benda kecil bulat (Apel, Telur)</p>
                 </div>
             </div>
-        </div>
 
-        <div v-show="activeTab === 'rs'" class="animate-fade-in">
-            <div class="bg-red-50 border-4 border-red-200 rounded-[32px] p-6 md:p-8">
-                <h2 class="text-2xl font-black text-red-800 mb-6 flex items-center gap-2">
-                    <span
-                        class="bg-white w-10 h-10 rounded-full flex items-center justify-center border-2 border-red-300">🏥</span>
-                    Rumah Sakit (Byouin)
-                </h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <ObjectCard v-for="(item, index) in HospitalItems" :key="index" :item="item" variant="hospital" />
-                </div>
-            </div>
-        </div>
-
-        <div v-show="activeTab === 'olahraga'" class="animate-fade-in">
-            <div class="bg-purple-50 border-4 border-purple-200 rounded-[32px] p-6 md:p-8">
-                <h2 class="text-2xl font-black text-purple-800 mb-6 flex items-center gap-2">
-                    <span
-                        class="bg-white w-10 h-10 rounded-full flex items-center justify-center border-2 border-purple-300">⚽</span>
-                    Tempat Olahraga (Supootsu)
-                </h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-                    <ObjectCard v-for="(item, index) in SportItems" :key="index" :item="item" variant="sport" />
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-8 bg-white border-4 border-pop-dark rounded-[32px] p-6 text-center shadow-card">
-            <h3 class="font-black text-xl text-pop-dark mb-4">Contoh Kalimat</h3>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <div class="bg-slate-50 p-4 rounded-2xl border-2 border-slate-200 flex-1">
-                    <p class="text-slate-500 font-bold uppercase text-xs mb-1">Menunjuk Benda (Dekat)</p>
-                    <p class="font-black text-lg text-slate-800">これ は <span class="text-sky-600">[Benda]</span> です。</p>
-                    <p class="text-slate-700 font-medium">Kore wa <span class="text-slate-500 font-bold">[Benda]</span>
-                        desu.</p>
-                    <p class="text-sm text-slate-400 mt-1">Ini adalah [Benda].</p>
-                </div>
-                <div class="bg-slate-50 p-4 rounded-2xl border-2 border-slate-200 flex-1">
-                    <p class="text-slate-500 font-bold uppercase text-xs mb-1">Keberadaan Benda</p>
-                    <p class="font-black text-lg text-slate-800"><span class="text-sky-600">[Benda]</span> が あります。</p>
-                    <p class="text-slate-700 font-medium"><span class="text-slate-500 font-bold">[Benda]</span> ga
-                        arimasu.</p>
-                    <p class="text-sm text-slate-400 mt-1">Ada [Benda].</p>
+            <div
+                class="bg-white text-ghost-dark p-5 rounded-2xl border-4 border-ghost-dark shadow-card flex items-center gap-4">
+                <div class="text-4xl shrink-0">📄</div>
+                <div>
+                    <h4 class="font-black text-lg sm:text-xl leading-tight">~Mai (枚)</h4>
+                    <p class="text-slate-500 font-bold text-xs sm:text-sm">Benda tipis (Kertas, Piring, Baju)</p>
                 </div>
             </div>
         </div>
