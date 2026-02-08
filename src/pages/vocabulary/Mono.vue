@@ -1,57 +1,50 @@
 <script setup lang="ts">
 import MenuCard from '@/components/common/card/MenuCard.vue';
 import TabSwitcher from '@/components/common/nav/TabSwitcher.vue';
-import { computed, ref, watch } from 'vue';
+import { computed, ref } from 'vue';
 import { useRoute } from 'vue-router';
-import { 
-  HomeItems, 
-  SchoolItems, 
-  NatureItems, 
-  HospitalItems, 
-  SportItems, 
-  RestaurantItems 
+import { usePagination } from '@/composables/usePagination';
+import {
+    HomeItems,
+    SchoolItems,
+    NatureItems,
+    HospitalItems,
+    SportItems,
+    RestaurantItems
 } from '@/data/mono';
 
 const monoTabs = [
-  { label: 'Rumah', value: 'home' },
-  { label: 'Sekolah', value: 'school' },
-  { label: 'Alam', value: 'nature' },
-  { label: 'RS', value: 'hospital' },
-  { label: 'Olahraga', value: 'sport' },
-  { label: 'Restoran', value: 'restaurant' },
+    { label: 'Rumah', value: 'home' },
+    { label: 'Sekolah', value: 'school' },
+    { label: 'Alam', value: 'nature' },
+    { label: 'RS', value: 'hospital' },
+    { label: 'Olahraga', value: 'sport' },
+    { label: 'Restoran', value: 'restaurant' },
 ]
 
 const route = useRoute();
 const themeName = computed(() => route.meta.bgClass as string);
 const activeTab = ref<'home' | 'school' | 'nature' | 'hospital' | 'sport' | 'restaurant'>('home');
 
-// --- LOGIC PAGINATION (Sama persis dengan Referensi) ---
-const currentPage = ref(1);
-const itemsPerPage = 8;
-
 const currentData = computed(() => {
-  if (activeTab.value === 'home') return HomeItems;
-  if (activeTab.value === 'school') return SchoolItems;
-  if (activeTab.value === 'nature') return NatureItems;
-  if (activeTab.value === 'hospital') return HospitalItems;
-  if (activeTab.value === 'sport') return SportItems;
-  return RestaurantItems;
+    if (activeTab.value === 'home') return HomeItems;
+    if (activeTab.value === 'school') return SchoolItems;
+    if (activeTab.value === 'nature') return NatureItems;
+    if (activeTab.value === 'hospital') return HospitalItems;
+    if (activeTab.value === 'sport') return SportItems;
+    return RestaurantItems;
 });
 
-const totalPages = computed(() => Math.ceil(currentData.value.length / itemsPerPage));
-
-const paginatedData = computed(() => {
-  const start = (currentPage.value - 1) * itemsPerPage;
-  const end = start + itemsPerPage;
-  return currentData.value.slice(start, end);
-});
-
-watch(activeTab, () => {
-  currentPage.value = 1;
-});
+const {
+    currentPage,
+    paginatedData,
+    totalPages,
+    nextPage,
+    prevPage
+} = usePagination(currentData, 8);
 
 const btnStyle = computed(() => ({
-  '--btn-bg': `var(--color-${themeName.value}-accent, #6366f1)`, 
+    '--btn-bg': `var(--color-${themeName.value}-accent, #6366f1)`,
 }));
 </script>
 
@@ -101,7 +94,7 @@ const btnStyle = computed(() => ({
         </div>
 
         <div class="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-3 gap-4">
-            
+
             <div
                 class="bg-ghost-accent text-white p-5 rounded-2xl border-4 border-ghost-dark shadow-card flex items-center gap-4">
                 <div class="text-4xl shrink-0">📦</div>

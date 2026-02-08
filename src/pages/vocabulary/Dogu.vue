@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import MenuCard from '@/components/common/card/MenuCard.vue';
 import TabSwitcher from '@/components/common/nav/TabSwitcher.vue';
-import { computed, ref, watch } from 'vue';
+import { computed, ref } from 'vue';
 import { useRoute } from 'vue-router';
+import { usePagination } from '@/composables/usePagination';
 import { carpentryTools, cleaningTools, gardeningTools } from '@/data/dogu';
 
 const toolTabs = [
@@ -15,27 +16,19 @@ const route = useRoute();
 const themeName = computed(() => route.meta.bgClass as string || 'orange');
 const activeTab = ref<'carpentry' | 'cleaning' | 'gardening'>('carpentry');
 
-// --- LOGIC PAGINATION ---
-const currentPage = ref(1);
-const itemsPerPage = 8;
-
 const currentData = computed(() => {
     if (activeTab.value === 'carpentry') return carpentryTools;
     if (activeTab.value === 'cleaning') return cleaningTools;
     return gardeningTools;
 });
 
-const totalPages = computed(() => Math.ceil(currentData.value.length / itemsPerPage));
-
-const paginatedData = computed(() => {
-    const start = (currentPage.value - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
-    return currentData.value.slice(start, end);
-});
-
-watch(activeTab, () => {
-    currentPage.value = 1;
-});
+const {
+    currentPage,
+    paginatedData,
+    totalPages,
+    nextPage,
+    prevPage
+} = usePagination(currentData, 8);
 
 const btnStyle = computed(() => ({
     '--btn-bg': `var(--color-orange-accent, #f97316)`,
