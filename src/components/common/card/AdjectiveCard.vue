@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { AdjectivePair } from '@/types';
+import { playAudio } from '@/utils/audio';
 
 const props = defineProps<{
     pair: AdjectivePair;
@@ -28,18 +29,6 @@ const badgeBgClass = computed(() =>
 const bottomBgClass = computed(() =>
     isNa.value ? 'bg-green-50' : 'bg-aqua'
 );
-
-// --- LOGIKA AUDIO (YOUDAO - KANJI) ---
-// Kita butuh parameter 'text' karena ada 2 kata berbeda dalam 1 kartu
-const playAudio = (word: string) => {
-    if (!word) return;
-
-    const text = encodeURIComponent(word);
-    const url = `https://dict.youdao.com/dictvoice?audio=${text}&le=jap`;
-
-    const audio = new Audio(url);
-    audio.play().catch(e => console.warn("Audio Error:", e));
-}
 </script>
 
 <template>

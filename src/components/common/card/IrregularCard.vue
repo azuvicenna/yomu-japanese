@@ -1,20 +1,10 @@
 <script setup lang="ts">
 import type { VerbConjugation } from '@/types';
+import { playAudio } from '@/utils/audio';
 
 defineProps<{
     verb: VerbConjugation;
 }>();
-
-// --- LOGIKA AUDIO (YOUDAO) ---
-const playAudio = (text: string) => {
-    if (!text) return;
-
-    const encodedText = encodeURIComponent(text);
-    const url = `https://dict.youdao.com/dictvoice?audio=${encodedText}&le=jap`;
-
-    const audio = new Audio(url);
-    audio.play().catch(e => console.warn("Audio Error:", e));
-}
 </script>
 
 <template>

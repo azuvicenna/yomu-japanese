@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { WordItem } from '@/types';
 import { computed } from 'vue';
+import { playAudio } from '@/utils/audio';
 
 const props = withDefaults(defineProps<{
     item: WordItem;
@@ -27,24 +28,10 @@ const dynamicStyles = computed(() => {
         '--card-accent': themeConfig.accent,
     };
 });
-
-// --- LOGIKA AUDIO (YOUDAO) ---
-const playAudio = () => {
-    if (!props.item.kanji) return;
-
-    const text = encodeURIComponent(props.item.kanji);
-    const url = `https://dict.youdao.com/dictvoice?audio=${text}&le=jap`;
-
-    const audio = new Audio(url);
-
-    audio.play().catch(e => {
-        console.warn("Youdao Audio Error:", e);
-    });
-}
 </script>
 
 <template>
-    <div class="menu-card group select-none" :style="dynamicStyles" @click="playAudio">
+    <div class="menu-card group select-none" :style="dynamicStyles" @click="playAudio(props.item.kanji)">
 
         <div class="emoji-icon group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300 ease-out">
             {{ item.icon }}

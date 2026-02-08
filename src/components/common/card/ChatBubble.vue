@@ -1,27 +1,17 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { AisatsuItem } from '@/types';
+import { playAudio } from '@/utils/audio';
 
 const props = defineProps<{
     item: AisatsuItem;
 }>();
 
 const isRight = computed(() => props.item.align === 'right');
-
-// --- LOGIKA AUDIO (YOUDAO) ---
-const playAudio = () => {
-    if (!props.item.kana) return;
-
-    const text = encodeURIComponent(props.item.kana);
-    const url = `https://dict.youdao.com/dictvoice?audio=${text}&le=jap`;
-
-    const audio = new Audio(url);
-    audio.play().catch(e => console.warn("Audio Error:", e));
-}
 </script>
 
 <template>
-    <div :class="['bubble group select-none', isRight ? 'bubble-right' : 'bubble-left']" @click="playAudio">
+    <div :class="['bubble group select-none', isRight ? 'bubble-right' : 'bubble-left']" @click="playAudio(props.item.kana)">
 
         <div :class="[
             'absolute top-3 opacity-0 group-hover:opacity-100 transition-opacity text-sm',

@@ -1,22 +1,14 @@
 <script setup lang="ts">
 import type { ShigotoItem } from '@/types';
+import { playAudio } from '@/utils/audio';
 
 const props = defineProps<{
     item: ShigotoItem;
 }>();
-
-// --- LOGIKA AUDIO (YOUDAO) ---
-const playAudio = () => {
-    const text = encodeURIComponent(props.item.kanji);
-    const url = `https://dict.youdao.com/dictvoice?audio=${text}&le=jap`;
-
-    const audio = new Audio(url);
-    audio.play().catch(e => console.warn("Audio Error:", e));
-}
 </script>
 
 <template>
-    <div class="id-card group cursor-pointer select-none" @click="playAudio">
+    <div class="id-card group cursor-pointer select-none" @click="playAudio(props.item.kanji)">
 
         <div class="id-hole"></div>
 

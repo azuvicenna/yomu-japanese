@@ -1,17 +1,10 @@
 <script setup lang="ts">
 import type { JoshiExtraItem } from '@/types';
+import { playAudio } from '@/utils/audio';
 
 defineProps<{
     item: JoshiExtraItem;
 }>();
-
-const playAudio = (text: string) => {
-    if (!text) return;
-    const encodedText = encodeURIComponent(text);
-    const url = `https://dict.youdao.com/dictvoice?audio=${encodedText}&le=jap`;
-    const audio = new Audio(url);
-    audio.play().catch(e => console.warn("Audio Error:", e));
-}
 </script>
 
 <template>

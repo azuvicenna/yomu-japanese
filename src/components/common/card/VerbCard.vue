@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { VerbConjugation } from '@/types';
+import { playAudio } from '@/utils/audio';
 
 interface Props {
     verb: VerbConjugation;
@@ -13,17 +14,6 @@ const props = withDefaults(defineProps<Props>(), {
 const badgeClass = props.type === 'ichidan'
     ? 'bg-pink-100 text-pink-600'
     : 'bg-slate-200 text-slate-600';
-
-// --- LOGIKA AUDIO (YOUDAO) ---
-const playAudio = (text: string) => {
-    if (!text) return;
-
-    const encodedText = encodeURIComponent(text);
-    const url = `https://dict.youdao.com/dictvoice?audio=${encodedText}&le=jap`;
-
-    const audio = new Audio(url);
-    audio.play().catch(e => console.warn("Audio Error:", e));
-}
 </script>
 
 <template>

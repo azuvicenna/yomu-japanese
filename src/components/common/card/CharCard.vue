@@ -10,7 +10,7 @@ interface CharData {
 
 const props = withDefaults(defineProps<{
     data: CharData;
-    theme?: string; // 'peach', 'ice', 'lavender', etc.
+    theme?: string; 
     size?: 'normal' | 'large';
 }>(), {
     theme: 'peach',
