@@ -1,4 +1,4 @@
-import type { JoshiItem, JoshiExtraItem } from "@/types/Joshi";
+import type { JoshiItem, JoshiExtraItem } from "@/types";
 
 // ==========================================
 // 1. MAIN PARTICLES (KARTU UTAMA)

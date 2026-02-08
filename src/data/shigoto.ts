@@ -1,4 +1,4 @@
-import type { ShigotoItem } from "@/types/Shigoto";
+import type { ShigotoItem } from "@/types";
 
 export const ShigotoItems: ShigotoItem[] = [
   // --- SEKOLAH ---

@@ -12,7 +12,6 @@ import {
   RestaurantItems 
 } from '@/data/mono';
 
-// Tab Categories (Manual list)
 const monoTabs = [
   { label: 'Rumah', value: 'home' },
   { label: 'Sekolah', value: 'school' },

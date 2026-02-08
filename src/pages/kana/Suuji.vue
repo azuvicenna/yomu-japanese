@@ -21,8 +21,6 @@ const activeTab = ref('basic')
 const playAudio = (text: string) => {
     if (!text) return;
 
-    // Bersihkan teks dari simbol (misal: "300 (Sanbyaku)" -> ambil "Sanbyaku")
-    // Atau kirim Kanji jika ada. Di sini kita terima text mentah.
     const encodedText = encodeURIComponent(text);
     const url = `https://dict.youdao.com/dictvoice?audio=${encodedText}&le=jap`;
 

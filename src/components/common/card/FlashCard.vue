@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import type { FlashcardItem } from '@/types/Flashcard';
+import type { FlashcardItem } from '@/types';
 
 const props = defineProps<{
     item: FlashcardItem;

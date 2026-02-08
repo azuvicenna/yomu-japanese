@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { JoshiExtraItem } from '@/types/Joshi';
+import type { JoshiExtraItem } from '@/types';
 
 defineProps<{
     item: JoshiExtraItem;

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { MenuItem } from '@/types/Tabemono';
+import { WordItem } from '@/types';
 import { computed } from 'vue';
 
 const props = withDefaults(defineProps<{
-    item: MenuItem;
+    item: WordItem;
     theme?: string;
 }>(), {
     theme: 'apricot'

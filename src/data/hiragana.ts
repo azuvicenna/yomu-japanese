@@ -1,4 +1,4 @@
-import type { CharData } from "@/types/Kana";
+import type { CharData } from "@/types";
 
 // --- 1. SEION ---
 export const seion: CharData[] = [

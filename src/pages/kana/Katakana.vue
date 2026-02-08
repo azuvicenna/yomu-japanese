@@ -3,7 +3,7 @@ import TabSwitcher from '@/components/common/nav/TabSwitcher.vue';
 import CharModal from '@/components/common/modal/CharModal.vue';
 import { computed, ref } from 'vue';
 import { seion, dakuten, yoon, tokushuon } from '@/data/katakana';
-import type { CharData } from '@/types/Kana';
+import type { CharData } from '@/types';
 import CharCard from '@/components/common/card/CharCard.vue';
 import { useRoute } from 'vue-router';
 

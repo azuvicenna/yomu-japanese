@@ -1,4 +1,4 @@
-import type { AisatsuItem } from "@/types/Aisatsu";
+import type { AisatsuItem } from "@/types";
 
 // ==========================================
 // 1. DAILY GREETINGS (SALAM HARIAN)

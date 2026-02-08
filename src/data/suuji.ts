@@ -1,4 +1,4 @@
-import { NumberItem } from "@/types/Suuji";
+import { NumberItem } from "@/types";
 
 // 1. Angka Dasar (1-10)
 export const BasicNumbers: NumberItem[] = [

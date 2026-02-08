@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ShigotoItem } from '@/types/Shigoto';
+import type { ShigotoItem } from '@/types';
 
 const props = defineProps<{
     item: ShigotoItem;

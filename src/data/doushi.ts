@@ -1,4 +1,4 @@
-import type { VerbConjugation } from "@/types/Doushi"; // Sesuaikan path type Bos
+import type { VerbConjugation } from "@/types";
 
 export const godan: VerbConjugation[] = [
   // --- 1. Akhiran -U (う) → -IMASU (います) ---

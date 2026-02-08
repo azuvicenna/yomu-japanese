@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import type { KanjiData } from '@/types/Kanji';
+import type { KanjiData } from '@/types';
 
 const props = withDefaults(defineProps<{
     data: KanjiData;

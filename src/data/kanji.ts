@@ -1,4 +1,4 @@
-import type { KanjiData } from "@/types/Kanji";
+import type { KanjiData } from "@/types";
 
 export const N5: KanjiData[] = [
   {

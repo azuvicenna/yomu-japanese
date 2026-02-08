@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import type { AdjectivePair } from '@/types/Keiyoushi';
+import type { AdjectivePair } from '@/types';
 
 const props = defineProps<{
     pair: AdjectivePair;

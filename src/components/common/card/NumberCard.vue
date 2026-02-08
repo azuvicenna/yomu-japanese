@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { NumberItem } from '@/types/Suuji';
+import type { NumberItem } from '@/types';
 
 const props = defineProps<{
     item: NumberItem;

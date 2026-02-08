@@ -1,4 +1,4 @@
-import type { AdjectivePair } from "@/types/Keiyoushi";
+import type { AdjectivePair } from "@/types";
 
 // ==========================================
 // 1. KATA SIFAT -I (I-KEIYOUSHI PAIRS)

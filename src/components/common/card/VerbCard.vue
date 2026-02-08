@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { VerbConjugation } from '@/types/Doushi';
+import type { VerbConjugation } from '@/types';
 
 interface Props {
     verb: VerbConjugation;

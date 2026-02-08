@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import type { AisatsuItem } from '@/types/Aisatsu';
+import type { AisatsuItem } from '@/types';
 
 const props = defineProps<{
     item: AisatsuItem;

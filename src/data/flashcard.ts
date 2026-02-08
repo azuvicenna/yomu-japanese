@@ -1,4 +1,4 @@
-import type { FlashcardItem } from "@/types/Flashcard";
+import type { FlashcardItem } from "@/types";
 
 // Deck 1: Hiragana (Tipe: CHAR)
 export const HiraganaDeck: FlashcardItem[] = [
