@@ -54,7 +54,7 @@ onUnmounted(() => {
                 <div
                     class="inline-block transform -rotate-2 hover:rotate-0 transition duration-300 mb-4 cursor-default">
                     <span
-                        class="bg-[var(--color-vanilla)] uppercase text-slate-800 border-4 border-white px-6 py-2 rounded-2xl font-extrabold text-lg shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">
+                        class="bg-(--color-vanilla) uppercase text-slate-800 border-4 border-white px-6 py-2 rounded-2xl font-extrabold text-lg shadow-[6px_6px_0px_rgba(0,0,0,0.1)]">
                         {{ $t('home.hero.badge') }}
                     </span>
                 </div>

@@ -232,6 +232,16 @@ const router = createRouter({
             themeColor: "#dcfce7",
           },
         },
+        {
+          path: "kanyouku",
+          name: "Idiom",
+          component: () => import("@/pages/grammar/Idiom.vue"),
+          meta: {
+            title: "topics.grammar.kanyouku.title",
+            bgClass: "indigo",
+            themeColor: "#6366f1",
+          },
+        },
       ],
     },
     {
