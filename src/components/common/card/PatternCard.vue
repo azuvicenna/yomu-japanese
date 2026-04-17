@@ -17,7 +17,7 @@ defineProps<{
             {{ title }}
         </h3>
 
-        <div class="flex-grow">
+        <div class="grow">
             <slot></slot>
         </div>
     </div>

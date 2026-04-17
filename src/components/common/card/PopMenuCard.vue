@@ -42,7 +42,7 @@ const badgeClass = computed(() => {
         <div>
             <div class="text-5xl mb-2">{{ icon }}</div>
             <h3
-                class="text-2xl font-black text-slate-700 group-hover:text-[var(--hover-color)] transition-colors duration-200">
+                class="text-2xl font-black text-slate-700 group-hover:text-(--hover-color) transition-colors duration-200">
                 {{ title }}
             </h3>
             <p class="font-bold text-slate-400 text-sm mt-1 leading-snug">
@@ -54,7 +54,7 @@ const badgeClass = computed(() => {
             <span :class="['text-[10px] font-black px-2 py-1 rounded uppercase tracking-wider', badgeClass]">
                 {{ tag }}
             </span>
-            <span class="font-black text-slate-300 group-hover:text-[var(--hover-color)] transition-colors">→</span>
+            <span class="font-black text-slate-300 group-hover:text-(--hover-color) transition-colors">→</span>
         </div>
     </router-link>
 </template>

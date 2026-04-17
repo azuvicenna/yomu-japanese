@@ -14,7 +14,7 @@ const { getMeaning } = useLocalized()
 
 <template>
     <div
-        class="verb-card p-5 bg-yellow-50 border-3 border-yellow-500 rounded-3xl relative shadow-card hover:translate-y-[-4px] hover:shadow-lg transition-all duration-200">
+        class="verb-card p-5 bg-yellow-50 border-3 border-yellow-500 rounded-3xl relative shadow-card hover:-translate-y-1 hover:shadow-lg transition-all duration-200">
 
         <div class="flex justify-between items-start mb-4">
             <span class="text-4xl">{{ verb.icon }}</span>
@@ -38,7 +38,7 @@ const { getMeaning } = useLocalized()
                     🔊
                 </div>
 
-                <span v-if="showFurigana" class="block text-[10px] font-bold text-slate-400 mb-[-4px]">
+                <span v-if="showFurigana" class="block text-[10px] font-bold text-slate-400 -mb-1">
                     {{ verb.furigana }}
                 </span>
 
@@ -59,7 +59,7 @@ const { getMeaning } = useLocalized()
                     🔊
                 </div>
 
-                <span v-if="showFurigana" class="block text-[10px] font-bold text-yellow-600 mb-[-4px]">
+                <span v-if="showFurigana" class="block text-[10px] font-bold text-yellow-600 -mb-1">
                     {{ verb.masu_furigana }}
                 </span>
 

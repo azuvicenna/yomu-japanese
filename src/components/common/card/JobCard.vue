@@ -30,7 +30,7 @@ const { showRomaji, showFurigana } = useSettings()
 
         <div class="p-5 text-center flex flex-col items-center h-full">
 
-            <p v-if="showFurigana" class="text-xs font-bold text-slate-400 mb-[-4px]">
+            <p v-if="showFurigana" class="text-xs font-bold text-slate-400 -mb-1">
                 {{ item.furigana }}
             </p>
 

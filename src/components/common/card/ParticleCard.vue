@@ -29,7 +29,7 @@ const { getLabel, getFunction, getExampleResult } = useLocalized();
             </div>
         </div>
 
-        <div class="p-6 flex-grow flex flex-col gap-4">
+        <div class="p-6 grow flex flex-col gap-4">
             <div>
                 <h3 class="font-bold text-mint-dark mb-1 flex items-center gap-2">
                     <span class="text-lg">💡</span> {{ $t('common.dictionary.joshi.function') }}:

@@ -3,6 +3,7 @@
 @theme {
     /* --- Font Family --- */
     --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-jp: "Noto Sans JP", sans-serif;
 
     /* --- Global Color --- */
     --color-dark: #334155;

@@ -40,16 +40,16 @@ const { showRomaji, showFurigana } = useSettings()
             {{ item.icon }}
         </div>
 
-        <p v-if="showFurigana" class="text-[10px] font-bold text-slate-400 mb-[-4px] transition-all">
+        <p v-if="showFurigana" class="text-[10px] font-bold text-slate-400 -mb-1 transition-all">
             {{ item.furigana }}
         </p>
 
         <h3
-            class="text-2xl font-black text-slate-700 mb-1 leading-tight group-hover:text-[var(--card-dark)] transition-colors">
+            class="text-2xl font-black text-slate-700 mb-1 leading-tight group-hover:text-(--card-dark) transition-colors">
             {{ item.kanji }}
         </h3>
 
-        <p class="text-sm font-extrabold text-[var(--card-accent)] uppercase tracking-widest">
+        <p class="text-sm font-extrabold text-(--card-accent) uppercase tracking-widest">
             {{ showRomaji ? item.romaji : '-' }}
         </p>
 

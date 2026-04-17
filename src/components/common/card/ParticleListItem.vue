@@ -16,7 +16,7 @@ const { getFunction, getMeaning } = useLocalized();
     <div
         class="flex flex-col md:flex-row gap-4 p-4 rounded-xl transition-colors border-2 border-transparent hover:bg-mint hover:border-mint-accent group relative">
 
-        <div class="w-16 h-16 bg-mint-dark text-white rounded-xl flex items-center justify-center font-black text-2xl flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform cursor-pointer select-none relative overflow-hidden active:scale-95"
+        <div class="w-16 h-16 bg-mint-dark text-white rounded-xl flex items-center justify-center font-black text-2xl shrink-0 shadow-sm group-hover:scale-110 transition-transform cursor-pointer select-none relative overflow-hidden active:scale-95"
             @click.stop="playAudio(item.kana)">
             {{ item.kana }}
             <div
@@ -25,7 +25,7 @@ const { getFunction, getMeaning } = useLocalized();
             </div>
         </div>
 
-        <div class="flex-grow flex flex-col justify-center">
+        <div class="grow flex flex-col justify-center">
             <h4 class="font-bold text-lg text-mint-dark leading-tight mb-1">
                 {{ item.romaji }}
             </h4>

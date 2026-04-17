@@ -12,7 +12,7 @@ const { showRomaji, showFurigana } = useSettings()
 
 <template>
     <div @click="playAudio(props.item.kanji)"
-        class="group relative top-0 active:top-[4px] bg-white border-4 border-vanilla-dark rounded-2xl p-4 text-center cursor-pointer transition-all duration-100 shadow-[0px_6px_0px_#f59e0b] active:shadow-[0px_2px_0px_#f59e0b] hover:bg-vanilla select-none">
+        class="group relative top-0 active:top-1 bg-white border-4 border-vanilla-dark rounded-2xl p-4 text-center cursor-pointer transition-all duration-100 shadow-[0px_6px_0px_#f59e0b] active:shadow-[0px_2px_0px_#f59e0b] hover:bg-vanilla select-none">
 
         <div class="text-5xl font-black text-vanilla-accent mb-2">
             {{ item.num }}

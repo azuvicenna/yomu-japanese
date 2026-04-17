@@ -25,12 +25,12 @@ const frontFontSize = computed(() => {
 
             <div class="card-face card-face-front">
                 <span
-                    class="absolute top-6 left-6 bg-[var(--color-indigo)] text-[var(--color-indigo-dark)] px-3 py-1 rounded-full text-xs font-bold border-2 border-[var(--color-indigo-dark)] uppercase">
+                    class="absolute top-6 left-6 bg-indigo text-(--color-indigo-dark) px-3 py-1 rounded-full text-xs font-bold border-2 border-(--color-indigo-dark) uppercase">
                     {{ item.tag }}
                 </span>
 
                 <div class="flex flex-col items-center w-full">
-                    <h2 :class="['font-black text-[var(--color-indigo-dark)] mb-2', frontFontSize]">
+                    <h2 :class="['font-black text-(--color-indigo-dark) mb-2', frontFontSize]">
                         {{ item.front }}
                     </h2>
 
@@ -47,7 +47,7 @@ const frontFontSize = computed(() => {
             <div class="card-face card-face-back">
                 <div class="flex flex-col items-center text-center p-6 w-full h-full justify-center">
 
-                    <h3 class="text-4xl md:text-5xl font-black mb-3 break-words w-full">
+                    <h3 class="text-4xl md:text-5xl font-black mb-3 wrap-break-word w-full">
                         {{ item.romaji }}
                     </h3>
 

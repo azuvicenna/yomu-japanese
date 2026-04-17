@@ -1,5 +1,5 @@
 <template>
-    <div class="layout-wrapper min-h-screen flex flex-col font-sans overflow-x-hidden pb-12">
+    <div class="layout-wrapper min-h-screen flex flex-col font-jp overflow-x-hidden pb-12">
         <slot />
     </div>
 </template>

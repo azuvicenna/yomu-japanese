@@ -133,7 +133,7 @@ const pageTitle = computed(() => (route.meta.title as string) || '')
 </script>
 
 <template>
-    <div class="min-h-screen pb-20 transition-colors duration-300 layout-root" :class="currentTheme.bg"
+    <div class="min-h-screen pb-20 transition-colors duration-300 layout-root font-jp" :class="currentTheme.bg"
         :style="currentTheme.dot">
         <SecNavbar :title="pageTitle" :hover-class="currentTheme.hover" />
 
@@ -150,6 +150,5 @@ const pageTitle = computed(() => (route.meta.title as string) || '')
 <style>
 .layout-root {
     color: var(--color-dark);
-    font-family: var(--font-sans);
 }
 </style>

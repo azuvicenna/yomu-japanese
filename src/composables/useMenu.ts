@@ -199,9 +199,9 @@ export function useMenu() {
     {
       to: "/grammar/kanyouku",
       icon: "📜",
-      title: t("topics.grammar.kanyoku.title"),
-      desc: t("topics.grammar.kanyoku.desc"),
-      tag: t("topics.grammar.kanyoku.tag"),
+      title: t("topics.grammar.kanyouku.title"),
+      desc: t("topics.grammar.kanyouku.desc"),
+      tag: t("topics.grammar.kanyouku.tag"),
       hoverColor: "var(--color-indigo-accent)",
       theme: "indigo",
     },
