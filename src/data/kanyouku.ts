@@ -1,9 +1,9 @@
 import type { IdiomData } from "@/types";
 
 export const idiomsData: Record<string, IdiomData[]> = {
-  body: [
+  kanyouku: [
     {
-      id: "b1",
+      id: "k1",
       kanji: "頭が固い",
       romaji: "Atama ga katai",
       literal: "Kepalanya keras",
@@ -16,7 +16,7 @@ export const idiomsData: Record<string, IdiomData[]> = {
       theme: "bg-emerald-300",
     },
     {
-      id: "b2",
+      id: "k2",
       kanji: "口が軽い",
       romaji: "Kuchi ga karui",
       literal: "Mulutnya ringan",
@@ -29,7 +29,7 @@ export const idiomsData: Record<string, IdiomData[]> = {
       theme: "bg-rose-300",
     },
     {
-      id: "b3",
+      id: "k3",
       kanji: "耳が痛い",
       romaji: "Mimi ga itai",
       literal: "Telinganya sakit",
@@ -42,7 +42,7 @@ export const idiomsData: Record<string, IdiomData[]> = {
       theme: "bg-amber-300",
     },
     {
-      id: "b4",
+      id: "k4",
       kanji: "首を長くする",
       romaji: "Kubi o nagaku suru",
       literal: "Memanjangkan leher",
@@ -55,7 +55,7 @@ export const idiomsData: Record<string, IdiomData[]> = {
       theme: "bg-teal-300",
     },
     {
-      id: "b5",
+      id: "k5",
       kanji: "腹が立つ",
       romaji: "Hara ga tatsu",
       literal: "Perutnya berdiri",
@@ -68,7 +68,7 @@ export const idiomsData: Record<string, IdiomData[]> = {
       theme: "bg-red-300",
     },
     {
-      id: "b6",
+      id: "k6",
       kanji: "顔が広い",
       romaji: "Kao ga hiroi",
       literal: "Wajahnya lebar",
@@ -80,10 +80,8 @@ export const idiomsData: Record<string, IdiomData[]> = {
       icon: "😎",
       theme: "bg-blue-300",
     },
-  ],
-  animal: [
     {
-      id: "a1",
+      id: "k7",
       kanji: "猫の手も借りたい",
       romaji: "Neko no te mo karitai",
       literal: "Ingin pinjam tangan kucing",
@@ -96,7 +94,7 @@ export const idiomsData: Record<string, IdiomData[]> = {
       theme: "bg-sky-300",
     },
     {
-      id: "a2",
+      id: "k8",
       kanji: "犬猿の仲",
       romaji: "Ken'en no naka",
       literal: "Hubungan anjing dan monyet",
@@ -109,7 +107,7 @@ export const idiomsData: Record<string, IdiomData[]> = {
       theme: "bg-fuchsia-300",
     },
     {
-      id: "a3",
+      id: "k9",
       kanji: "馬が合う",
       romaji: "Uma ga au",
       literal: "Kudanya cocok",
@@ -122,7 +120,7 @@ export const idiomsData: Record<string, IdiomData[]> = {
       theme: "bg-orange-300",
     },
     {
-      id: "a4",
+      id: "k10",
       kanji: "雀の涙",
       romaji: "Suzume no namida",
       literal: "Air mata burung gereja",
@@ -135,7 +133,7 @@ export const idiomsData: Record<string, IdiomData[]> = {
       theme: "bg-cyan-300",
     },
     {
-      id: "a5",
+      id: "k11",
       kanji: "猿も木から落ちる",
       romaji: "Saru mo ki kara ochiru",
       literal: "Monyet pun jatuh dari pohon",
@@ -146,6 +144,191 @@ export const idiomsData: Record<string, IdiomData[]> = {
       },
       icon: "🐒",
       theme: "bg-lime-300",
+    },
+    {
+      id: "k12",
+      kanji: "水に流す",
+      romaji: "Mizu ni nagasu",
+      literal: "Mengalirkan ke air",
+      meaning: "Memaafkan dan melupakan masa lalu / Biarlah berlalu",
+      example: {
+        jp: "過去のケンカは水に流しましょう。",
+        id: "Mari kita lupakan pertengkaran di masa lalu.",
+      },
+      icon: "🌊",
+      theme: "bg-cyan-300",
+    },
+    {
+      id: "k13",
+      kanji: "道草を食う",
+      romaji: "Michikusa o kuu",
+      literal: "Makan rumput pinggir jalan",
+      meaning: "Mampir-mampir / Membuang waktu di jalan",
+      example: {
+        jp: "学校の帰りに道草を食ってはいけません。",
+        id: "Jangan mampir-mampir saat pulang sekolah.",
+      },
+      icon: "🌿",
+      theme: "bg-green-300",
+    },
+    {
+      id: "k14",
+      kanji: "水を差す",
+      romaji: "Mizu o sasu",
+      literal: "Menuangkan air",
+      meaning: "Merusak suasana / Mengganggu kesenangan",
+      example: {
+        jp: "楽しい話に水を差さないでください。",
+        id: "Jangan merusak suasana saat obrolan lagi seru.",
+      },
+      icon: "💧",
+      theme: "bg-blue-300",
+    },
+    {
+      id: "k15",
+      kanji: "雲をつかむ",
+      romaji: "Kumo o tsukamu",
+      literal: "Menangkap awan",
+      meaning: "Tidak realistis / Mengawang-awang",
+      example: {
+        jp: "彼の話は雲をつかむようです。",
+        id: "Ceritanya dia itu tidak realistis (mengawang-awang).",
+      },
+      icon: "☁️",
+      theme: "bg-slate-300",
+    },
+  ],
+  yojijukugo: [
+    {
+      id: "y1",
+      kanji: "一期一会",
+      romaji: "Ichigo ichie",
+      literal: "Satu waktu, satu pertemuan",
+      meaning: "Pertemuan sekali seumur hidup (hargai setiap momen)",
+      example: {
+        jp: "一期一会の出会いを大切にしたいです。",
+        id: "Saya ingin menghargai pertemuan yang hanya terjadi sekali seumur hidup ini.",
+      },
+      icon: "🌸",
+      theme: "bg-pink-300",
+    },
+    {
+      id: "y2",
+      kanji: "十人十色",
+      romaji: "Juunin toiro",
+      literal: "Sepuluh orang, sepuluh warna",
+      meaning: "Setiap orang punya selera dan keunikan masing-masing",
+      example: {
+        jp: "好きな映画は十人十色ですね。",
+        id: "Film kesukaan setiap orang itu beda-beda ya.",
+      },
+      icon: "🎨",
+      theme: "bg-indigo-300",
+    },
+    {
+      id: "y3",
+      kanji: "自業自得",
+      romaji: "Jigou jitoku",
+      literal: "Perbuatan sendiri, untung/rugi sendiri",
+      meaning: "Kena batunya / Akibat perbuatan sendiri",
+      example: {
+        jp: "勉強しなくてテストに落ちたのは自業自得だ。",
+        id: "Gagal ujian karena tidak belajar itu akibat perbuatan sendiri.",
+      },
+      icon: "🪃",
+      theme: "bg-rose-400",
+    },
+    {
+      id: "y4",
+      kanji: "一石二鳥",
+      romaji: "Isseki nichou",
+      literal: "Satu batu, dua burung",
+      meaning:
+        "Mendapat dua keuntungan dari satu tindakan (Sambil menyelam minum air)",
+      example: {
+        jp: "散歩しながらゴミを拾うのは一石二鳥だ。",
+        id: "Memungut sampah sambil jalan-jalan itu mendapat dua keuntungan sekaligus.",
+      },
+      icon: "🕊️",
+      theme: "bg-sky-300",
+    },
+    {
+      id: "y5",
+      kanji: "七転八起",
+      romaji: "Shichiten hakki",
+      literal: "Tujuh kali jatuh, delapan kali bangun",
+      meaning: "Pantang menyerah / Selalu bangkit meski terus gagal",
+      example: {
+        jp: "七転八起の精神で頑張ります。",
+        id: "Saya akan berjuang dengan semangat pantang menyerah.",
+      },
+      icon: "🔥",
+      theme: "bg-orange-400",
+    },
+    {
+      id: "y6",
+      kanji: "以心伝心",
+      romaji: "Ishin denshin",
+      literal: "Hati ke hati",
+      meaning: "Saling pengertian tanpa perlu diucapkan / Ikatan batin",
+      example: {
+        jp: "彼とは以心伝心で、言わなくてもわかる。",
+        id: "Saya punya ikatan batin dengannya, tanpa diucap pun sudah saling paham.",
+      },
+      icon: "💞",
+      theme: "bg-fuchsia-300",
+    },
+    {
+      id: "y7",
+      kanji: "三日坊主",
+      romaji: "Mikka bouzu",
+      literal: "Biksu tiga hari",
+      meaning: "Hangat-hangat tahi ayam / Mudah menyerah atau bosan",
+      example: {
+        jp: "日記を始めたが、三日坊主で終わった。",
+        id: "Saya mulai menulis buku harian, tapi berhenti karena gampang bosan.",
+      },
+      icon: "🧘‍♂️",
+      theme: "bg-violet-300",
+    },
+    {
+      id: "y8",
+      kanji: "弱肉強食",
+      romaji: "Jakuniku kyoushoku",
+      literal: "Daging lemah dimakan yang kuat",
+      meaning: "Hukum rimba / Yang kuat yang menang",
+      example: {
+        jp: "自然界は弱肉強食の世界だ。",
+        id: "Alam bebas adalah dunia hukum rimba.",
+      },
+      icon: "🦖",
+      theme: "bg-red-400",
+    },
+    {
+      id: "y9",
+      kanji: "花鳥風月",
+      romaji: "Kachou fuugetsu",
+      literal: "Bunga, burung, angin, bulan",
+      meaning: "Keindahan alam / Menikmati alam yang puitis",
+      example: {
+        jp: "休日は花鳥風月を楽しむのが好きです。",
+        id: "Saat libur, saya suka menikmati keindahan alam.",
+      },
+      icon: "🎑",
+      theme: "bg-emerald-300",
+    },
+    {
+      id: "y10",
+      kanji: "晴耕雨読",
+      romaji: "Seikou udoku",
+      literal: "Hari cerah bertani, hari hujan membaca",
+      meaning: "Hidup tenang, santai, dan selaras dengan alam",
+      example: {
+        jp: "将来は田舎で晴耕雨読の生活をしたい。",
+        id: "Di masa depan, saya ingin hidup tenang santai di desa.",
+      },
+      icon: "🌦️",
+      theme: "bg-amber-300",
     },
   ],
 };

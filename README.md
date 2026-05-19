@@ -59,7 +59,7 @@
   <li>🏗️ <strong>Bunpou</strong> — Basic Sentence Patterns</li>
   <li>🔗 <strong>Particles (Joshi)</strong> — Wa, Ga, Wo, Ni, De</li>
   <li>💬 <strong>Greetings (Aisatsu)</strong> — Daily Conversation Phrases</li>
-  <li>📜 <strong>Idioms</strong> — Kanyouku & Yojijukugo (Coming Soon)</li>
+  <li>📜 <strong>Idioms</strong> — Kanyouku & Yojijukugo</li>
 </ul>
 
 <h2>🛠️ Tech Stack</h2>

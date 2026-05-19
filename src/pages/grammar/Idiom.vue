@@ -5,59 +5,19 @@ import { useRoute } from 'vue-router';
 import { idiomsData } from '@/data/kanyouku';
 
 const idiomTabs = [
-    { label: 'Tubuh Manusia', value: 'body' },
-    { label: 'Hewan', value: 'animal' },
+  { label: "Kanyouku (慣用句)", value: "kanyouku" },
+  { label: "Yojijukugo (四字熟語)", value: "yojijukugo" },
 ];
 
 const route = useRoute();
 const themeName = computed(() => route.meta.bgClass as string);
-const activeTab = ref(idiomTabs[0]?.value || 'body');
+const activeTab = ref(idiomTabs[0]?.value || 'kanyouku');
 
 const currentIdioms = computed(() => idiomsData[activeTab.value] || []);
 </script>
 
 <template>
     <div class="max-w-4xl mx-auto px-4 pb-20 pt-6 font-sans min-h-screen">
-
-        <div
-            class="bg-indigo-500 border-[3px] border-slate-900 rounded-4xl p-6 md:p-8 mb-12 shadow-[6px_6px_0px_#0f172a] relative">
-            <div
-                class="absolute -top-5 -right-3 bg-yellow-400 text-slate-900 font-black px-4 py-2 border-[3px] border-slate-900 rounded-full shadow-[4px_4px_0px_#0f172a] -rotate-6 text-xl">
-                KIASAN! 🎭
-            </div>
-
-            <h2
-                class="text-2xl md:text-3xl font-black text-white mb-3 uppercase tracking-wide drop-shadow-[2px_2px_0px_#0f172a]">
-                Kanyouku (慣用句)
-            </h2>
-            <p class="text-indigo-100 font-bold mb-8 text-sm md:text-base border-b-2 border-indigo-400 pb-4">
-                Gabungan kata yang maknanya kiasan, bukan arti sebenarnya!
-            </p>
-
-            <div class="bg-white p-5 rounded-2xl border-[3px] border-slate-900 shadow-[4px_4px_0px_#0f172a]">
-                <p class="text-xs font-black text-slate-400 mb-3 text-center uppercase tracking-widest">Contoh Logika
-                    Idiom</p>
-                <div class="flex flex-wrap justify-center items-center gap-2 md:gap-4">
-                    <div
-                        class="bg-slate-100 border-2 border-slate-900 px-3 py-2 rounded-xl text-center shadow-[2px_2px_0px_#0f172a]">
-                        <span class="text-2xl block mb-1">🐱</span>
-                        <span class="font-black text-xs">KUCING</span>
-                    </div>
-                    <span class="font-black text-2xl text-slate-800">+</span>
-                    <div
-                        class="bg-slate-100 border-2 border-slate-900 px-3 py-2 rounded-xl text-center shadow-[2px_2px_0px_#0f172a]">
-                        <span class="text-2xl block mb-1">✋</span>
-                        <span class="font-black text-xs">TANGAN</span>
-                    </div>
-                    <span class="font-black text-2xl text-slate-800 rotate-90 md:rotate-0">=</span>
-                    <div
-                        class="bg-yellow-300 border-[3px] border-slate-900 px-4 py-2 rounded-xl text-center shadow-[4px_4px_0px_#0f172a] rotate-2">
-                        <span class="text-2xl block mb-1">🤯</span>
-                        <span class="font-black text-sm text-slate-900">SIBUK BANGET!</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="flex justify-center mb-10">
             <TabSwitcher :tabs="idiomTabs" v-model="activeTab" :theme="themeName" />
