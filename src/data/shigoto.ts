@@ -1,7 +1,6 @@
 import type { ShigotoItem } from "@/types";
 
 export const ShigotoItems: ShigotoItem[] = [
-  // --- SEKOLAH ---
   {
     icon: "🎓",
     kanji: "学生",
@@ -27,8 +26,6 @@ export const ShigotoItems: ShigotoItem[] = [
     meaning: "Peneliti",
     category: "Sains",
   },
-
-  // --- KANTOR & BISNIS ---
   {
     icon: "💼",
     kanji: "会社員",
@@ -53,8 +50,6 @@ export const ShigotoItems: ShigotoItem[] = [
     meaning: "Sekretaris",
     category: "Kantor",
   },
-
-  // --- MEDIS ---
   {
     icon: "👨‍⚕️",
     kanji: "医者",
@@ -71,8 +66,6 @@ export const ShigotoItems: ShigotoItem[] = [
     meaning: "Perawat",
     category: "Medis",
   },
-
-  // --- TEKNOLOGI & KREATIF ---
   {
     icon: "💻",
     kanji: "エンジニア",
@@ -91,8 +84,6 @@ export const ShigotoItems: ShigotoItem[] = [
     category: "Kreatif",
     note: "(Kata Serapan: Designer)",
   },
-
-  // --- PELAYANAN PUBLIK ---
   {
     icon: "👮",
     kanji: "警察官",
@@ -117,8 +108,6 @@ export const ShigotoItems: ShigotoItem[] = [
     meaning: "Pengacara",
     category: "Hukum",
   },
-
-  // --- JASA & TOKO ---
   {
     icon: "🏪",
     kanji: "店員",
@@ -151,8 +140,6 @@ export const ShigotoItems: ShigotoItem[] = [
     meaning: "Sopir / Pengemudi",
     category: "Jasa",
   },
-
-  // --- SENI & HIBURAN ---
   {
     icon: "🎤",
     kanji: "歌手",
@@ -176,5 +163,87 @@ export const ShigotoItems: ShigotoItem[] = [
     romaji: "Shufu",
     meaning: "Ibu Rumah Tangga",
     category: "Rumah",
+  },
+  {
+    icon: "🚒",
+    kanji: "消防士",
+    furigana: "しょう.ぼう.し",
+    romaji: "Shouboushi",
+    meaning: "Pemadam Kebakaran",
+    category: "Publik",
+  },
+  {
+    icon: "🧑‍🌾",
+    kanji: "農家",
+    furigana: "のう.か",
+    romaji: "Nouka",
+    meaning: "Petani",
+    category: "Pertanian",
+  },
+  {
+    icon: "🦷",
+    kanji: "歯医者",
+    furigana: "は.い.しゃ",
+    romaji: "Haisha",
+    meaning: "Dokter Gigi",
+    category: "Medis",
+  },
+  {
+    icon: "📸",
+    kanji: "写真家",
+    furigana: "しゃ.しん.か",
+    romaji: "Shashinka",
+    meaning: "Fotografer",
+    category: "Kreatif",
+  },
+  {
+    icon: "🎬",
+    kanji: "俳優",
+    furigana: "はい.ゆう",
+    romaji: "Haiyuu",
+    meaning: "Aktor / Aktris",
+    category: "Seni",
+  },
+  {
+    icon: "✈️",
+    kanji: "パイロット",
+    furigana: "パイロット",
+    romaji: "Pairotto",
+    meaning: "Pilot",
+    category: "Jasa",
+    note: "(Kata Serapan: Pilot)",
+  },
+  {
+    icon: "📰",
+    kanji: "記者",
+    furigana: "き.しゃ",
+    romaji: "Kisha",
+    meaning: "Jurnalis / Wartawan",
+    category: "Publik",
+  },
+  {
+    icon: "👔",
+    kanji: "社長",
+    furigana: "しゃ.ちょう",
+    romaji: "Shachou",
+    meaning: "Direktur / Pimpinan Perusahaan",
+    category: "Kantor",
+  },
+  {
+    icon: "🐟",
+    kanji: "漁師",
+    furigana: "りょう.し",
+    romaji: "Ryoushi",
+    meaning: "Nelayan",
+    category: "Pertanian",
+  },
+  {
+    icon: "🏃",
+    kanji: "スポーツ選手",
+    furigana: "スポーツ.せん.しゅ",
+    romaji: "Supootsu senshu",
+    meaning: "Atlet",
+    category: "Seni",
+    note: "(Bisa disingkat: 選手 / Senshu)",
   },
 ];

@@ -2,108 +2,18 @@
 import TabSwitcher from '@/components/common/nav/TabSwitcher.vue';
 import { computed, ref } from 'vue';
 import { useRoute } from 'vue-router';
+import { idiomsData } from '@/data/kanyouku';
+
+const idiomTabs = [
+    { label: 'Tubuh Manusia', value: 'body' },
+    { label: 'Hewan', value: 'animal' },
+];
 
 const route = useRoute();
 const themeName = computed(() => route.meta.bgClass as string);
-const activeTab = ref('body');
+const activeTab = ref(idiomTabs[0]?.value || 'body');
 
-// ============================================================================
-// 1. TYPE DEFINITIONS (TypeScript Aman)
-// ============================================================================
-interface IdiomData {
-    id: string;
-    kanji: string;
-    romaji: string;
-    literal: string;
-    meaning: string;
-    example: {
-        jp: string;
-        id: string;
-    };
-    icon: string;
-    theme: string; // Warna untuk aksen card
-}
-
-// ============================================================================
-// 2. DATA TABS & MATERI IDIOM
-// ============================================================================
-const idiomTabs = [
-    { label: 'Tubuh (Mata, Mulut, dll)', value: 'body' },
-    { label: 'Hewan (Kucing, dll)', value: 'animal' },
-];
-
-const bodyIdioms: IdiomData[] = [
-    {
-        id: 'b1',
-        kanji: '頭が固い',
-        romaji: 'Atama ga katai',
-        literal: 'Kepalanya keras',
-        meaning: 'Keras kepala / Kaku pikirannya',
-        example: {
-            jp: 'うちの上司は頭が固いです。',
-            id: 'Bos saya orangnya keras kepala (kaku).'
-        },
-        icon: '🗿',
-        theme: 'bg-emerald-300'
-    },
-    {
-        id: 'b2',
-        kanji: '口が軽い',
-        romaji: 'Kuchi ga karui',
-        literal: 'Mulutnya ringan',
-        meaning: 'Bocor / Tidak bisa jaga rahasia',
-        example: {
-            jp: '彼は口が軽いから、秘密を言わないで。',
-            id: 'Dia orangnya bocor, jadi jangan kasih tahu rahasia.'
-        },
-        icon: '🤐',
-        theme: 'bg-rose-300'
-    },
-    {
-        id: 'b3',
-        kanji: '耳が痛い',
-        romaji: 'Mimi ga itai',
-        literal: 'Telinganya sakit',
-        meaning: 'Tertampar kenyataan / Sakit dengar kebenaran',
-        example: {
-            jp: '親の注意は耳が痛いです。',
-            id: 'Nasihat orang tua itu bikin tertampar kenyataan.'
-        },
-        icon: '👂',
-        theme: 'bg-amber-300'
-    }
-];
-
-const animalIdioms: IdiomData[] = [
-    {
-        id: 'a1',
-        kanji: '猫の手も借りたい',
-        romaji: 'Neko no te mo karitai',
-        literal: 'Ingin pinjam tangan kucing',
-        meaning: 'Sangat sibuk (butuh bantuan siapa saja)',
-        example: {
-            jp: '今日は忙しくて、猫の手も借りたいです。',
-            id: 'Hari ini sibuk banget, rasanya butuh bantuan siapa aja.'
-        },
-        icon: '🐾',
-        theme: 'bg-sky-300'
-    },
-    {
-        id: 'a2',
-        kanji: '犬猿の仲',
-        romaji: 'Ken\'en no naka',
-        literal: 'Hubungan anjing dan monyet',
-        meaning: 'Musuh bebuyutan / Tidak pernah akur',
-        example: {
-            jp: 'あの二人は犬猿の仲です。',
-            id: 'Mereka berdua itu musuh bebuyutan (seperti anjing & kucing di Indo).'
-        },
-        icon: '🐕',
-        theme: 'bg-fuchsia-300'
-    }
-];
-
-const currentIdioms = computed(() => activeTab.value === 'body' ? bodyIdioms : animalIdioms);
+const currentIdioms = computed(() => idiomsData[activeTab.value] || []);
 </script>
 
 <template>
@@ -111,7 +21,6 @@ const currentIdioms = computed(() => activeTab.value === 'body' ? bodyIdioms : a
 
         <div
             class="bg-indigo-500 border-[3px] border-slate-900 rounded-4xl p-6 md:p-8 mb-12 shadow-[6px_6px_0px_#0f172a] relative">
-
             <div
                 class="absolute -top-5 -right-3 bg-yellow-400 text-slate-900 font-black px-4 py-2 border-[3px] border-slate-900 rounded-full shadow-[4px_4px_0px_#0f172a] -rotate-6 text-xl">
                 KIASAN! 🎭
@@ -155,13 +64,11 @@ const currentIdioms = computed(() => activeTab.value === 'body' ? bodyIdioms : a
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-snap">
-
             <div v-for="idiom in currentIdioms" :key="idiom.id"
                 class="bg-white border-[3px] border-slate-900 rounded-3xl overflow-hidden shadow-[6px_6px_0px_#0f172a] flex flex-col group hover:-translate-y-1 transition-transform duration-200">
                 <div
                     :class="[idiom.theme, 'border-b-[3px] border-slate-900 p-6 flex justify-between items-center relative overflow-hidden']">
                     <div class="absolute -right-4 -bottom-4 text-7xl opacity-20 rotate-12">{{ idiom.icon }}</div>
-
                     <div class="relative z-10">
                         <h3
                             class="text-3xl font-black text-slate-900 tracking-wider font-japanese drop-shadow-[1px_1px_0px_#fff]">
@@ -209,7 +116,6 @@ const currentIdioms = computed(() => activeTab.value === 'body' ? bodyIdioms : a
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div v-if="currentIdioms.length === 0"

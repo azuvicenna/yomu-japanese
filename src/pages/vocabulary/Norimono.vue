@@ -28,7 +28,7 @@ const {
     totalPages,
     nextPage,
     prevPage
-} = usePagination(currentData, 8);
+} = usePagination(currentData, 12);
 
 const btnStyle = computed(() => ({
     '--btn-bg': `var(--color-metro-accent, #8b5cf6)`,

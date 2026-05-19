@@ -180,3 +180,21 @@ export interface FlashcardItem {
   tag: string;
   type?: FlashcardType;
 }
+
+// ==========================================
+// 8. IDIOM
+// ==========================================
+
+export interface IdiomData {
+  id: string;
+  kanji: string;
+  romaji: string;
+  literal: string;
+  meaning: string;
+  example: {
+    jp: string;
+    id: string;
+  };
+  icon: string;
+  theme: string;
+}
