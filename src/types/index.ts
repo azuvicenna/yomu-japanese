@@ -198,3 +198,34 @@ export interface IdiomData {
   icon: string;
   theme: string;
 }
+
+// ==========================================
+// 9. HAIKU (Puisi Jepang)
+// ==========================================
+
+export interface HaikuItem {
+  id: string;
+  poem_jp: string;
+  poem_kana: string;
+  poem_ro: string;
+  author: string;
+  meaningId: string;
+  meaningEn: string;
+  meaningJa: string;
+}
+
+// ==========================================
+// 10. KOUTSUU HYOUSHIKI (Rambu Lalu Lintas)
+// ==========================================
+
+export interface KoutsuuItem {
+  id: string;
+  icon: string;
+  kanji: string;
+  furigana: string;
+  romaji: string;
+  meaningId: string;
+  meaningEn: string;
+  meaningJa: string;
+  type: string;
+}

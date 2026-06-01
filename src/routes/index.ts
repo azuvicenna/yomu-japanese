@@ -195,6 +195,16 @@ const router = createRouter({
             themeColor: "#f97316",
           },
         },
+        {
+          path: "koutsuu",
+          name: "Koutsuu",
+          component: () => import("@/pages/vocabulary/Koutsuu.vue"),
+          meta: {
+            title: "topics.vocabulary.koutsuu.title",
+            bgClass: "koutsuu",
+            themeColor: "#fff8e1",
+          },
+        },
       ],
     },
     {
@@ -240,6 +250,16 @@ const router = createRouter({
             title: "topics.grammar.kanyouku.title",
             bgClass: "indigo",
             themeColor: "#6366f1",
+          },
+        },
+        {
+          path: "haiku",
+          name: "Haiku",
+          component: () => import("@/pages/grammar/Haiku.vue"),
+          meta: {
+            title: "topics.grammar.haiku.title",
+            bgClass: "haiku",
+            themeColor: "#fce4ec",
           },
         },
       ],

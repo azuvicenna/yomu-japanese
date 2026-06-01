@@ -142,6 +142,11 @@
         "title": "Peralatan",
         "desc": "Alat Tukang & Rumah",
         "tag": "Perkakas"
+      },
+      "koutsuu": {
+        "title": "Rambu Lalu Lintas",
+        "desc": "Jalan & Aturan",
+        "tag": "Keamanan"
       }
     },
     "grammar": {
@@ -159,6 +164,11 @@
         "title": "Idiom",
         "desc": "Peribahasa Jepang",
         "tag": "Ekspresi"
+      },
+      "haiku": {
+        "title": "Haiku",
+        "desc": "Puisi Jepang",
+        "tag": "Puisi"
       }
     },
     "others": {

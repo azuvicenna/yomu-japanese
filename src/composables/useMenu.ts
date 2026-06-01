@@ -165,6 +165,15 @@ export function useMenu() {
       hoverColor: "var(--color-orange-accent)",
       theme: "orange",
     },
+    {
+      to: "/vocabulary/koutsuu",
+      icon: "🚸",
+      title: t("topics.vocabulary.koutsuu.title"),
+      desc: t("topics.vocabulary.koutsuu.desc"),
+      tag: t("topics.vocabulary.koutsuu.tag"),
+      hoverColor: "var(--color-koutsuu-accent)",
+      theme: "amber",
+    },
 
     // ==========================================
     // SECTION 3: GRAMMAR
@@ -204,6 +213,15 @@ export function useMenu() {
       tag: t("topics.grammar.kanyouku.tag"),
       hoverColor: "var(--color-indigo-accent)",
       theme: "indigo",
+    },
+    {
+      to: "/grammar/haiku",
+      icon: "🎋",
+      title: t("topics.grammar.haiku.title"),
+      desc: t("topics.grammar.haiku.desc"),
+      tag: t("topics.grammar.haiku.tag"),
+      hoverColor: "var(--color-haiku-accent)",
+      theme: "pink",
     },
   ]);
 

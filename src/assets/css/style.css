@@ -94,6 +94,14 @@
     --color-orange-accent: #f97316; 
     --color-orange-dark: #c2410c;
 
+    --color-haiku: #fce4ec;
+    --color-haiku-accent: #f06292;
+    --color-haiku-dark: #c2185b;
+
+    --color-koutsuu: #fff8e1;
+    --color-koutsuu-accent: #ffc107;
+    --color-koutsuu-dark: #ff8f00;
+
     /* --- PALET BENTO (KOTOBA) --- */
     --color-kotoba: #f3f4f6;
     --color-kotoba-accent: #6366f1;

@@ -142,6 +142,11 @@
         "title": "Tools",
         "desc": "Carpentry & Home",
         "tag": "Tools"
+      },
+      "koutsuu": {
+        "title": "Traffic Signs",
+        "desc": "Road & Rules",
+        "tag": "Safety"
       }
     },
     "grammar": {
@@ -159,6 +164,11 @@
         "title": "Idioms",
         "desc": "Proverbs & Phrases",
         "tag": "Express"
+      },
+      "haiku": {
+        "title": "Haiku",
+        "desc": "Japanese Poetry",
+        "tag": "Poetry"
       }
     },
     "others": {
