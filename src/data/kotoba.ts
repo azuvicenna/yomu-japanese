@@ -575,54 +575,77 @@ export const positions = [
   },
 ];
 
-export const demonstratives = [
+export const shijigoData = [
   {
-    kanji: "これ",
-    romaji: "Kore",
-    meaningId: "Ini (benda)",
-    meaningEn: "This (object)",
+    id: "benda-mandiri",
+    title: "1. Nunjuk Benda (Berdiri Sendiri)",
+    description:
+      "Ini dipakai kalau bendanya nggak disebut lagi di belakang kata tunjuknya.",
+    items: [
+      { kana: "これ", romaji: "Kore", meaningId: "Ini", meaningEn: "This" },
+      { kana: "それ", romaji: "Sore", meaningId: "Itu (dekat dia)", meaningEn: "That (near listener)" },
+      { kana: "あれ", romaji: "Are", meaningId: "Itu (jauh)", meaningEn: "That (far)" },
+      { kana: "どれ", romaji: "Dore", meaningId: "Yang mana?", meaningEn: "Which one?" },
+    ],
+    example: {
+      jp: "これは本です。",
+      romaji: "Kore wa hon desu.",
+      id: "Ini adalah buku.",
+      icon: "📖",
+    },
   },
   {
-    kanji: "それ",
-    romaji: "Sore",
-    meaningId: "Itu (benda)",
-    meaningEn: "That (object)",
+    id: "benda-diikuti",
+    title: "2. Nunjuk Benda (Harus + Kata Benda)",
+    description:
+      'Ini dipakai kalau Bos mau nyebut bendanya, misalnya "Buku ini" atau "Orang itu".',
+    items: [
+      { kana: "この", romaji: "Kono", meaningId: "... ini", meaningEn: "This ..." },
+      { kana: "その", romaji: "Sono", meaningId: "... itu", meaningEn: "That ..." },
+      { kana: "あの", romaji: "Ano", meaningId: "... itu (jauh)", meaningEn: "That ... (far)" },
+      { kana: "どの", romaji: "Dono", meaningId: "... yang mana?", meaningEn: "Which ...?" },
+    ],
+    example: {
+      jp: "あの人は誰ですか。",
+      romaji: "Ano hito wa dare desu ka?",
+      id: "Orang itu siapa?",
+      icon: "🧍‍♂️",
+    },
   },
   {
-    kanji: "あれ",
-    romaji: "Are",
-    meaningId: "Itu jauh (benda)",
-    meaningEn: "That over there (object)",
+    id: "tempat",
+    title: "3. Nunjuk Tempat",
+    description: "Digunakan untuk menunjuk suatu lokasi atau tempat.",
+    items: [
+      { kana: "ここ", romaji: "Koko", meaningId: "Di sini", meaningEn: "Here" },
+      { kana: "そこ", romaji: "Soko", meaningId: "Di situ", meaningEn: "There" },
+      { kana: "あそこ", romaji: "Asoko", meaningId: "Di sana", meaningEn: "Over there" },
+      { kana: "どこ", romaji: "Doko", meaningId: "Di mana?", meaningEn: "Where?" },
+    ],
+    example: {
+      jp: "トイレはどこですか。",
+      romaji: "Toire wa doko desu ka?",
+      id: "Toilet ada di mana?",
+      icon: "🚽",
+    },
   },
   {
-    kanji: "ここ",
-    romaji: "Koko",
-    meaningId: "Sini (tempat)",
-    meaningEn: "Here (place)",
-  },
-  {
-    kanji: "そこ",
-    romaji: "Soko",
-    meaningId: "Situ (tempat)",
-    meaningEn: "There (place)",
-  },
-  {
-    kanji: "あそこ",
-    romaji: "Asoko",
-    meaningId: "Sana jauh (tempat)",
-    meaningEn: "Over there (place)",
-  },
-  {
-    kanji: "どれ",
-    romaji: "Dore",
-    meaningId: "Yang mana?",
-    meaningEn: "Which one?",
-  },
-  {
-    kanji: "どこ",
-    romaji: "Doko",
-    meaningId: "Di mana?",
-    meaningEn: "Where?",
+    id: "arah-sopan",
+    title: "4. Nunjuk Arah / Tempat (Lebih Sopan)",
+    description:
+      "Biasanya dipakai di dunia kerja atau ngomong sama orang yang dihormati.",
+    items: [
+      { kana: "こちら", romaji: "Kochira", meaningId: "Sebelah sini / Sini", meaningEn: "This way / Here" },
+      { kana: "そちら", romaji: "Sochira", meaningId: "Sebelah situ / Situ", meaningEn: "That way / There" },
+      { kana: "あちら", romaji: "Achira", meaningId: "Sebelah sana / Sana", meaningEn: "That way over there / Over there" },
+      { kana: "どちら", romaji: "Dochira", meaningId: "Sebelah mana? / Mana?", meaningEn: "Which way? / Where?" },
+    ],
+    example: {
+      jp: "受付はあちらです。",
+      romaji: "Uketsuke wa achira desu.",
+      id: "Resepsionis ada di sebelah sana.",
+      icon: "💁‍♀️",
+    },
   },
 ];
 

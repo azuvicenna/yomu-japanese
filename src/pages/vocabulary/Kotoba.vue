@@ -4,7 +4,7 @@ import { useLocalized } from '@/composables/useLocalized';
 import { useSettings } from '@/composables/useSettings';
 import {
     colors, days, directions, familyMembers, months, seasons,
-    dayTime, weather, positions, elements, demonstratives
+    dayTime, weather, positions, elements, shijigoData
 } from '@/data/kotoba';
 
 const { showRomaji, showFurigana } = useSettings()
@@ -213,18 +213,37 @@ const { getMeaning } = useLocalized()
             </BentoCard>
 
             <BentoCard theme="demo" :title="`指示語 ${showRomaji ? '(Shijigo)' : ''} - Kata Tunjuk`" icon="👉"
-                subTitle="Ko-So-A-Do" col-span="md:col-span-2">
-                <div class="grid grid-cols-2 gap-2 mt-auto">
-                    <div v-for="d in demonstratives" :key="d.romaji"
-                        class="flex flex-col justify-center px-3 py-1 bg-white border border-slate-200 rounded-lg">
+                subTitle="Ko-So-A-Do" col-span="md:col-span-2" row-span="md:row-span-2">
+                <div class="flex flex-col gap-4 mt-2 h-full overflow-y-auto pr-1 scrollbar-hide pb-2">
+                    <div v-for="cat in shijigoData" :key="cat.id" class="flex flex-col gap-2">
+                        <!-- Category Header -->
+                        <div class="flex items-center gap-2 border-b border-teal-100 pb-1">
+                            <span class="text-[10px] font-bold text-teal-700 bg-teal-50 px-1.5 py-0.5 rounded">{{ cat.title.split('.')[0] }}</span>
+                            <span class="text-xs font-bold text-slate-600">{{ cat.title.split('. ')[1] }}</span>
+                        </div>
+                        
+                        <!-- Grid Items -->
+                        <div class="grid grid-cols-2 gap-2">
+                            <div v-for="d in cat.items" :key="d.romaji"
+                                class="flex flex-col justify-center px-3 py-1 bg-white border border-slate-200 rounded-lg">
+                                <span class="text-base font-black text-slate-800">{{ d.kana }}</span>
+                                <div class="flex justify-between items-baseline">
+                                    <span v-if="showRomaji" class="text-[10px] font-bold text-teal-600 uppercase">
+                                        {{ d.romaji }}
+                                    </span>
+                                    <span class="text-[8px] text-gray-400 italic">{{ getMeaning(d) }}</span>
+                                </div>
+                            </div>
+                        </div>
 
-                        <span class="text-base font-black text-slate-800">{{ d.kanji }}</span>
-
-                        <div class="flex justify-between items-baseline">
-                            <span v-if="showRomaji" class="text-[10px] font-bold text-teal-600 uppercase">
-                                {{ d.romaji }}
-                            </span>
-                            <span class="text-[8px] text-gray-400 italic">{{ getMeaning(d) }}</span>
+                        <!-- Example -->
+                        <div class="bg-teal-50/50 p-2 rounded-lg border border-teal-100 flex items-center gap-3">
+                            <span class="text-xl">{{ cat.example.icon }}</span>
+                            <div class="flex flex-col">
+                                <span class="text-[11px] font-bold text-slate-700 leading-none mb-1">{{ cat.example.jp }}</span>
+                                <span v-if="showRomaji" class="text-[9px] text-teal-600 font-medium leading-none mb-0.5">{{ cat.example.romaji }}</span>
+                                <span class="text-[9px] text-slate-500 italic leading-none">{{ cat.example.id }}</span>
+                            </div>
                         </div>
                     </div>
                 </div>

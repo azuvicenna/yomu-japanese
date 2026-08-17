@@ -1,8 +1,5 @@
 import type { JoshiItem, JoshiExtraItem } from "@/types";
 
-// ==========================================
-// 1. MAIN PARTICLES (KARTU UTAMA)
-// ==========================================
 export const MainParticles: JoshiItem[] = [
   {
     kana: "は",
@@ -175,11 +172,46 @@ export const MainParticles: JoshiItem[] = [
       highlight: "か",
     },
   },
+  {
+    kana: "が",
+    romaji: "GA",
+    labelId: "Subjek",
+    labelEn: "Subject",
+    labelJa: "主格 (Shukaku)",
+    functionId: "Menandai subjek dari kata kerja intransitif, atau memberi penekanan pada subjek.",
+    functionEn: "Marks the subject of an intransitive verb, or emphasizes the subject.",
+    functionJa: "動作や状態の主体を示します。",
+    example: {
+      jp: "雨が降っています。",
+      furigana: "あめ.が.ふっています",
+      ro: "Ame ga futte imasu.",
+      id: "Hujan turun.",
+      en: "It is raining.",
+      ja: "雨が降っている状態です。",
+      highlight: "が",
+    },
+  },
+  {
+    kana: "や",
+    romaji: "YA",
+    labelId: "Dan (Lain-lain)",
+    labelEn: "And (Others)",
+    labelJa: "並立 (Heiritsu)",
+    functionId: "Berarti 'dan', tapi tidak menyebutkan semuanya (menyebutkan sebagian contoh).",
+    functionEn: "Means 'and', but implies there are other unlisted items.",
+    functionJa: "いくつかある中から一部を例示します。",
+    example: {
+      jp: "パンや牛乳。",
+      furigana: "パン.や.ぎゅうにゅう",
+      ro: "Pan ya gyuunyuu.",
+      id: "Roti dan susu (dsb).",
+      en: "Bread and milk (etc).",
+      ja: "パンや牛乳などがあります。",
+      highlight: "や",
+    },
+  }
 ];
 
-// ==========================================
-// 2. EXTRA PARTICLES (LIST TAMBAHAN)
-// ==========================================
 export const ExtraParticles: JoshiExtraItem[] = [
   {
     kana: "から",
@@ -233,4 +265,69 @@ export const ExtraParticles: JoshiExtraItem[] = [
     example_meaningEn: "It is hot, you know!",
     example_meaningJa: "暑いことを強調する",
   },
+  {
+    kana: "だけ",
+    romaji: "Dake",
+    descId: "Hanya / Cuma (Batasan positif).",
+    descEn: "Only / Just (Positive limitation).",
+    descJa: "限定（これのみ）を示します。",
+    example_jp: "５分だけ",
+    furigana: "ごふん.だけ",
+    example_ro: "Gofun dake",
+    example_meaningId: "Hanya 5 menit",
+    example_meaningEn: "Only 5 minutes",
+    example_meaningJa: "５分という時間の限定",
+  },
+  {
+    kana: "しか",
+    romaji: "Shika",
+    descId: "Hanya (Selalu diikuti bentuk negatif).",
+    descEn: "Only (Always followed by negative).",
+    descJa: "限定（否定形と共に使用）を示します。",
+    example_jp: "水しかない",
+    furigana: "みず.しか.ない",
+    example_ro: "Mizu shika nai",
+    example_meaningId: "Hanya ada air",
+    example_meaningEn: "There is only water",
+    example_meaningJa: "水以外にない",
+  },
+  {
+    kana: "より",
+    romaji: "Yori",
+    descId: "Daripada (Untuk perbandingan).",
+    descEn: "Than (For comparison).",
+    descJa: "比較の基準を示します。",
+    example_jp: "車より速い",
+    furigana: "くるま.より.はやい",
+    example_ro: "Kuruma yori hayai",
+    example_meaningId: "Lebih cepat dari mobil",
+    example_meaningEn: "Faster than a car",
+    example_meaningJa: "車を基準としてそれ以上に速い",
+  },
+  {
+    kana: "ぐらい",
+    romaji: "Gurai / Kurai",
+    descId: "Sekitar / Kira-kira (Estimasi jumlah atau waktu).",
+    descEn: "About / Approximately (Estimation).",
+    descJa: "おおよその数量や程度を示します。",
+    example_jp: "１時間ぐらい",
+    furigana: "いちじかん.ぐらい",
+    example_ro: "Ichijikan gurai",
+    example_meaningId: "Sekitar 1 jam",
+    example_meaningEn: "About 1 hour",
+    example_meaningJa: "大体１時間",
+  },
+  {
+    kana: "など",
+    romaji: "Nado",
+    descId: "Dan lain-lain (Sering dipakai bersama Ya).",
+    descEn: "Etcetera / And so on.",
+    descJa: "いくつか例を挙げて、他にもあることを示します。",
+    example_jp: "りんごなど",
+    furigana: "りんご.など",
+    example_ro: "Ringo nado",
+    example_meaningId: "Apel dan lain-lain",
+    example_meaningEn: "Apples, etc.",
+    example_meaningJa: "りんごやそのほかのもの",
+  }
 ];
