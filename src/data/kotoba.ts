@@ -298,45 +298,6 @@ export const directions = [
   },
 ];
 
-export const familyMembers = [
-  {
-    meaningId: "Ayah",
-    meaningEn: "Father",
-    me: { romaji: "Chichi", kanji: "父", furigana: "ちち" },
-    other: { romaji: "Otousan", kanji: "お父さん", furigana: "お.とう.さん" },
-  },
-  {
-    meaningId: "Ibu",
-    meaningEn: "Mother",
-    me: { romaji: "Haha", kanji: "母", furigana: "はは" },
-    other: { romaji: "Okaasan", kanji: "お母さん", furigana: "お.かあ.さん" },
-  },
-  {
-    meaningId: "Kakak (L)",
-    meaningEn: "Older Brother",
-    me: { romaji: "Ani", kanji: "兄", furigana: "あに" },
-    other: { romaji: "Oniisan", kanji: "お兄さん", furigana: "お.にい.さん" },
-  },
-  {
-    meaningId: "Kakak (P)",
-    meaningEn: "Older Sister",
-    me: { romaji: "Ane", kanji: "姉", furigana: "あね" },
-    other: { romaji: "Oneesan", kanji: "お姉さん", furigana: "お.ねえ.さん" },
-  },
-  {
-    meaningId: "Adik (L)",
-    meaningEn: "Younger Brother",
-    me: { romaji: "Otouto", kanji: "弟", furigana: "おとうと" },
-    other: { romaji: "Otoutosan", kanji: "弟さん", furigana: "おとうと.さん" },
-  },
-  {
-    meaningId: "Adik (P)",
-    meaningEn: "Younger Sister",
-    me: { romaji: "Imouto", kanji: "妹", furigana: "いもうと" },
-    other: { romaji: "Imoutosan", kanji: "妹さん", furigana: "いもうと.さん" },
-  },
-];
-
 export const months = [
   {
     num: 1,
@@ -646,80 +607,5 @@ export const shijigoData = [
       id: "Resepsionis ada di sebelah sana.",
       icon: "💁‍♀️",
     },
-  },
-];
-
-export const elements = [
-  {
-    kanji: "火",
-    furigana: "ひ",
-    romaji: "Hi",
-    meaningId: "Api",
-    meaningEn: "Fire",
-    color: "text-red-600",
-    bg: "bg-red-50",
-  },
-  {
-    kanji: "水",
-    furigana: "みず",
-    romaji: "Mizu",
-    meaningId: "Air",
-    meaningEn: "Water",
-    color: "text-blue-600",
-    bg: "bg-blue-50",
-  },
-  {
-    kanji: "木",
-    furigana: "き",
-    romaji: "Ki",
-    meaningId: "Kayu/Pohon",
-    meaningEn: "Wood/Tree",
-    color: "text-green-600",
-    bg: "bg-green-50",
-  },
-  {
-    kanji: "金",
-    furigana: "かね",
-    romaji: "Kane",
-    meaningId: "Logam/Emas",
-    meaningEn: "Metal/Gold",
-    color: "text-yellow-600",
-    bg: "bg-yellow-50",
-  },
-  {
-    kanji: "土",
-    furigana: "つち",
-    romaji: "Tsuchi",
-    meaningId: "Tanah",
-    meaningEn: "Earth/Soil",
-    color: "text-amber-700",
-    bg: "bg-amber-50",
-  },
-  {
-    kanji: "風",
-    furigana: "かぜ",
-    romaji: "Kaze",
-    meaningId: "Angin",
-    meaningEn: "Wind",
-    color: "text-teal-600",
-    bg: "bg-teal-50",
-  },
-  {
-    kanji: "雷",
-    furigana: "かみなり",
-    romaji: "Kaminari",
-    meaningId: "Petir",
-    meaningEn: "Thunder",
-    color: "text-yellow-400",
-    bg: "bg-yellow-100",
-  },
-  {
-    kanji: "光",
-    furigana: "ひかり",
-    romaji: "Hikari",
-    meaningId: "Cahaya",
-    meaningEn: "Light",
-    color: "text-orange-400",
-    bg: "bg-orange-50",
   },
 ];
