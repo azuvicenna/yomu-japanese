@@ -182,7 +182,7 @@ const { getMeaning } = useLocalized()
 
             <div class="col-span-1 md:col-span-2 flex flex-col gap-4 h-fit">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <BentoCard theme="time" :title="`時間じかん ${showRomaji ? '(Jikan)' : ''} - Waktu`" icon="⏰">
+                    <BentoCard theme="time" :title="`時間 ${showRomaji ? '(Jikan)' : ''} - Waktu`" icon="⏰">
                         <div class="grid grid-cols-2 gap-2 mt-2">
                             <div v-for="t in dayTime" :key="t.romaji"
                                 class="bg-indigo-50 p-2 rounded-lg border border-indigo-100 text-center flex flex-col justify-center items-center">
@@ -198,7 +198,7 @@ const { getMeaning } = useLocalized()
                         </div>
                     </BentoCard>
 
-                    <BentoCard theme="weather" :title="`天気てんき ${showRomaji ? '(Tenki)' : ''} - Cuaca`" icon="⛅">
+                    <BentoCard theme="weather" :title="`天気 ${showRomaji ? '(Tenki)' : ''} - Cuaca`" icon="⛅">
                         <div class="grid grid-cols-2 gap-2 mt-2">
                             <div v-for="w in weather" :key="w.romaji"
                                 class="bg-sky-50 p-2 rounded-lg border border-sky-100 text-center flex flex-col justify-center items-center">
@@ -214,7 +214,7 @@ const { getMeaning } = useLocalized()
                     </BentoCard>
                 </div>
 
-                <BentoCard theme="dir" :title="`位置いち ${showRomaji ? '(Ichi)' : ''} - Lokasi`" icon="📍">
+                <BentoCard theme="dir" :title="`位置 ${showRomaji ? '(Ichi)' : ''} - Lokasi`" icon="📍">
                     <div class="grid grid-cols-3 gap-2 mt-2">
                         <div v-for="p in positions" :key="p.romaji"
                             class="bg-white border border-slate-100 rounded flex flex-col items-center justify-center p-1 shadow-sm">
