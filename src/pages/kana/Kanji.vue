@@ -71,7 +71,7 @@ const btnStyle = computed(() => {
 
         <TabSwitcher :tabs="kanjiTabs" v-model="activeTab" :theme="themeName" />
 
-        <div class="animate-fade-in min-h-[400px]">
+        <div class="animate-fade-in min-h-100">
 
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6">
                 <KanjiCard v-for="(item, index) in paginatedData" :key="`${activeTab}-${index}`" :data="item"
@@ -91,14 +91,14 @@ const btnStyle = computed(() => {
                 ← <span class="ml-1">Prev</span>
             </button>
 
-            <div class="flex items-center justify-center min-w-[70px] sm:min-w-[120px]">
+            <div class="flex items-center justify-center min-w-17.5 sm:min-w-30">
                 <span class="font-black text-slate-800 text-sm sm:text-lg">
                     {{ currentPage }} / {{ totalPages }}
                 </span>
             </div>
 
             <button @click="nextPage" :disabled="currentPage === totalPages"
-                class="flex-1 sm:flex-none px-4 sm:px-8 py-2 rounded-xl font-bold transition-all border-2 border-slate-800 shadow-[4px_4px_0px_#1e293b] active:translate-y-1 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none bg-[var(--btn-bg)] text-white hover:brightness-110 cursor-pointer text-sm sm:text-base">
+                class="flex-1 sm:flex-none px-4 sm:px-8 py-2 rounded-xl font-bold transition-all border-2 border-slate-800 shadow-[4px_4px_0px_#1e293b] active:translate-y-1 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none bg-(--btn-bg) text-white hover:brightness-110 cursor-pointer text-sm sm:text-base">
                 <span class="mr-1">Next</span> →
             </button>
 

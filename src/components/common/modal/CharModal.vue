@@ -49,11 +49,11 @@ const { getMeaning } = useLocalized();
                 class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm"
                 @click="emit('close')">
 
-                <div class="bg-white border-4 border-slate-800 rounded-[32px] w-full max-w-sm overflow-hidden shadow-modal relative modal-card"
+                <div class="bg-white border-4 border-slate-800 rounded-4xl w-full max-w-sm overflow-hidden shadow-modal relative modal-card"
                     @click.stop :style="dynamicStyle">
 
                     <div
-                        class="bg-[var(--modal-accent)] p-6 text-center relative border-b-4 border-slate-800 transition-colors duration-300">
+                        class="bg-(--modal-accent) p-6 text-center relative border-b-4 border-slate-800 transition-colors duration-300">
 
                         <button @click="emit('close')"
                             class="absolute top-4 right-4 bg-white text-slate-800 w-8 h-8 rounded-full font-bold border-2 border-slate-800 hover:bg-slate-100 transition-colors flex items-center justify-center cursor-pointer">
@@ -65,24 +65,24 @@ const { getMeaning } = useLocalized();
                         </h2>
 
                         <span v-if="showRomaji"
-                            class="inline-block bg-white text-[var(--modal-accent)] px-4 py-1 rounded-full font-bold border-2 border-slate-800 -mb-9 relative z-10 shadow-sm text-lg uppercase transition-colors duration-300">
+                            class="inline-block bg-white text-(--modal-accent) px-4 py-1 rounded-full font-bold border-2 border-slate-800 -mb-9 relative z-10 shadow-sm text-lg uppercase transition-colors duration-300">
                             {{ data.romaji }}
                         </span>
                     </div>
 
                     <div class="p-8 pt-10 text-center">
-                        <p class="uppercase text-slate-400 font-bold uppercase text-xs tracking-widest mb-2">
+                        <p class="text-slate-400 font-bold uppercase text-xs tracking-widest mb-2">
                             {{ $t('common.dictionary.example_word') }}
                         </p>
 
                         <div v-if="data.word"
-                            class="bg-[var(--modal-bg)]/50 p-4 rounded-xl border-2 border-dashed border-[var(--modal-accent)] mb-6 transition-colors duration-300 flex flex-col items-center gap-1">
+                            class="bg-(--modal-bg)/50 p-4 rounded-xl border-2 border-dashed border-(--modal-accent) mb-6 transition-colors duration-300 flex flex-col items-center gap-1">
 
                             <p class="text-3xl font-black text-slate-800">
                                 {{ data.word }}
                             </p>
 
-                            <p v-if="showRomaji" class="text-lg font-bold text-[var(--modal-accent)]">
+                            <p v-if="showRomaji" class="text-lg font-bold text-(--modal-accent)">
                                 {{ data.wordRomaji }}
                             </p>
 
@@ -99,7 +99,7 @@ const { getMeaning } = useLocalized();
 
                         <div class="flex justify-center w-full">
                             <button @click.stop="handlePlayAudio(data.word)" :disabled="isLoading || !data.word"
-                                class="bg-white border-2 border-slate-200 py-3 px-8 rounded-xl font-bold text-slate-500 text-sm hover:border-[var(--modal-accent)] hover:text-[var(--modal-accent)] transition-all flex justify-center items-center gap-2 group active:scale-95 shadow-sm w-full cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
+                                class="bg-white border-2 border-slate-200 py-3 px-8 rounded-xl font-bold text-slate-500 text-sm hover:border-(--modal-accent) hover:text-(--modal-accent) transition-all flex justify-center items-center gap-2 group active:scale-95 shadow-sm w-full cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed">
 
                                 <span v-if="isLoading" class="animate-spin text-lg">⏳</span>
                                 <span v-else class="text-lg">🔊</span>

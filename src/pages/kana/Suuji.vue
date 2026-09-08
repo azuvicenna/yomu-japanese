@@ -28,7 +28,7 @@ const { showRomaji, showFurigana } = useSettings();
 
         <div v-show="activeTab === 'basic'" class="animate-fade-in">
             <div
-                class="bg-white border-4 border-vanilla-dark rounded-[32px] p-6 md:p-8 shadow-[8px_8px_0px_theme('colors.vanilla-dark')]">
+                class="bg-white border-4 border-vanilla-dark rounded-4xl p-6 md:p-8 shadow-[8px_8px_0px_var(--color-vanilla-dark)]">
                 <h2 class="text-center font-black text-3xl text-vanilla-dark mb-6">Angka Dasar</h2>
 
                 <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -67,7 +67,7 @@ const { showRomaji, showFurigana } = useSettings();
 
         <div v-show="activeTab === 'tens'" class="animate-fade-in">
             <div
-                class="bg-white border-4 border-vanilla-dark rounded-[32px] p-6 md:p-8 shadow-[8px_8px_0px_theme('colors.vanilla-dark')]">
+                class="bg-white border-4 border-vanilla-dark rounded-4xl p-6 md:p-8 shadow-[8px_8px_0px_var(--color-vanilla-dark)]">
 
                 <h2 class="text-center font-black text-3xl text-vanilla-dark mb-2">Rumus Puluhan</h2>
                 <p class="text-center text-slate-500 mb-8 font-medium">Pola pembentukan angka belasan dan puluhan.</p>
@@ -86,7 +86,7 @@ const { showRomaji, showFurigana } = useSettings();
 
                         <div class="flex items-center justify-center gap-2 md:gap-3 flex-wrap select-none">
 
-                            <div class="flex flex-col items-center bg-white border-2 border-vanilla-dark rounded-xl p-3 min-w-[80px] cursor-pointer hover:bg-slate-50 active:scale-95 transition-all shadow-sm group"
+                            <div class="flex flex-col items-center bg-white border-2 border-vanilla-dark rounded-xl p-3 min-w-20 cursor-pointer hover:bg-slate-50 active:scale-95 transition-all shadow-sm group"
                                 @click="playAudio('十')">
                                 <span v-if="showFurigana" class="text-xs text-slate-400 mb-0.5">じゅう</span>
                                 <span class="text-2xl font-black text-vanilla-dark">十</span>
@@ -96,7 +96,7 @@ const { showRomaji, showFurigana } = useSettings();
 
                             <div class="text-vanilla-accent font-black text-xl">+</div>
 
-                            <div class="flex flex-col items-center bg-white border-2 border-vanilla-dark rounded-xl p-3 min-w-[80px] cursor-pointer hover:bg-slate-50 active:scale-95 transition-all shadow-sm group"
+                            <div class="flex flex-col items-center bg-white border-2 border-vanilla-dark rounded-xl p-3 min-w-20 cursor-pointer hover:bg-slate-50 active:scale-95 transition-all shadow-sm group"
                                 @click="playAudio('一')">
                                 <span v-if="showFurigana" class="text-xs text-slate-400 mb-0.5">いち</span>
                                 <span class="text-2xl font-black text-vanilla-dark">一</span>
@@ -106,7 +106,7 @@ const { showRomaji, showFurigana } = useSettings();
 
                             <div class="text-vanilla-accent font-black text-xl">=</div>
 
-                            <div class="flex flex-col items-center bg-vanilla-accent text-white border-2 border-vanilla-dark rounded-xl p-3 min-w-[100px] cursor-pointer hover:brightness-110 active:scale-95 transition-all shadow-[0px_4px_0px_#78350f] active:shadow-none active:translate-y-[4px] group"
+                            <div class="flex flex-col items-center bg-vanilla-accent text-white border-2 border-vanilla-dark rounded-xl p-3 min-w-25 cursor-pointer hover:brightness-110 active:scale-95 transition-all shadow-[0px_4px_0px_#78350f] active:shadow-none active:translate-y-1 group"
                                 @click="playAudio('十一')">
                                 <span v-if="showFurigana" class="text-xs text-white/80 mb-0.5">じゅういち</span>
                                 <span class="text-2xl font-black">十一</span>
@@ -128,7 +128,7 @@ const { showRomaji, showFurigana } = useSettings();
 
                         <div class="flex items-center justify-center gap-2 md:gap-3 flex-wrap select-none">
 
-                            <div class="flex flex-col items-center bg-white border-2 border-vanilla-dark rounded-xl p-3 min-w-[80px] cursor-pointer hover:bg-slate-50 active:scale-95 transition-all shadow-sm group"
+                            <div class="flex flex-col items-center bg-white border-2 border-vanilla-dark rounded-xl p-3 min-w-20 cursor-pointer hover:bg-slate-50 active:scale-95 transition-all shadow-sm group"
                                 @click="playAudio('二')">
                                 <span v-if="showFurigana" class="text-xs text-slate-400 mb-0.5">に</span>
                                 <span class="text-2xl font-black text-vanilla-dark">二</span>
@@ -138,7 +138,7 @@ const { showRomaji, showFurigana } = useSettings();
 
                             <div class="text-vanilla-dark font-black text-xs px-1 opacity-50">lalu</div>
 
-                            <div class="flex flex-col items-center bg-white border-2 border-vanilla-dark rounded-xl p-3 min-w-[80px] cursor-pointer hover:bg-slate-50 active:scale-95 transition-all shadow-sm group"
+                            <div class="flex flex-col items-center bg-white border-2 border-vanilla-dark rounded-xl p-3 min-w-20 cursor-pointer hover:bg-slate-50 active:scale-95 transition-all shadow-sm group"
                                 @click="playAudio('十')">
                                 <span v-if="showFurigana" class="text-xs text-slate-400 mb-0.5">じゅう</span>
                                 <span class="text-2xl font-black text-vanilla-dark">十</span>
@@ -148,7 +148,7 @@ const { showRomaji, showFurigana } = useSettings();
 
                             <div class="text-vanilla-accent font-black text-xl">=</div>
 
-                            <div class="flex flex-col items-center bg-vanilla-dark text-white border-2 border-vanilla-dark rounded-xl p-3 min-w-[100px] cursor-pointer hover:bg-slate-800 active:scale-95 transition-all shadow-[0px_4px_0px_#000000] active:shadow-none active:translate-y-[4px] group"
+                            <div class="flex flex-col items-center bg-vanilla-dark text-white border-2 border-vanilla-dark rounded-xl p-3 min-w-25 cursor-pointer hover:bg-slate-800 active:scale-95 transition-all shadow-[0px_4px_0px_#000000] active:shadow-none active:translate-y-1 group"
                                 @click="playAudio('二十')">
                                 <span v-if="showFurigana" class="text-xs text-white/70 mb-0.5">にじゅう</span>
                                 <span class="text-2xl font-black">二十</span>
@@ -166,7 +166,7 @@ const { showRomaji, showFurigana } = useSettings();
             <div class="grid gap-6 md:grid-cols-2">
 
                 <div
-                    class="bg-white border-4 border-vanilla-dark rounded-[32px] p-6 shadow-[8px_8px_0px_theme('colors.vanilla-dark')] h-fit">
+                    class="bg-white border-4 border-vanilla-dark rounded-4xl p-6 shadow-[8px_8px_0px_var(--color-vanilla-dark)] h-fit">
 
                     <div class="flex justify-between items-center mb-6 border-b-2 border-slate-100 pb-4">
                         <h2 class="font-black text-2xl text-vanilla-dark">Ratusan</h2>
@@ -221,7 +221,7 @@ const { showRomaji, showFurigana } = useSettings();
                 </div>
 
                 <div
-                    class="bg-white border-4 border-vanilla-dark rounded-[32px] p-6 shadow-[8px_8px_0px_theme('colors.vanilla-dark')] h-fit">
+                    class="bg-white border-4 border-vanilla-dark rounded-4xl p-6 shadow-[8px_8px_0px_var(--color-vanilla-dark)] h-fit">
 
                     <div class="flex justify-between items-center mb-6 border-b-2 border-slate-100 pb-4">
                         <h2 class="font-black text-2xl text-vanilla-dark">Ribuan</h2>
@@ -280,7 +280,7 @@ const { showRomaji, showFurigana } = useSettings();
 
         <div v-show="activeTab === 'millions'" class="animate-fade-in">
             <div
-                class="bg-vanilla-dark text-white border-4 border-vanilla-dark rounded-[32px] p-6 md:p-8 shadow-[8px_8px_0px_#451a03]">
+                class="bg-vanilla-dark text-white border-4 border-vanilla-dark rounded-4xl p-6 md:p-8 shadow-[8px_8px_0px_#451a03]">
 
                 <h2 class="text-center font-black text-3xl text-yellow-400 mb-2">Angka Raksasa</h2>
                 <p class="text-center text-yellow-100 mb-8 text-sm font-medium">
@@ -312,9 +312,9 @@ const { showRomaji, showFurigana } = useSettings();
                                 </div>
                             </div>
 
-                            <div class="flex flex-col items-end text-right min-w-[100px]">
+                            <div class="flex flex-col items-end text-right min-w-25">
 
-                                <span v-if="showFurigana" class="text-sm font-bold text-slate-500 mb-[-4px] z-10">
+                                <span v-if="showFurigana" class="text-sm font-bold text-slate-500 -mb-1 z-10">
                                     {{ item.furigana }}
                                 </span>
 

@@ -8,7 +8,7 @@ export const HiraganaDeck: FlashcardItem[] = [
     meaning: "Huruf A",
     example: "Ari (Semut)",
     tag: "Hiragana",
-    type: "char", 
+    type: "char",
   },
   {
     front: "い",
@@ -24,12 +24,12 @@ export const HiraganaDeck: FlashcardItem[] = [
 export const VocabDeck: FlashcardItem[] = [
   {
     front: "食べる",
-    frontSub: "Taberu", 
+    frontSub: "Taberu",
     romaji: "Taberu",
     meaning: "Makan",
     example: "Gohan o tabemasu (Makan nasi)",
     tag: "Vocab",
-    type: "word", 
+    type: "word",
   },
   {
     front: "先生",
@@ -37,7 +37,7 @@ export const VocabDeck: FlashcardItem[] = [
     romaji: "Sensei",
     meaning: "Guru",
     tag: "Vocab",
-    type: "word", 
+    type: "word",
   },
 ];
 
@@ -48,7 +48,7 @@ export const PhraseDeck: FlashcardItem[] = [
     romaji: "Ohayou Gozaimasu",
     meaning: "Selamat Pagi",
     tag: "Salam",
-    type: "sentence", 
+    type: "sentence",
   },
   {
     front: "お元気ですか？",

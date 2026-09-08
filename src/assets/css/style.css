@@ -31,8 +31,8 @@
     --color-aqua-accent: #06b6d4;
     --color-aqua-dark: #164e63;
 
-    --color-ghost: #f8fafc; 
-    --color-ghost-accent: #64748b; 
+    --color-ghost: #f8fafc;
+    --color-ghost-accent: #64748b;
     --color-ghost-dark: #1e293b;
     --color-loc-home: #f97316;
     --color-loc-school: #3b82f6;
@@ -90,8 +90,8 @@
     --color-indigo-accent: #6366f1;
     --color-indigo-dark: #312e81;
 
-    --color-orange: #fff7ed;      
-    --color-orange-accent: #f97316; 
+    --color-orange: #fff7ed;
+    --color-orange-accent: #f97316;
     --color-orange-dark: #c2410c;
 
     --color-haiku: #fce4ec;
@@ -106,7 +106,7 @@
     --color-kotoba: #f3f4f6;
     --color-kotoba-accent: #6366f1;
     --color-kotoba-dark: #312e81;
-    
+
     /* Hero (Indigo) */
     --color-bento-hero: #6366f1;
     --color-bento-hero-dark: #312e81;

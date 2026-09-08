@@ -10,7 +10,7 @@ import { ShigotoItems } from '@/data/shigoto'
             <JobCard v-for="(job, index) in ShigotoItems" :key="index" :item="job" />
         </div>
 
-        <div class="mt-12 bg-white border-4 border-surface-dark rounded-[32px] p-6 md:p-8 shadow-card text-center">
+        <div class="mt-12 bg-white border-4 border-surface-dark rounded-4xl p-6 md:p-8 shadow-card text-center">
             <h3 class="text-2xl font-black text-surface-dark mb-4">Memperkenalkan Pekerjaan</h3>
 
             <div class="bg-surface rounded-2xl p-6 border-2 border-dashed border-slate-300">

@@ -172,7 +172,7 @@ const { getMeaning } = useLocalized()
                                     }}</span>
                                 <span v-if="showRomaji"
                                     class="text-[9px] text-teal-600 font-medium leading-none mb-0.5">{{
-                                    cat.example.romaji }}</span>
+                                        cat.example.romaji }}</span>
                                 <span class="text-[9px] text-slate-500 italic leading-none">{{ cat.example.id }}</span>
                             </div>
                         </div>
@@ -222,7 +222,7 @@ const { getMeaning } = useLocalized()
                             <span class="text-lg font-black text-slate-700 leading-none">{{ p.kanji }}</span>
                             <span class="text-[8px] font-bold text-orange-600 uppercase leading-tight mt-0.5">{{
                                 showRomaji ?
-                                p.romaji : '-' }}</span>
+                                    p.romaji : '-' }}</span>
                             <span class="text-[7px] text-gray-400 italic leading-none">{{ getMeaning(p) }}</span>
                         </div>
                     </div>

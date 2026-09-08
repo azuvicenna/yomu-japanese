@@ -544,9 +544,24 @@ export const shijigoData = [
       "Ini dipakai kalau bendanya nggak disebut lagi di belakang kata tunjuknya.",
     items: [
       { kana: "これ", romaji: "Kore", meaningId: "Ini", meaningEn: "This" },
-      { kana: "それ", romaji: "Sore", meaningId: "Itu (dekat dia)", meaningEn: "That (near listener)" },
-      { kana: "あれ", romaji: "Are", meaningId: "Itu (jauh)", meaningEn: "That (far)" },
-      { kana: "どれ", romaji: "Dore", meaningId: "Yang mana?", meaningEn: "Which one?" },
+      {
+        kana: "それ",
+        romaji: "Sore",
+        meaningId: "Itu (dekat dia)",
+        meaningEn: "That (near listener)",
+      },
+      {
+        kana: "あれ",
+        romaji: "Are",
+        meaningId: "Itu (jauh)",
+        meaningEn: "That (far)",
+      },
+      {
+        kana: "どれ",
+        romaji: "Dore",
+        meaningId: "Yang mana?",
+        meaningEn: "Which one?",
+      },
     ],
     example: {
       jp: "これは本です。",
@@ -561,10 +576,30 @@ export const shijigoData = [
     description:
       'Ini dipakai kalau Bos mau nyebut bendanya, misalnya "Buku ini" atau "Orang itu".',
     items: [
-      { kana: "この", romaji: "Kono", meaningId: "... ini", meaningEn: "This ..." },
-      { kana: "その", romaji: "Sono", meaningId: "... itu", meaningEn: "That ..." },
-      { kana: "あの", romaji: "Ano", meaningId: "... itu (jauh)", meaningEn: "That ... (far)" },
-      { kana: "どの", romaji: "Dono", meaningId: "... yang mana?", meaningEn: "Which ...?" },
+      {
+        kana: "この",
+        romaji: "Kono",
+        meaningId: "... ini",
+        meaningEn: "This ...",
+      },
+      {
+        kana: "その",
+        romaji: "Sono",
+        meaningId: "... itu",
+        meaningEn: "That ...",
+      },
+      {
+        kana: "あの",
+        romaji: "Ano",
+        meaningId: "... itu (jauh)",
+        meaningEn: "That ... (far)",
+      },
+      {
+        kana: "どの",
+        romaji: "Dono",
+        meaningId: "... yang mana?",
+        meaningEn: "Which ...?",
+      },
     ],
     example: {
       jp: "あの人は誰ですか。",
@@ -579,9 +614,24 @@ export const shijigoData = [
     description: "Digunakan untuk menunjuk suatu lokasi atau tempat.",
     items: [
       { kana: "ここ", romaji: "Koko", meaningId: "Di sini", meaningEn: "Here" },
-      { kana: "そこ", romaji: "Soko", meaningId: "Di situ", meaningEn: "There" },
-      { kana: "あそこ", romaji: "Asoko", meaningId: "Di sana", meaningEn: "Over there" },
-      { kana: "どこ", romaji: "Doko", meaningId: "Di mana?", meaningEn: "Where?" },
+      {
+        kana: "そこ",
+        romaji: "Soko",
+        meaningId: "Di situ",
+        meaningEn: "There",
+      },
+      {
+        kana: "あそこ",
+        romaji: "Asoko",
+        meaningId: "Di sana",
+        meaningEn: "Over there",
+      },
+      {
+        kana: "どこ",
+        romaji: "Doko",
+        meaningId: "Di mana?",
+        meaningEn: "Where?",
+      },
     ],
     example: {
       jp: "トイレはどこですか。",
@@ -596,10 +646,30 @@ export const shijigoData = [
     description:
       "Biasanya dipakai di dunia kerja atau ngomong sama orang yang dihormati.",
     items: [
-      { kana: "こちら", romaji: "Kochira", meaningId: "Sebelah sini / Sini", meaningEn: "This way / Here" },
-      { kana: "そちら", romaji: "Sochira", meaningId: "Sebelah situ / Situ", meaningEn: "That way / There" },
-      { kana: "あちら", romaji: "Achira", meaningId: "Sebelah sana / Sana", meaningEn: "That way over there / Over there" },
-      { kana: "どちら", romaji: "Dochira", meaningId: "Sebelah mana? / Mana?", meaningEn: "Which way? / Where?" },
+      {
+        kana: "こちら",
+        romaji: "Kochira",
+        meaningId: "Sebelah sini / Sini",
+        meaningEn: "This way / Here",
+      },
+      {
+        kana: "そちら",
+        romaji: "Sochira",
+        meaningId: "Sebelah situ / Situ",
+        meaningEn: "That way / There",
+      },
+      {
+        kana: "あちら",
+        romaji: "Achira",
+        meaningId: "Sebelah sana / Sana",
+        meaningEn: "That way over there / Over there",
+      },
+      {
+        kana: "どちら",
+        romaji: "Dochira",
+        meaningId: "Sebelah mana? / Mana?",
+        meaningEn: "Which way? / Where?",
+      },
     ],
     example: {
       jp: "受付はあちらです。",

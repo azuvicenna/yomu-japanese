@@ -3,7 +3,7 @@ import type { GrammarBlockType } from '@/types';
 import { computed } from 'vue';
 
 const props = defineProps<{
-    type?: GrammarBlockType; 
+    type?: GrammarBlockType;
 }>();
 
 const colorClass = computed(() => {
@@ -12,7 +12,7 @@ const colorClass = computed(() => {
         case 'verb': return 'bg-block-verb text-white border-transparent';
         case 'particle': return 'bg-block-particle text-white rounded-full px-3 border-transparent';
         case 'adj': return 'bg-block-adj text-white border-transparent';
-        case 'desu': return 'bg-cool-accent text-cool-dark border-transparent'; 
+        case 'desu': return 'bg-cool-accent text-cool-dark border-transparent';
         case 'highlight': return 'bg-pink-500 text-white border-transparent';
         default: return 'bg-slate-200 text-slate-600 border-slate-300';
     }

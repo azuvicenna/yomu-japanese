@@ -42,7 +42,7 @@ const btnStyle = computed(() => ({
 
         <div class="animate-fade-in">
             <div
-                class="bg-white border-4 border-metro-accent rounded-2xl sm:rounded-[32px] p-4 sm:p-8 shadow-[6px_6px_0px_theme('colors.metro-accent')] sm:shadow-[8px_8px_0px_theme('colors.metro-accent')]">
+                class="bg-white border-4 border-metro-accent rounded-2xl sm:rounded-4xl p-4 sm:p-8 shadow-[6px_6px_0px_var(--color-metro-accent)] sm:shadow-[8px_8px_0px_var(--color-metro-accent)]">
 
                 <h2 class="text-xl sm:text-3xl font-black text-metro-accent mb-4 sm:mb-6 border-b-2 border-metro pb-2">
                     <span v-if="activeTab === 'land'">Transportasi Darat 🚗</span>
@@ -62,14 +62,14 @@ const btnStyle = computed(() => ({
                         ← <span>Prev</span>
                     </button>
 
-                    <div class="flex items-center justify-center min-w-[70px] sm:min-w-[120px]">
+                    <div class="flex items-center justify-center min-w-17.5 sm:min-w-30">
                         <span class="font-black text-slate-800 text-sm sm:text-lg">
                             {{ currentPage }} / {{ totalPages }}
                         </span>
                     </div>
 
                     <button @click="currentPage++" :disabled="currentPage === totalPages"
-                        class="flex-1 sm:flex-none px-4 sm:px-8 py-2 rounded-xl font-bold border-2 border-slate-800 shadow-[4px_4px_0px_#1e293b] active:translate-y-1 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed bg-[var(--btn-bg)] text-white cursor-pointer text-sm sm:text-base">
+                        class="flex-1 sm:flex-none px-4 sm:px-8 py-2 rounded-xl font-bold border-2 border-slate-800 shadow-[4px_4px_0px_#1e293b] active:translate-y-1 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed bg-(--btn-bg) text-white cursor-pointer text-sm sm:text-base">
                         <span>Next</span> →
                     </button>
                 </div>

@@ -261,7 +261,7 @@ const polaTe: BlockData[] = [
                 <h3 class="text-2xl font-black text-slate-900 mb-6 uppercase">Meminta Tolong</h3>
                 <div
                     class="flex flex-wrap justify-center items-center bg-white py-2 px-4 border-[3px] border-slate-900 rounded-2xl w-fit mx-auto shadow-[4px_4px_0px_#0f172a]">
-                    <template v-for="(item, idx) in polaTe" :key="'te-'+idx">
+                    <template v-for="(item, idx) in polaTe" :key="'te-' + idx">
                         <span v-if="item.isPlain" :class="item.class">{{ item.text }}</span>
                         <GrammarBlock v-else :type="item.type">{{ item.text }}</GrammarBlock>
                     </template>

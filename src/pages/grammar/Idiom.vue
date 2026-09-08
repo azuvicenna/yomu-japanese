@@ -5,8 +5,8 @@ import { useRoute } from 'vue-router';
 import { idiomsData } from '@/data/kanyouku';
 
 const idiomTabs = [
-  { label: "Kanyouku (慣用句)", value: "kanyouku" },
-  { label: "Yojijukugo (四字熟語)", value: "yojijukugo" },
+    { label: "Kanyouku (慣用句)", value: "kanyouku" },
+    { label: "Yojijukugo (四字熟語)", value: "yojijukugo" },
 ];
 
 const route = useRoute();

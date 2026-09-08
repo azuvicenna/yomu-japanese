@@ -22,8 +22,8 @@ const currentCard = computed(() => activeDeck.value[currentIndex.value]);
 // --- ACTIONS ---
 const switchDeck = (deckKey: string) => {
     currentDeckName.value = deckKey;
-    currentIndex.value = 0; 
-    isFlipped.value = false; 
+    currentIndex.value = 0;
+    isFlipped.value = false;
 };
 
 const toggleFlip = () => {
@@ -83,7 +83,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
             </button>
         </div>
 
-        <div class="w-full flex justify-between items-end mb-6 px-4 max-w-[400px]">
+        <div class="w-full flex justify-between items-end mb-6 px-4 max-w-100">
             <span class="font-black text-indigo-dark text-xl">
                 {{ currentIndex + 1 }} / {{ activeDeck.length }}
             </span>
@@ -95,7 +95,7 @@ onUnmounted(() => window.removeEventListener('keydown', handleKeydown));
 
         <FlashCard :item="currentCard" :is-flipped="isFlipped" @toggle="toggleFlip" />
 
-        <div class="grid grid-cols-3 gap-4 w-full max-w-[400px] mt-10">
+        <div class="grid grid-cols-3 gap-4 w-full max-w-100 mt-10">
             <button @click="prevCard" class="ctrl-btn group">
                 <span class="group-hover:-translate-x-1 block transition-transform">← Prev</span>
             </button>

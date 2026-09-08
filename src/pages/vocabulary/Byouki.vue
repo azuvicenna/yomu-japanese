@@ -41,7 +41,7 @@ const btnStyle = computed(() => ({
         <TabSwitcher :tabs="diseaseTabs" v-model="activeTab" :theme="themeName" class="mb-6" />
 
         <div class="animate-fade-in">
-            <div class="bg-white border-4 rounded-2xl sm:rounded-[32px] p-4 sm:p-8 transition-colors duration-300"
+            <div class="bg-white border-4 rounded-2xl sm:rounded-4xl p-4 sm:p-8 transition-colors duration-300"
                 :class="[
                     `border-${themeName}-accent`,
                     `shadow-[6px_6px_0px_var(--color-${themeName}-accent)] sm:shadow-[8px_8px_0px_var(--color-${themeName}-accent)]`
@@ -67,14 +67,14 @@ const btnStyle = computed(() => ({
                         ← <span class="ml-1">Prev</span>
                     </button>
 
-                    <div class="flex items-center justify-center min-w-[70px] sm:min-w-[120px]">
+                    <div class="flex items-center justify-center min-w-17.5 sm:min-w-30">
                         <span class="font-black text-slate-800 text-sm sm:text-lg">
                             {{ currentPage }} / {{ totalPages }}
                         </span>
                     </div>
 
                     <button @click="currentPage++" :disabled="currentPage === totalPages"
-                        class="flex-1 sm:flex-none px-4 sm:px-8 py-2 rounded-xl font-bold border-2 border-slate-800 shadow-[4px_4px_0px_#1e293b] active:translate-y-1 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed bg-[var(--btn-bg)] text-white cursor-pointer">
+                        class="flex-1 sm:flex-none px-4 sm:px-8 py-2 rounded-xl font-bold border-2 border-slate-800 shadow-[4px_4px_0px_#1e293b] active:translate-y-1 active:shadow-none disabled:opacity-50 disabled:cursor-not-allowed bg-(--btn-bg) text-white cursor-pointer">
                         <span class="mr-1">Next</span> →
                     </button>
                 </div>
