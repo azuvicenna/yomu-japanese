@@ -243,6 +243,16 @@ const router = createRouter({
           },
         },
         {
+          path: "dictionary/joshi/:kana",
+          name: "JoshiDictionary",
+          component: () => import("@/pages/grammar/JoshiDictionary.vue"),
+          meta: {
+            title: "topics.grammar.joshi_dictionary.title",
+            bgClass: "mint",
+            themeColor: "#dcfce7",
+          },
+        },
+        {
           path: "kanyouku",
           name: "Idiom",
           component: () => import("@/pages/grammar/Idiom.vue"),

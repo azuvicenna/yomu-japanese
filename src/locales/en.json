@@ -21,7 +21,8 @@
         "function": "Function",
         "title": "Sentence Connectors",
         "subtitle": "Particles are like 'glue' that bind words together into a complete sentence.",
-        "extra_particles": "Other Important Particles"
+        "extra_particles": "Other Important Particles",
+        "button": "See More"
       }
     }
   },
@@ -159,6 +160,11 @@
         "title": "Particles",
         "desc": "Wa, Ga, Wo, Ni, De",
         "tag": "Joshi"
+      },
+      "joshi_dictionary": {
+        "title": "Particles Dictionary",
+        "desc": "Dictionary",
+        "tag": "Particles Dictionary"
       },
       "kanyouku": {
         "title": "Idioms",

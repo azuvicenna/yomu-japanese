@@ -21,7 +21,9 @@
         "function": "役割",
         "title": "助詞 (文のつなぎ)",
         "subtitle": "助詞は言葉をつなぎ合わせて一文にする「接着剤」のようなものです。",
-        "extra_particles": "その他の重要な助詞"
+        "extra_particles": "その他の重要な助詞",
+        "button": "詳細を見る"
+
       }
     }
   },
@@ -159,6 +161,11 @@
         "title": "助詞",
         "desc": "は・が・を・に・で",
         "tag": "助詞"
+      },
+      "joshi_dictionary": {
+        "title": "助詞辞典",
+        "desc": "は・が・を・に・で",
+        "tag": "助詞辞典"
       },
       "kanyouku": {
         "title": "慣用句",

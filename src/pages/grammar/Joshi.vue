@@ -6,16 +6,19 @@ import { MainParticles, ExtraParticles } from '@/data/joshi';
 
 <template>
     <div class="max-w-6xl mx-auto px-4 pb-12">
-
         <div class="text-center mb-10 max-w-2xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-black text-mint-dark mb-2">{{
-                $t('common.dictionary.joshi.title') }}</h2>
-            <p class="font-bold text-slate-500">{{ $t('common.dictionary.joshi.subtitle') }}
+            <h2 class="text-3xl md:text-4xl font-black text-mint-dark mb-2">
+                {{ $t('common.dictionary.joshi.title') }}
+            </h2>
+            <p class="font-bold text-slate-500">
+                {{ $t('common.dictionary.joshi.subtitle') }}
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            <ParticleCard v-for="(p, i) in MainParticles" :key="i" :item="p" />
+            <div v-for="(p, i) in MainParticles" :key="i" class="flex flex-col h-full">
+                <ParticleCard :item="p" class="flex-1" />
+            </div>
         </div>
 
         <div class="bg-white border-4 border-mint-dark rounded-4xl p-6 md:p-8 shadow-card">
@@ -23,9 +26,10 @@ import { MainParticles, ExtraParticles } from '@/data/joshi';
                 {{ $t('common.dictionary.joshi.extra_particles') }}
             </h3>
             <div class="grid gap-4">
-                <ParticleListItem v-for="(p, i) in ExtraParticles" :key="i" :item="p" />
+                <div v-for="(p, i) in ExtraParticles" :key="i" class="flex flex-col sm:flex-row gap-4 items-center">
+                    <ParticleListItem :item="p" class="flex-1 w-full" />
+                </div>
             </div>
         </div>
-
     </div>
 </template>

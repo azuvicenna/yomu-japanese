@@ -21,7 +21,9 @@
         "function": "Fungsi",
         "title": "Penghubung Kalimat",
         "subtitle": "Partikel ibarat \"lem\" yang menyatukan kata-kata menjadi kalimat utuh.",
-        "extra_particles": "Partikel Penting Lainnya"
+        "extra_particles": "Partikel Penting Lainnya",
+        "button": "Lihat Selengkapnya"
+
       }
     }
   },
@@ -159,6 +161,11 @@
         "title": "Partikel",
         "desc": "Wa, Ga, Wo, Ni, De",
         "tag": "Joshi"
+      },
+      "joshi_dictionary": {
+        "title": "Kamus Partikel",
+        "desc": "Kamus",
+        "tag": "Kamus Partikel"
       },
       "kanyouku": {
         "title": "Idiom",

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
 import { useSettings } from '@/composables/useSettings';
 import { useLocalized } from '@/composables/useLocalized';
 import type { JoshiExtraItem } from '@/types';
@@ -8,8 +9,13 @@ defineProps<{
     item: JoshiExtraItem;
 }>();
 
+const router = useRouter();
 const { showRomaji, showFurigana } = useSettings();
 const { getFunction, getMeaning } = useLocalized();
+
+const goToDetail = (kana: string) => {
+    router.push(`/grammar/dictionary/joshi/${kana}`);
+};
 </script>
 
 <template>
@@ -59,6 +65,13 @@ const { getFunction, getMeaning } = useLocalized();
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="flex items-center shrink-0 mt-2 md:mt-0">
+            <button @click="goToDetail(item.kana)"
+                class="px-4 sm:px-8 py-2 w-full md:w-auto rounded-xl font-bold border-2 border-slate-800 shadow-[4px_4px_0px_#1e293b] active:translate-y-1 active:shadow-none bg-white text-slate-800 cursor-pointer text-sm sm:text-base whitespace-nowrap transition-all duration-300 ease-in-out hover:bg-mint-accent hover:-translate-y-1 hover:shadow-[6px_6px_0px_#1e293b]">
+                {{ $t('common.dictionary.joshi.button') }}
+            </button>
         </div>
     </div>
 </template>

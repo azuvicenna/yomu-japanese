@@ -95,6 +95,20 @@ export interface JoshiItem {
   };
 }
 
+export interface ParticleData {
+  kana: string;
+  romaji: string;
+  functions: {
+    title: string;
+    description: string;
+    example: {
+      jp: string;
+      ro: string;
+      id: string;
+    };
+  }[];
+}
+
 export interface JoshiExtraItem {
   kana: string;
   romaji: string;
