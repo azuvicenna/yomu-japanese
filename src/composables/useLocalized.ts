@@ -30,10 +30,11 @@ export function useLocalized() {
   };
 
   // --- 1. Ambil Arti Kata (Meaning) ---
-  // Cocok untuk: Verb, Adjective, Vocab
+  // Cocok untuk: Verb, Adjective, Vocab, Idiom
   const getMeaning = (data: any) => {
+    if (!data) return "";
     // Cek kasus khusus untuk ExtraParticles yang propertinya 'example_meaningId'
-    if (data && "example_meaningId" in data) {
+    if ("example_meaningId" in data) {
       return pickText(
         data,
         "example_meaningId",
@@ -41,16 +42,25 @@ export function useLocalized() {
         "example_meaningJa",
       );
     }
-    return pickText(data, "meaningId", "meaningEn");
+    const text = pickText(data, "meaningId", "meaningEn", "meaningJa");
+    return text || data.meaning || "";
   };
 
-  // --- 2. Ambil Label/Judul (Label) ---
+  // --- 2. Ambil Arti Harfiah (Literal) ---
+  // Cocok untuk: Idiom / Kanyouku
+  const getLiteral = (data: any) => {
+    if (!data) return "";
+    const text = pickText(data, "literalId", "literalEn", "literalJa");
+    return text || data.literal || "";
+  };
+
+  // --- 3. Ambil Label/Judul (Label) ---
   // Cocok untuk: Tab Joshi, Kategori
   const getLabel = (data: any) => {
     return pickText(data, "labelId", "labelEn", "labelJa");
   };
 
-  // --- 3. Ambil Fungsi/Penjelasan (Function/Description) ---
+  // --- 4. Ambil Fungsi/Penjelasan (Function/Description) ---
   // Cocok untuk: Joshi Function, Extra Particle Desc
   const getFunction = (data: any) => {
     // Cek apakah pakai 'function' atau 'desc'
@@ -60,26 +70,26 @@ export function useLocalized() {
     return pickText(data, "functionId", "functionEn", "functionJa");
   };
 
-  // --- 4. Ambil Situasi (Situation) ---
+  // --- 5. Ambil Situasi (Situation) ---
   // Cocok untuk: Aisatsu (Salam)
   const getSituation = (data: any) => {
     return pickText(data, "situationId", "situationEn");
   };
 
-  // --- 5. Ambil Terjemahan Contoh Kalimat (Example) ---
-  // Cocok untuk: Joshi Example Object { id: "...", en: "..." }
+  // --- 6. Ambil Terjemahan Contoh Kalimat (Example) ---
+  // Cocok untuk: Joshi Example Object { id: "...", en: "...", ja: "..." }
   const getExampleResult = (exampleData: any) => {
     if (!exampleData) return "";
-    // Struktur example di Joshi: { id: "...", en: "...", ja: "..." }
-    // Di sini kuncinya langsung 'id', 'en', 'ja'
-    if (locale.value === "id") return exampleData.id || "";
-    if (locale.value === "ja") return exampleData.ja || exampleData.en || "";
-    return exampleData.en || "";
+    // Struktur example: { id: "...", en: "...", ja: "..." }
+    if (locale.value === "id") return exampleData.id || exampleData.en || "";
+    if (locale.value === "ja") return exampleData.ja || exampleData.en || exampleData.id || "";
+    return exampleData.en || exampleData.id || "";
   };
 
   return {
     locale,
     getMeaning,
+    getLiteral,
     getLabel,
     getFunction,
     getSituation,

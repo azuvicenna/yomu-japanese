@@ -1,16 +1,11 @@
 <script setup lang="ts">
 import { haikuData } from '@/data/haiku';
-import { useI18n } from 'vue-i18n';
 import { useSettings } from '@/composables/useSettings';
+import { useLocalized } from '@/composables/useLocalized';
+import { playAudio } from '@/utils/audio';
 
-const { locale } = useI18n();
 const { showRomaji, showFurigana } = useSettings();
-
-const getMeaning = (item: any) => {
-    if (locale.value === 'id') return item.meaningId;
-    if (locale.value === 'ja') return item.meaningJa;
-    return item.meaningEn;
-};
+const { getMeaning } = useLocalized();
 </script>
 
 <template>
@@ -21,7 +16,12 @@ const getMeaning = (item: any) => {
 
                 <div class="absolute top-0 right-0 p-4 opacity-10 pointer-events-none text-8xl z-0">🎋</div>
 
-                <div class="bg-pink-50 border-b-[3px] border-slate-900 p-6 flex flex-col relative overflow-hidden z-10">
+                <div class="bg-pink-50 border-b-[3px] border-slate-900 p-6 flex flex-col relative overflow-hidden z-10 cursor-pointer select-none group/card"
+                    @click="playAudio(item.poem_kana.replace(/\n/g, ' '))">
+                    <div
+                        class="absolute top-3 left-3 opacity-0 group-hover/card:opacity-100 transition-opacity text-slate-800 text-sm z-20">
+                        🔊
+                    </div>
                     <p v-if="showFurigana"
                         class="text-sm font-bold text-slate-500 tracking-widest font-japanese leading-relaxed whitespace-pre-line text-center mb-2">
                         {{ item.poem_kana }}
@@ -47,7 +47,7 @@ const getMeaning = (item: any) => {
                     <div class="bg-slate-50 p-4 rounded-xl border-2 border-slate-900 relative">
                         <span
                             class="absolute -top-3 left-4 bg-white font-black text-[10px] px-2 py-0.5 border-2 border-slate-900 rounded-md text-slate-600 uppercase whitespace-nowrap">
-                            Makna / Meaning
+                            {{ $t('common.dictionary.haiku.meaning') }}
                         </span>
                         <p class="font-bold text-slate-800 text-sm mt-1">
                             {{ getMeaning(item) }}

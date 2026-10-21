@@ -7,44 +7,76 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Penanda Topik Utama",
-        description:
-          "Berfungsi memberitahu lawan bicara apa yang sedang dibahas.",
+        titleId: "Penanda Topik Utama",
+        titleEn: "Topic Marker (Main Topic)",
+        titleJa: "主題（トピック）の提示",
+        description: "Berfungsi memberitahu lawan bicara apa yang sedang dibahas.",
+        descriptionId: "Berfungsi memberitahu lawan bicara apa yang sedang dibahas.",
+        descriptionEn: "Indicates the main topic being discussed in the sentence.",
+        descriptionJa: "文の主題（今何について話しているか）を示します。",
         example: {
           jp: "私はスペシャルウィークが好きです",
+          furigana: "わたしは スペシャルウィークが すきです",
           ro: "Watashi wa Special Week ga suki desu",
           id: "Saya suka Special Week. (Topik utamanya adalah 'Saya').",
+          en: "I like Special Week. (The main topic is 'I').",
+          ja: "私はスペシャルウィークが好きです（「私」が主題）。",
         },
       },
       {
         title: "Menunjukkan Kontras atau Perbandingan",
-        description:
-          "Bisa dipakai kalau Bos mau membandingkan dua hal yang berbeda atau berlawanan.",
+        titleId: "Menunjukkan Kontras atau Perbandingan",
+        titleEn: "Contrast or Comparison",
+        titleJa: "対比・比較",
+        description: "Bisa dipakai kalau Bos mau membandingkan dua hal yang berbeda atau berlawanan.",
+        descriptionId: "Bisa dipakai kalau Bos mau membandingkan dua hal yang berbeda atau berlawanan.",
+        descriptionEn: "Used when contrasting two different or opposing things.",
+        descriptionJa: "二つの異なる事柄や反対の事柄を対比して述べる際に使います。",
         example: {
           jp: "コーヒーは飲みますが、お茶は飲みません",
+          furigana: "コーヒーは のみますが、おちゃは のみません",
           ro: "Koohii wa nomimasu ga, ocha wa nomimasen",
           id: "Kopi (sih) saya minum, tapi teh (saya) nggak minum.",
+          en: "I drink coffee, but I don't drink tea.",
+          ja: "コーヒーは飲みますが、お茶は飲みません。",
         },
       },
       {
         title: "Menekankan Penolakan atau Kalimat Negatif",
-        description:
-          "Sering dipakai di kalimat negatif biar kedengarannya lebih natural dan memberikan sedikit penekanan kalau hal itu tidak dilakukan.",
+        titleId: "Menekankan Penolakan atau Kalimat Negatif",
+        titleEn: "Emphasis on Negation",
+        titleJa: "否定の強調",
+        description: "Sering dipakai di kalimat negatif biar kedengarannya lebih natural dan memberikan sedikit penekanan kalau hal itu tidak dilakukan.",
+        descriptionId: "Sering dipakai di kalimat negatif biar kedengarannya lebih natural dan memberikan sedikit penekanan kalau hal itu tidak dilakukan.",
+        descriptionEn: "Often used in negative sentences to make them sound natural and emphasize non-action.",
+        descriptionJa: "否定文で用いられ、その行為を行わないことを強調して自然に響かせます。",
         example: {
           jp: "今日は行きません",
+          furigana: "きょうは いきません",
           ro: "Kyou wa ikimasen",
           id: "Kalau hari ini (sih), saya nggak pergi.",
+          en: "As for today, I'm not going.",
+          ja: "今日は行きません。",
         },
       },
       {
         title: "Memberi Penekanan pada Waktu atau Tempat",
-        description:
-          "Bisa digabung dengan partikel lain (seperti に/ni atau で/de) buat ngasih sorotan khusus ke sebuah tempat atau waktu.",
+        titleId: "Memberi Penekanan pada Waktu atau Tempat",
+        titleEn: "Emphasis on Time or Place",
+        titleJa: "時や場所の強調",
+        description: "Bisa digabung dengan partikel lain (seperti に/ni atau で/de) buat ngasih sorotan khusus ke sebuah tempat atau waktu.",
+        descriptionId: "Bisa digabung dengan partikel lain (seperti に/ni atau で/de) buat ngasih sorotan khusus ke sebuah tempat atau waktu.",
+        descriptionEn: "Can be combined with other particles (like に/ni or で/de) to highlight a specific place or time.",
+        descriptionJa: "他の助詞（に・で等）と組み合わせて、特定の時や場所に焦点を当てます。",
         example: {
           jp: "日本には行きたいです",
+          furigana: "にほんには いきたいです",
           ro: "Nihon ni wa ikitai desu",
           id: "Kalau ke Jepang (sih), saya mau pergi.",
+          en: "As for Japan, I definitely want to go there.",
+          ja: "日本には行きたいです。",
         },
-      },
+      }
     ],
   },
   {
@@ -53,44 +85,76 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menandai Objek Langsung (Paling Umum)",
-        description:
-          "Menunjuk benda yang langsung dikenai aksi dari sebuah kata kerja aktif.",
+        titleId: "Menandai Objek Langsung (Paling Umum)",
+        titleEn: "Direct Object Marker",
+        titleJa: "直接目的語の表示",
+        description: "Menunjuk benda yang langsung dikenai aksi dari sebuah kata kerja aktif.",
+        descriptionId: "Menunjuk benda yang langsung dikenai aksi dari sebuah kata kerja aktif.",
+        descriptionEn: "Indicates the direct object of an action verb.",
+        descriptionJa: "他動詞の動作が直接及ぶ対象（目的語）を示します。",
         example: {
           jp: "映画を見ます",
+          furigana: "えいがを みます",
           ro: "Eiga o mimasu",
           id: "Menonton film. (Film adalah objek yang ditonton).",
+          en: "Watch a movie. (Movie is the object being watched).",
+          ja: "映画を見ます。",
         },
       },
       {
         title: "Menunjukkan Tempat yang Dilewati atau Dilintasi",
-        description:
-          "Dipakai bersama kata kerja yang berhubungan dengan pergerakan (berjalan, terbang, menyeberang, berlari) untuk menandai area pergerakan tersebut.",
+        titleId: "Menunjukkan Tempat yang Dilewati atau Dilintasi",
+        titleEn: "Passage or Movement Route",
+        titleJa: "移動・通過の場所",
+        description: "Dipakai bersama kata kerja yang berhubungan dengan pergerakan (berjalan, terbang, menyeberang, berlari) untuk menandai area pergerakan tersebut.",
+        descriptionId: "Dipakai bersama kata kerja yang berhubungan dengan pergerakan (berjalan, terbang, menyeberang, berlari) untuk menandai area pergerakan tersebut.",
+        descriptionEn: "Used with movement verbs (walk, fly, cross, run) to indicate the area traversed.",
+        descriptionJa: "移動を表す動詞（散歩する、渡る等）と共に使い、移動経路を示します。",
         example: {
           jp: "公園を散歩します",
+          furigana: "こうえんを さんぽします",
           ro: "Kouen o sanposhimasu",
           id: "Jalan-jalan di taman.",
+          en: "Take a walk in the park.",
+          ja: "公園を散歩します。",
         },
       },
       {
         title: "Menandai Titik Keberangkatan atau Tempat Keluar",
-        description:
-          "Wajib dipakai pas Bos mau menjelaskan aksi meninggalkan suatu tempat, seperti turun dari kendaraan, keluar dari ruangan, atau lulus sekolah.",
+        titleId: "Menandai Titik Keberangkatan atau Tempat Keluar",
+        titleEn: "Starting Point or Point of Departure",
+        titleJa: "出発点・離脱点",
+        description: "Wajib dipakai pas Bos mau menjelaskan aksi meninggalkan suatu tempat, seperti turun dari kendaraan, keluar dari ruangan, atau lulus sekolah.",
+        descriptionId: "Wajib dipakai pas Bos mau menjelaskan aksi meninggalkan suatu tempat, seperti turun dari kendaraan, keluar dari ruangan, atau lulus sekolah.",
+        descriptionEn: "Marks the place or vehicle you are leaving or getting off from.",
+        descriptionJa: "離れる場所や降りる乗り物などの出発点・離脱点を示します。",
         example: {
           jp: "電車を降ります",
+          furigana: "でんしゃを おります",
           ro: "Densha o orimasu",
           id: "Turun dari kereta.",
+          en: "Get off the train.",
+          ja: "電車を降ります。",
         },
       },
       {
         title: "Menyatakan Profesi atau Peran",
-        description:
-          "Biasanya digabung dengan kata kerja します (shimasu) untuk memberitahu pekerjaan atau posisi yang sedang dijalani.",
+        titleId: "Menyatakan Profesi atau Peran",
+        titleEn: "Expressing Profession or Role",
+        titleJa: "職業・役割の表現",
+        description: "Biasanya digabung dengan kata kerja します (shimasu) untuk memberitahu pekerjaan atau posisi yang sedang dijalani.",
+        descriptionId: "Biasanya digabung dengan kata kerja します (shimasu) untuk memberitahu pekerjaan atau posisi yang sedang dijalani.",
+        descriptionEn: "Combined with している (shite iru) to denote a current job or role.",
+        descriptionJa: "「〜をしている」の形で、現在の職業や役割を表します。",
         example: {
           jp: "先生をしています",
+          furigana: "せんせいを しています",
           ro: "Sensei o shite imasu",
           id: "Bekerja sebagai guru.",
+          en: "Working as a teacher.",
+          ja: "先生の仕事をしています。",
         },
-      },
+      }
     ],
   },
   {
@@ -99,44 +163,76 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menyatakan Kesamaan ('Juga')",
-        description:
-          "Dipakai kalau subjek, objek, atau hal yang dibahas punya kondisi yang sama dengan apa yang baru saja disebutkan.",
+        titleId: "Menyatakan Kesamaan ('Juga')",
+        titleEn: "Expressing Similarity ('Also / Too')",
+        titleJa: "同類の提示（〜も）",
+        description: "Dipakai kalau subjek, objek, atau hal yang dibahas punya kondisi yang sama dengan apa yang baru saja disebutkan.",
+        descriptionId: "Dipakai kalau subjek, objek, atau hal yang dibahas punya kondisi yang sama dengan apa yang baru saja disebutkan.",
+        descriptionEn: "Indicates that the same condition applies to someone or something else.",
+        descriptionJa: "前述の事柄と同様であることを表します。",
         example: {
           jp: "田中さんは学生です。私も学生です",
+          furigana: "たなかさんは がくせいです。わたしも がくせいです",
           ro: "Tanaka-san wa gakusei desu. Watashi mo gakusei desu",
           id: "Tanaka adalah mahasiswa. Saya juga mahasiswa.",
+          en: "Tanaka is a student. I am also a student.",
+          ja: "田中さんは学生です。私も学生です。",
         },
       },
       {
         title: "Menggabungkan Dua Hal ('Baik... maupun...')",
-        description:
-          "Kalau Bos menyebutkan dua kata benda dan di belakang masing-masing ditambah partikel も, fungsinya jadi merangkum kedua hal tersebut.",
+        titleId: "Menggabungkan Dua Hal ('Baik... maupun...')",
+        titleEn: "Combining Multiple Items ('Both... and...')",
+        titleJa: "並立・列挙（〜も〜も）",
+        description: "Kalau Bos menyebutkan dua kata benda dan di belakang masing-masing ditambah partikel も, fungsinya jadi merangkum kedua hal tersebut.",
+        descriptionId: "Kalau Bos menyebutkan dua kata benda dan di belakang masing-masing ditambah partikel も, fungsinya jadi merangkum kedua hal tersebut.",
+        descriptionEn: "Repeats after nouns to mean both A and B.",
+        descriptionJa: "名詞を並べて「〜も〜も」と二つ以上の事柄を包括して示します。",
         example: {
           jp: "英語も日本語も勉強します",
+          furigana: "えいごも にほんごも べんきょうします",
           ro: "Eigo mo nihongo mo benkyou shimasu",
           id: "Saya belajar baik bahasa Inggris maupun bahasa Jepang.",
+          en: "I study both English and Japanese.",
+          ja: "英語も日本語も両方勉強します。",
         },
       },
       {
         title: "Penyangkalan Total ('Pun tidak...')",
-        description:
-          "Kalau partikel も digabung sama kata tanya (seperti apa, siapa, ke mana) lalu ditutup dengan kata kerja bentuk negatif, artinya jadi menolak segalanya.",
+        titleId: "Penyangkalan Total ('Pun tidak...')",
+        titleEn: "Total Negation ('Not even / Nothing')",
+        titleJa: "全面否定",
+        description: "Kalau partikel も digabung sama kata tanya (seperti apa, siapa, ke mana) lalu ditutup dengan kata kerja bentuk negatif, artinya jadi menolak segalanya.",
+        descriptionId: "Kalau partikel も digabung sama kata tanya (seperti apa, siapa, ke mana) lalu ditutup dengan kata kerja bentuk negatif, artinya jadi menolak segalanya.",
+        descriptionEn: "Used with interrogatives or counters in negative sentences for complete negation.",
+        descriptionJa: "疑問詞＋「も」＋否定形で、全面的な否定を表します。",
         example: {
           jp: "朝から何も食べていません",
+          furigana: "あさから なにも たべていません",
           ro: "Asa kara nani mo tabete imasen",
           id: "Dari pagi tidak makan apa pun.",
+          en: "I haven't eaten anything since morning.",
+          ja: "朝から何も食べていません。",
         },
       },
       {
         title: "Menekankan Jumlah yang Banyak ('Sampai...')",
-        description:
-          "Diselipkan tepat setelah kata bantu bilangan buat ngasih kesan terkejut atau menekankan kalau jumlah/waktu tersebut terhitung banyak.",
+        titleId: "Menekankan Jumlah yang Banyak ('Sampai...')",
+        titleEn: "Emphasizing Large Amounts ('As many as...')",
+        titleJa: "数量の多さの強調",
+        description: "Diselipkan tepat setelah kata bantu bilangan buat ngasih kesan terkejut atau menekankan kalau jumlah/waktu tersebut terhitung banyak.",
+        descriptionId: "Diselipkan tepat setelah kata bantu bilangan buat ngasih kesan terkejut atau menekankan kalau jumlah/waktu tersebut terhitung banyak.",
+        descriptionEn: "Placed after quantities to emphasize that the amount is unexpectedly large.",
+        descriptionJa: "数量を表す言葉に付けて、その数や量が極めて多いことを強調します。",
         example: {
           jp: "昨日、コーヒーを５杯も飲みました",
+          furigana: "きのう、コーヒーを ごはいも のみました",
           ro: "Kinou, koohii o gohai mo nomimashita",
           id: "Kemarin, saya minum sampai 5 cangkir kopi.",
+          en: "Yesterday, I drank as many as 5 cups of coffee.",
+          ja: "昨日、コーヒーを５杯もたくさん飲みました。",
         },
-      },
+      }
     ],
   },
   {
@@ -145,54 +241,94 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menunjukkan Waktu Spesifik",
-        description:
-          "Dipakai di belakang keterangan waktu pasti yang biasanya ada angkanya (jam, tanggal, bulan) atau nama hari.",
+        titleId: "Menunjukkan Waktu Spesifik",
+        titleEn: "Specific Time",
+        titleJa: "特定の時間",
+        description: "Dipakai di belakang keterangan waktu pasti yang biasanya ada angkanya (jam, tanggal, bulan) atau nama hari.",
+        descriptionId: "Dipakai di belakang keterangan waktu pasti yang biasanya ada angkanya (jam, tanggal, bulan) atau nama hari.",
+        descriptionEn: "Specifies the precise time when an action takes place.",
+        descriptionJa: "動作が行われる特定の時点や時刻を示します。",
         example: {
           jp: "6時に起きます",
+          furigana: "ろくじに おきます",
           ro: "Roku-ji ni okimasu",
           id: "Bangun pada jam 6.",
+          en: "I wake up at 6 o'clock.",
+          ja: "6時に起きます。",
         },
       },
       {
         title: "Menunjukkan Lokasi Keberadaan (Statis)",
-        description:
-          "Digabungkan dengan kata kerja あります (arimasu) atau います (imasu) untuk memberitahu letak atau posisi sesuatu benda berdiam.",
+        titleId: "Menunjukkan Lokasi Keberadaan (Statis)",
+        titleEn: "Static Location of Existence",
+        titleJa: "存在の場所（静止）",
+        description: "Digabungkan dengan kata kerja あります (arimasu) atau います (imasu) untuk memberitahu letak atau posisi sesuatu benda berdiam.",
+        descriptionId: "Digabungkan dengan kata kerja あります (arimasu) atau います (imasu) untuk memberitahu letak atau posisi sesuatu benda berdiam.",
+        descriptionEn: "Indicates where someone or something exists (with いる/ある).",
+        descriptionJa: "人や物が存在する場所（「ある・いる」と共起）を示します。",
         example: {
           jp: "机の上にパソコンがあります",
+          furigana: "つくえの うえに パソコンが あります",
           ro: "Tsukue no ue ni pasokon ga arimasu",
           id: "Di atas meja ada laptop.",
+          en: "There is a laptop on the desk.",
+          ja: "机の上にパソコンがあります。",
         },
       },
       {
         title: "Menandai Arah atau Tempat Tujuan",
-        description:
-          "Kalau Bos pakai kata kerja perpindahan (pergi, datang, pulang), partikel ini menandakan letak akhir dari perpindahan tersebut.",
+        titleId: "Menandai Arah atau Tempat Tujuan",
+        titleEn: "Direction or Destination",
+        titleJa: "目的地・到着点",
+        description: "Kalau Bos pakai kata kerja perpindahan (pergi, datang, pulang), partikel ini menandakan letak akhir dari perpindahan tersebut.",
+        descriptionId: "Kalau Bos pakai kata kerja perpindahan (pergi, datang, pulang), partikel ini menandakan letak akhir dari perpindahan tersebut.",
+        descriptionEn: "Marks the final destination of movement verbs.",
+        descriptionJa: "移動の目的地や到着する場所を示します。",
         example: {
           jp: "日本に行きます",
+          furigana: "にほんに いきます",
           ro: "Nihon ni ikimasu",
           id: "Pergi ke Jepang.",
+          en: "I will go to Japan.",
+          ja: "日本に行きます。",
         },
       },
       {
         title: "Menunjukkan Target atau Penerima Aksi",
-        description:
-          "Dipakai saat mengarahkan suatu tindakan ke orang lain, seperti memberikan barang, menelepon, atau mengajarkan sesuatu.",
+        titleId: "Menunjukkan Target atau Penerima Aksi",
+        titleEn: "Target or Recipient of Action",
+        titleJa: "動作の相手・対象",
+        description: "Dipakai saat mengarahkan suatu tindakan ke orang lain, seperti memberikan barang, menelepon, atau mengajarkan sesuatu.",
+        descriptionId: "Dipakai saat mengarahkan suatu tindakan ke orang lain, seperti memberikan barang, menelepon, atau mengajarkan sesuatu.",
+        descriptionEn: "Indicates the person or target receiving an action.",
+        descriptionJa: "行為や働きかけの相手・受け手を示します。",
         example: {
           jp: "友達に電話をかけます",
+          furigana: "ともだちに でんわを かけます",
           ro: "Tomodachi ni denwa o kakemasu",
           id: "Menelepon teman.",
+          en: "I will make a phone call to a friend.",
+          ja: "友達に電話をかけます。",
         },
       },
       {
         title: "Menyatakan Tujuan Melakukan Sesuatu",
-        description:
-          "Dipakai bersama kata kerja perpindahan untuk menjelaskan tujuan pergi ke suatu tempat. Caranya dengan mengambil kata kerja bentuk masu (masu dicoret) lalu ditambah ni.",
+        titleId: "Menyatakan Tujuan Melakukan Sesuatu",
+        titleEn: "Purpose of Movement",
+        titleJa: "移動の目的",
+        description: "Dipakai bersama kata kerja perpindahan untuk menjelaskan tujuan pergi ke suatu tempat. Caranya dengan mengambil kata kerja bentuk masu (masu dicoret) lalu ditambah ni.",
+        descriptionId: "Dipakai bersama kata kerja perpindahan untuk menjelaskan tujuan pergi ke suatu tempat. Caranya dengan mengambil kata kerja bentuk masu (masu dicoret) lalu ditambah ni.",
+        descriptionEn: "Combined with verb stem to state the purpose of going/coming.",
+        descriptionJa: "動詞の連用形に付き、移動の目的を表します。",
         example: {
           jp: "寿司を食べに行きます",
+          furigana: "すしを たべに いきます",
           ro: "Sushi o tabe ni ikimasu",
           id: "Pergi untuk makan sushi.",
+          en: "I am going to eat sushi.",
+          ja: "寿司を食べに行きます。",
         },
-      },
+      }
     ],
   },
   {
@@ -201,54 +337,94 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menunjukkan Cara atau Alat ('Dengan')",
-        description:
-          "Dipakai untuk ngasih tau alat, sarana transportasi, atau bahkan bahasa yang digunakan untuk melakukan sesuatu.",
+        titleId: "Menunjukkan Cara atau Alat ('Dengan')",
+        titleEn: "Method, Tool, or Means ('By / With')",
+        titleJa: "手段・道具・方法",
+        description: "Dipakai untuk ngasih tau alat, sarana transportasi, atau bahkan bahasa yang digunakan untuk melakukan sesuatu.",
+        descriptionId: "Dipakai untuk ngasih tau alat, sarana transportasi, atau bahkan bahasa yang digunakan untuk melakukan sesuatu.",
+        descriptionEn: "Indicates the instrument, tool, or transportation used.",
+        descriptionJa: "動作を行うための道具、手段、交通手段を示します。",
         example: {
           jp: "バスで行きます",
+          furigana: "バスで いきます",
           ro: "Basu de ikimasu",
           id: "Pergi dengan bus.",
+          en: "I will go by bus.",
+          ja: "バスで行きます。",
         },
       },
       {
         title: "Menunjukkan Tempat Terjadinya Aksi ('Di')",
-        description:
-          "Dipakai kalau ada aktivitas atau kegiatan yang aktif dilakukan di tempat tersebut, berbeda dengan に yang hanya untuk benda diam.",
+        titleId: "Menunjukkan Tempat Terjadinya Aksi ('Di')",
+        titleEn: "Location of Action ('At / In')",
+        titleJa: "動作の行われる場所",
+        description: "Dipakai kalau ada aktivitas atau kegiatan yang aktif dilakukan di tempat tersebut, berbeda dengan に yang hanya untuk benda diam.",
+        descriptionId: "Dipakai kalau ada aktivitas atau kegiatan yang aktif dilakukan di tempat tersebut, berbeda dengan に yang hanya untuk benda diam.",
+        descriptionEn: "Indicates the active place where an action occurs.",
+        descriptionJa: "活動や動作が実際に行われる場所を示します。",
         example: {
           jp: "学校で勉強します",
+          furigana: "がっこうで べんきょうします",
           ro: "Gakkou de benkyou shimasu",
           id: "Belajar di sekolah.",
+          en: "I study at school.",
+          ja: "学校で勉強します。",
         },
       },
       {
         title: "Menunjukkan Alasan atau Penyebab ('Karena')",
-        description:
-          "Dipakai buat menjelaskan alasan kenapa suatu kondisi terjadi, sering merujuk pada penyakit, bencana alam, atau kecelakaan.",
+        titleId: "Menunjukkan Alasan atau Penyebab ('Karena')",
+        titleEn: "Reason or Cause ('Because of / Due to')",
+        titleJa: "原因・理由",
+        description: "Dipakai buat menjelaskan alasan kenapa suatu kondisi terjadi, sering merujuk pada penyakit, bencana alam, atau kecelakaan.",
+        descriptionId: "Dipakai buat menjelaskan alasan kenapa suatu kondisi terjadi, sering merujuk pada penyakit, bencana alam, atau kecelakaan.",
+        descriptionEn: "Marks the event or condition that causes an outcome.",
+        descriptionJa: "事態や結果を引き起こした原因・理由を示します。",
         example: {
           jp: "風邪で学校を休みます",
+          furigana: "かぜで がっこうを やすみます",
           ro: "Kaze de gakkou o yasumimasu",
           id: "Libur sekolah karena flu.",
+          en: "I will take time off school due to a cold.",
+          ja: "風邪で学校を休みます。",
         },
       },
       {
         title: "Menunjukkan Bahan Dasar ('Dari')",
-        description:
-          "Dipakai menjelaskan sebuah benda dibuat dari bahan apa, terutama jika bahan pembuatnya masih jelas terlihat wujud aslinya.",
+        titleId: "Menunjukkan Bahan Dasar ('Dari')",
+        titleEn: "Material or Substance ('Made of')",
+        titleJa: "材料・原料",
+        description: "Dipakai menjelaskan sebuah benda dibuat dari bahan apa, terutama jika bahan pembuatnya masih jelas terlihat wujud aslinya.",
+        descriptionId: "Dipakai menjelaskan sebuah benda dibuat dari bahan apa, terutama jika bahan pembuatnya masih jelas terlihat wujud aslinya.",
+        descriptionEn: "Shows the material used to create or construct something.",
+        descriptionJa: "物を作る材料や素材を示します。",
         example: {
           jp: "木で机を作ります",
+          furigana: "きで つくえを つくります",
           ro: "Ki de tsukue o tsukurimasu",
           id: "Membuat meja dari kayu.",
+          en: "Make a desk out of wood.",
+          ja: "木で机を作ります。",
         },
       },
       {
         title: "Menunjukkan Batas Waktu atau Jumlah Harga",
-        description:
-          "Digunakan untuk ngasih tau batas waktu yang dibutuhkan sampai sebuah aksi selesai, atau total harga dari suatu barang.",
+        titleId: "Menunjukkan Batas Waktu atau Jumlah Harga",
+        titleEn: "Time Limit or Total Quantity",
+        titleJa: "期限・合計数量",
+        description: "Digunakan untuk ngasih tau batas waktu yang dibutuhkan sampai sebuah aksi selesai, atau total harga dari suatu barang.",
+        descriptionId: "Digunakan untuk ngasih tau batas waktu yang dibutuhkan sampai sebuah aksi selesai, atau total harga dari suatu barang.",
+        descriptionEn: "Indicates the duration limit, scope, or total amount.",
+        descriptionJa: "所要時間や範囲の期限・合計を示します。",
         example: {
           jp: "1時間で終わります",
+          furigana: "いちじかんで おわります",
           ro: "Ichi-jikan de owarimasu",
           id: "Selesai dalam 1 jam.",
+          en: "It will finish in 1 hour.",
+          ja: "1時間で終わります。",
         },
-      },
+      }
     ],
   },
   {
@@ -257,34 +433,58 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menunjukkan Arah Pergerakan ('Ke / Menuju')",
-        description:
-          "Menunjukkan arah tujuan Bos pergi, lebih menekankan pada arah perjalanannya dibanding titik akhirnya.",
+        titleId: "Menunjukkan Arah Pergerakan ('Ke / Menuju')",
+        titleEn: "Direction of Movement ('Toward / To')",
+        titleJa: "移動の方向・方角",
+        description: "Menunjukkan arah tujuan Bos pergi, lebih menekankan pada arah perjalanannya dibanding titik akhirnya.",
+        descriptionId: "Menunjukkan arah tujuan Bos pergi, lebih menekankan pada arah perjalanannya dibanding titik akhirnya.",
+        descriptionEn: "Emphasizes the direction toward which movement is aimed.",
+        descriptionJa: "向かう方角や方向性を強調して示します。",
         example: {
           jp: "日本へ行きたい",
+          furigana: "にほんへ いきたい",
           ro: "Nihon e ikitai",
           id: "Ingin pergi ke Jepang.",
+          en: "I want to go towards Japan.",
+          ja: "日本へ行きたい。",
         },
       },
       {
         title: "Menunjukkan Penerima atau Tujuan Tindakan ('Kepada / Untuk')",
-        description:
-          "Dipakai buat ngasih tau ke siapa sebuah pesan, barang, atau tindakan ditujukan, sering ditemukan di bagian awal surat atau email.",
+        titleId: "Menunjukkan Penerima atau Tujuan Tindakan ('Kepada / Untuk')",
+        titleEn: "Recipient or Beneficiary ('To / For')",
+        titleJa: "相手・対象（手紙や贈り物）",
+        description: "Dipakai buat ngasih tau ke siapa sebuah pesan, barang, atau tindakan ditujukan, sering ditemukan di bagian awal surat atau email.",
+        descriptionId: "Dipakai buat ngasih tau ke siapa sebuah pesan, barang, atau tindakan ditujukan, sering ditemukan di bagian awal surat atau email.",
+        descriptionEn: "Marks the intended recipient of a letter, gift, or message.",
+        descriptionJa: "贈り物やメッセージなどを届ける対象を示します。",
         example: {
           jp: "友達へプレゼントを贈ります",
+          furigana: "ともだちへ プレゼントを おくります",
           ro: "Tomodachi e purezento o okurimasu",
           id: "Mengirim hadiah untuk/kepada teman.",
+          en: "Send a present to a friend.",
+          ja: "友達へプレゼントを贈ります。",
         },
       },
       {
         title: "Digabung dengan Partikel 'No' untuk Menjelaskan Kata Benda",
-        description:
-          "Menggabungkan partikel へ dengan の (no) untuk menerangkan kata benda yang memiliki arah tujuan ke suatu tempat.",
+        titleId: "Digabung dengan Partikel 'No' untuk Menjelaskan Kata Benda",
+        titleEn: "Combined with 'No' ('Bound for')",
+        titleJa: "「〜への」の形で名詞修飾",
+        description: "Menggabungkan partikel へ dengan の (no) untuk menerangkan kata benda yang memiliki arah tujuan ke suatu tempat.",
+        descriptionId: "Menggabungkan partikel へ dengan の (no) untuk menerangkan kata benda yang memiliki arah tujuan ke suatu tempat.",
+        descriptionEn: "Combines as 'e no' to modify a following noun.",
+        descriptionJa: "名詞を修飾して「〜へ向かう」という意味を添えます。",
         example: {
           jp: "東京へのバス",
+          furigana: "とうきょうへの バス",
           ro: "Toukyou e no basu",
           id: "Bus (yang menuju) ke Tokyo.",
+          en: "The bus bound for Tokyo.",
+          ja: "東京へ向かうバス。",
         },
-      },
+      }
     ],
   },
   {
@@ -293,54 +493,94 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menyatakan Kepemilikan ('Milik')",
-        description:
-          "Menunjukkan kalau benda tersebut adalah milik seseorang, instansi, atau sesuatu.",
+        titleId: "Menyatakan Kepemilikan ('Milik')",
+        titleEn: "Possession ('Belonging to')",
+        titleJa: "所有（〜のもの）",
+        description: "Menunjukkan kalau benda tersebut adalah milik seseorang, instansi, atau sesuatu.",
+        descriptionId: "Menunjukkan kalau benda tersebut adalah milik seseorang, instansi, atau sesuatu.",
+        descriptionEn: "Marks ownership or belonging.",
+        descriptionJa: "所属や所有関係を示します。",
         example: {
           jp: "私の本です",
+          furigana: "わたしの ほんです",
           ro: "Watashi no hon desu",
           id: "Buku milik saya.",
+          en: "It is my book.",
+          ja: "私の本です。",
         },
       },
       {
         title: "Menjelaskan Kata Benda (Kategori atau Asal)",
-        description:
-          "Kata benda pertama berfungsi memberikan keterangan lebih detail tentang kata benda kedua, seperti jenis, bidang, atau asalnya.",
+        titleId: "Menjelaskan Kata Benda (Kategori atau Asal)",
+        titleEn: "Noun Explanation (Category or Origin)",
+        titleJa: "名詞の修飾（属性・所属）",
+        description: "Kata benda pertama berfungsi memberikan keterangan lebih detail tentang kata benda kedua, seperti jenis, bidang, atau asalnya.",
+        descriptionId: "Kata benda pertama berfungsi memberikan keterangan lebih detail tentang kata benda kedua, seperti jenis, bidang, atau asalnya.",
+        descriptionEn: "Clarifies the type, subject matter, or background of a noun.",
+        descriptionJa: "名詞の内容、分野、出身などを詳しく説明します。",
         example: {
           jp: "日本語の先生",
+          furigana: "にほんごの せんせい",
           ro: "Nihongo no sensei",
           id: "Guru bahasa Jepang.",
+          en: "Japanese language teacher.",
+          ja: "日本語を教える先生。",
         },
       },
       {
         title: "Menunjukkan Letak atau Posisi",
-        description:
-          "Selalu digunakan untuk menggabungkan benda dengan kata penunjuk lokasi (atas, bawah, depan, belakang, dalam).",
+        titleId: "Menunjukkan Letak atau Posisi",
+        titleEn: "Location or Position",
+        titleJa: "位置・場所関係",
+        description: "Selalu digunakan untuk menggabungkan benda dengan kata penunjuk lokasi (atas, bawah, depan, belakang, dalam).",
+        descriptionId: "Selalu digunakan untuk menggabungkan benda dengan kata penunjuk lokasi (atas, bawah, depan, belakang, dalam).",
+        descriptionEn: "Connects an object to its spatial orientation (top, under, inside).",
+        descriptionJa: "物と位置関係（上、下、中など）を結びつけます。",
         example: {
           jp: "机の上",
+          furigana: "つくえの うえ",
           ro: "Tsukue no ue",
           id: "Atas meja.",
+          en: "On top of the desk.",
+          ja: "机の上。",
         },
       },
       {
         title: "Mengubah Kata Kerja Menjadi Kata Benda (Nominalisasi)",
-        description:
-          "Berguna untuk menjadikan suatu kegiatan (kata kerja) sebagai subjek atau objek yang sedang dibahas.",
+        titleId: "Mengubah Kata Kerja Menjadi Kata Benda (Nominalisasi)",
+        titleEn: "Nominalization (Turning Verb to Noun)",
+        titleJa: "準体言化（名詞化）",
+        description: "Berguna untuk menjadikan suatu kegiatan (kata kerja) sebagai subjek atau objek yang sedang dibahas.",
+        descriptionId: "Berguna untuk menjadikan suatu kegiatan (kata kerja) sebagai subjek atau objek yang sedang dibahas.",
+        descriptionEn: "Turns a verb into a noun clause ('the act of doing').",
+        descriptionJa: "動詞の連体形について、動作全体を名詞化します。",
         example: {
           jp: "アニメを見るのが好きです",
+          furigana: "アニメを みるのが すきです",
           ro: "Anime o miru no ga suki desu",
           id: "Saya suka (kegiatan) menonton anime.",
+          en: "I like watching anime.",
+          ja: "アニメを見ることが好きです。",
         },
       },
       {
         title: "Penanda Pertanyaan Santai (Informal)",
-        description:
-          "Jika diletakkan di akhir kalimat dan diucapkan dengan nada meninggi, fungsinya menjadi kata tanya pengganti partikel か (ka).",
+        titleId: "Penanda Pertanyaan Santai (Informal)",
+        titleEn: "Casual Question Marker",
+        titleJa: "親しい間柄での疑問・確認",
+        description: "Jika diletakkan di akhir kalimat dan diucapkan dengan nada meninggi, fungsinya menjadi kata tanya pengganti partikel か (ka).",
+        descriptionId: "Jika diletakkan di akhir kalimat dan diucapkan dengan nada meninggi, fungsinya menjadi kata tanya pengganti partikel か (ka).",
+        descriptionEn: "Used sentence-finally in casual speech to ask a gentle question.",
+        descriptionJa: "文末で親しい相手に質問や確認をする表現です。",
         example: {
           jp: "どこへ行くの？",
+          furigana: "どこへ いくの？",
           ro: "Doko e iku no?",
           id: "Mau pergi ke mana?",
+          en: "Where are you going?",
+          ja: "どこに行くの？",
         },
-      },
+      }
     ],
   },
   {
@@ -349,44 +589,76 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menggabungkan Kata Benda Secara Lengkap ('Dan')",
-        description:
-          "Mengikat semua benda atau subjek yang disebutkan dalam satu daftar penuh tanpa ada yang tertinggal.",
+        titleId: "Menggabungkan Kata Benda Secara Lengkap ('Dan')",
+        titleEn: "Complete Exhaustive Listing ('And')",
+        titleJa: "名詞の完全列挙（〜と〜）",
+        description: "Mengikat semua benda atau subjek yang disebutkan dalam satu daftar penuh tanpa ada yang tertinggal.",
+        descriptionId: "Mengikat semua benda atau subjek yang disebutkan dalam satu daftar penuh tanpa ada yang tertinggal.",
+        descriptionEn: "Lists all items completely without omissions.",
+        descriptionJa: "並べる名詞を漏れなく全て挙げる際に使います。",
         example: {
           jp: "猫と犬",
+          furigana: "パンと たまごを かいました",
           ro: "Neko to inu",
           id: "Kucing dan anjing.",
+          en: "I bought bread and eggs.",
+          ja: "パンと卵を買いました。",
         },
       },
       {
         title: "Menyatakan Keterlibatan Orang Lain ('Bersama / Dengan')",
-        description:
-          "Dipakai buat ngasih tau dengan siapa suatu aktivitas atau pekerjaan dilakukan.",
+        titleId: "Menyatakan Keterlibatan Orang Lain ('Bersama / Dengan')",
+        titleEn: "Accompaniment ('Together with')",
+        titleJa: "動作を共にする相手（〜と一緒に）",
+        description: "Dipakai buat ngasih tau dengan siapa suatu aktivitas atau pekerjaan dilakukan.",
+        descriptionId: "Dipakai buat ngasih tau dengan siapa suatu aktivitas atau pekerjaan dilakukan.",
+        descriptionEn: "Indicates the companion with whom an action is performed.",
+        descriptionJa: "一緒に動作を行う相手を示します。",
         example: {
           jp: "友達と映画を見ます",
+          furigana: "かのじょと えいがを みました",
           ro: "Tomodachi to eiga o mimasu",
           id: "Menonton film bersama teman.",
+          en: "I watched a movie with my girlfriend.",
+          ja: "彼女と一緒に映画を見ました。",
         },
       },
       {
         title: "Mengutip Perkataan atau Pemikiran ('Bahwa')",
-        description:
-          "Membungkus kutipan langsung maupun tidak langsung, biasanya nempel sebelum kata kerja seperti 言います (berkata) atau 思います (berpikir).",
+        titleId: "Mengutip Perkataan atau Pemikiran ('Bahwa')",
+        titleEn: "Quotation of Speech or Thought",
+        titleJa: "引用（発言・思考）",
+        description: "Membungkus kutipan langsung maupun tidak langsung, biasanya nempel sebelum kata kerja seperti 言います (berkata) atau 思います (berpikir).",
+        descriptionId: "Membungkus kutipan langsung maupun tidak langsung, biasanya nempel sebelum kata kerja seperti 言います (berkata) atau 思います (berpikir).",
+        descriptionEn: "Quotes direct speech or introduces personal thoughts.",
+        descriptionJa: "発言した言葉や考えた内容を引用します。",
         example: {
           jp: "明日雨が降ると思います",
+          furigana: "あしたは あめだと おもいます",
           ro: "Ashita ame ga furu to omoimasu",
           id: "Saya rasa bahwa besok akan hujan.",
+          en: "I think it will rain tomorrow.",
+          ja: "明日は雨が降ると思います。",
         },
       },
       {
         title: "Menyatakan Syarat yang Hasilnya Pasti ('Kalau / Jika')",
-        description:
-          "Menjelaskan sebab-akibat yang natural dan pasti terjadi, sering dipakai untuk petunjuk arah atau fenomena alam.",
+        titleId: "Menyatakan Syarat yang Hasilnya Pasti ('Kalau / Jika')",
+        titleEn: "Natural Inevitable Condition ('When / If')",
+        titleJa: "恒常的条件・確定条件",
+        description: "Menjelaskan sebab-akibat yang natural dan pasti terjadi, sering dipakai untuk petunjuk arah atau fenomena alam.",
+        descriptionId: "Menjelaskan sebab-akibat yang natural dan pasti terjadi, sering dipakai untuk petunjuk arah atau fenomena alam.",
+        descriptionEn: "States that whenever condition A occurs, result B inevitably follows.",
+        descriptionJa: "その条件が満たされると必然的に結果が起きることを表します。",
         example: {
           jp: "このボタンを押すと、水が出ます",
+          furigana: "はるに なると、さくらが さきます",
           ro: "Kono botan o osu to, mizu ga demasu",
           id: "Kalau menekan tombol ini, airnya akan keluar.",
+          en: "When spring arrives, cherry blossoms bloom.",
+          ja: "春になると桜が咲きます。",
         },
-      },
+      }
     ],
   },
   {
@@ -395,44 +667,76 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Penanda Pertanyaan di Akhir Kalimat ('?')",
-        description:
-          "Diletakkan di paling belakang kalimat, langsung mengubah pernyataan menjadi pertanyaan.",
+        titleId: "Penanda Pertanyaan di Akhir Kalimat ('?')",
+        titleEn: "Sentence-Final Question Marker",
+        titleJa: "文末の疑問表示",
+        description: "Diletakkan di paling belakang kalimat, langsung mengubah pernyataan menjadi pertanyaan.",
+        descriptionId: "Diletakkan di paling belakang kalimat, langsung mengubah pernyataan menjadi pertanyaan.",
+        descriptionEn: "Placed at the end of a sentence to turn it into a polite question.",
+        descriptionJa: "文末に置いて丁寧な疑問文を作ります。",
         example: {
           jp: "元気ですか",
+          furigana: "これはいっしょですか？",
           ro: "Genki desu ka",
           id: "Apa kabar?",
+          en: "Is this the same?",
+          ja: "これは一緒ですか？",
         },
       },
       {
         title: "Menunjukkan Pilihan ('Atau')",
-        description:
-          "Diselipkan di antara dua kata benda untuk memberikan opsi atau pilihan.",
+        titleId: "Menunjukkan Pilihan ('Atau')",
+        titleEn: "Choice or Alternative ('Or')",
+        titleJa: "選択の表示（〜か〜）",
+        description: "Diselipkan di antara dua kata benda untuk memberikan opsi atau pilihan.",
+        descriptionId: "Diselipkan di antara dua kata benda untuk memberikan opsi atau pilihan.",
+        descriptionEn: "Connects choices, equivalent to 'or'.",
+        descriptionJa: "二つ以上の選択肢を並べて「〜または〜」を示します。",
         example: {
           jp: "お茶かコーヒーを飲みます",
+          furigana: "おちゃか コーヒーを のみますか？",
           ro: "Ocha ka koohii o nomimasu",
           id: "Minum teh atau kopi.",
+          en: "Would you like tea or coffee?",
+          ja: "お茶かコーヒーを飲みますか？",
         },
       },
       {
         title: "Menyatakan Sesuatu yang Tidak Spesifik",
-        description:
-          "Kalau ditempel langsung setelah kata tanya, maknanya berubah jadi hal yang tidak menentu.",
+        titleId: "Menyatakan Sesuatu yang Tidak Spesifik",
+        titleEn: "Indefinite Pronoun ('Someone / Somewhere')",
+        titleJa: "不特定の事物の表示",
+        description: "Kalau ditempel langsung setelah kata tanya, maknanya berubah jadi hal yang tidak menentu.",
+        descriptionId: "Kalau ditempel langsung setelah kata tanya, maknanya berubah jadi hal yang tidak menentu.",
+        descriptionEn: "Attached to question words to denote something non-specific (dareka, nanika).",
+        descriptionJa: "疑問詞に付き「だれか」「なにか」のように不特定を表します。",
         example: {
           jp: "誰か来ました",
+          furigana: "へやに だれか いますか？",
           ro: "Dareka kimashita",
           id: "Seseorang telah datang.",
+          en: "Is someone in the room?",
+          ja: "部屋に誰かいますか？",
         },
       },
       {
         title: "Menyisipkan Pertanyaan dalam Kalimat ('Apakah')",
-        description:
-          "Digabung dengan kata どうか (dou ka) untuk menyatakan keraguan atau ketidaktahuan atas suatu kondisi iya atau tidak.",
+        titleId: "Menyisipkan Pertanyaan dalam Kalimat ('Apakah')",
+        titleEn: "Embedded Question Clause",
+        titleJa: "文中の疑問節（間接疑問）",
+        description: "Digabung dengan kata どうか (dou ka) untuk menyatakan keraguan atau ketidaktahuan atas suatu kondisi iya atau tidak.",
+        descriptionId: "Digabung dengan kata どうか (dou ka) untuk menyatakan keraguan atau ketidaktahuan atas suatu kondisi iya atau tidak.",
+        descriptionEn: "Embeds a question inside a longer sentence.",
+        descriptionJa: "文の中に疑問の文を組み込む際に使います。",
         example: {
           jp: "明日雨が降るかどうか分かりません",
+          furigana: "いつ くるか わかりません",
           ro: "Ashita ame ga furu ka dou ka wakarimasen",
           id: "Saya tidak tahu apakah besok akan hujan atau tidak.",
+          en: "I don't know when they will come.",
+          ja: "いつ来るか分かりません。",
         },
-      },
+      }
     ],
   },
   {
@@ -441,54 +745,94 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menandai Subjek dan Fenomena Alam",
-        description:
-          "Dipakai untuk mendampingi kata kerja intransitif atau menjelaskan keadaan alam yang terjadi apa adanya.",
+        titleId: "Menandai Subjek dan Fenomena Alam",
+        titleEn: "Subject & Natural Phenomena Marker",
+        titleJa: "主語および自然現象の表示",
+        description: "Dipakai untuk mendampingi kata kerja intransitif atau menjelaskan keadaan alam yang terjadi apa adanya.",
+        descriptionId: "Dipakai untuk mendampingi kata kerja intransitif atau menjelaskan keadaan alam yang terjadi apa adanya.",
+        descriptionEn: "Marks the grammatical subject, especially natural occurrences.",
+        descriptionJa: "文の主語や、自然現象などの直接の動作主を示します。",
         example: {
           jp: "雨が降っています",
+          furigana: "あめが ふっています",
           ro: "Ame ga futte imasu",
           id: "Hujan turun.",
+          en: "Rain is falling.",
+          ja: "雨が降っています。",
         },
       },
       {
         title: "Memberi Penekanan pada Subjek ('Yang...')",
-        description:
-          "Menegaskan siapa pelaku utamanya, fokus ditaruh di subjek tersebut, bukan di perbuatannya.",
+        titleId: "Memberi Penekanan pada Subjek ('Yang...')",
+        titleEn: "Subject Emphasis ('The one who')",
+        titleJa: "主語の特定・排他",
+        description: "Menegaskan siapa pelaku utamanya, fokus ditaruh di subjek tersebut, bukan di perbuatannya.",
+        descriptionId: "Menegaskan siapa pelaku utamanya, fokus ditaruh di subjek tersebut, bukan di perbuatannya.",
+        descriptionEn: "Emphasizes that it is specifically this subject and no other.",
+        descriptionJa: "他ではなく「まさにその人／物」であると強調します。",
         example: {
           jp: "私が行きます",
+          furigana: "わたしが やります",
           ro: "Watashi ga ikimasu",
           id: "Saya yang akan pergi.",
+          en: "I will be the one to do it.",
+          ja: "私が責任を持ってやります。",
         },
       },
       {
         title: "Menandai Objek untuk Kondisi Khusus",
-        description:
-          "Mendampingi kata yang menyatakan kesukaan, kemampuan, atau keinginan (seperti suka, mengerti, pintar, ingin).",
+        titleId: "Menandai Objek untuk Kondisi Khusus",
+        titleEn: "Object of Special Adjectives / Potential",
+        titleJa: "感情・能力・状態の対象",
+        description: "Mendampingi kata yang menyatakan kesukaan, kemampuan, atau keinginan (seperti suka, mengerti, pintar, ingin).",
+        descriptionId: "Mendampingi kata yang menyatakan kesukaan, kemampuan, atau keinginan (seperti suka, mengerti, pintar, ingin).",
+        descriptionEn: "Marks the object for words of liking, skill, desire, and potential verbs.",
+        descriptionJa: "好き・上手・欲しい・可能動詞などの対象を示します。",
         example: {
           jp: "日本語が分かります",
+          furigana: "にほんごが はなせます",
           ro: "Nihongo ga wakarimasu",
           id: "Mengerti bahasa Jepang.",
+          en: "I can speak Japanese.",
+          ja: "日本語を話すことができます。",
         },
       },
       {
         title: "Berfungsi Sebagai Kata Sambung ('Tetapi / Tapi')",
-        description:
-          "Diletakkan setelah predikat di tengah kalimat untuk menghubungkan dua kalimat yang saling bertentangan.",
+        titleId: "Berfungsi Sebagai Kata Sambung ('Tetapi / Tapi')",
+        titleEn: "Conjunction ('However / But')",
+        titleJa: "逆接・前置きの接続助詞",
+        description: "Diletakkan setelah predikat di tengah kalimat untuk menghubungkan dua kalimat yang saling bertentangan.",
+        descriptionId: "Diletakkan setelah predikat di tengah kalimat untuk menghubungkan dua kalimat yang saling bertentangan.",
+        descriptionEn: "Connects sentences with a contrastive 'but' or as a gentle intro.",
+        descriptionJa: "文をつなぐ「〜ですが」の形で逆接や前置きを表します。",
         example: {
           jp: "高いですが、買いたいです",
+          furigana: "たかいですが、おいしいです",
           ro: "Takai desu ga, kaitai desu",
           id: "Mahal, tetapi ingin beli.",
+          en: "It is expensive, but it's delicious.",
+          ja: "値段は高いですが、味は美味しいです。",
         },
       },
       {
         title: "Dipasangkan dengan Kata Tanya di Awal Subjek",
-        description:
-          "Dipakai wajib ketika bertanya tentang subjek yang belum diketahui.",
+        titleId: "Dipasangkan dengan Kata Tanya di Awal Subjek",
+        titleEn: "Paired with Interrogative Subject",
+        titleJa: "疑問詞主語との呼応",
+        description: "Dipakai wajib ketika bertanya tentang subjek yang belum diketahui.",
+        descriptionId: "Dipakai wajib ketika bertanya tentang subjek yang belum diketahui.",
+        descriptionEn: "Always marks the subject when the subject is a question word.",
+        descriptionJa: "疑問詞（だれ・どれ等）が主語になる際に必ず用います。",
         example: {
           jp: "誰が来ますか",
+          furigana: "だれが きましたか？",
           ro: "Dare ga kimasu ka",
           id: "Siapa yang akan datang?",
+          en: "Who came?",
+          ja: "誰が来ましたか？",
         },
-      },
+      }
     ],
   },
   {
@@ -497,34 +841,58 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menyebutkan Sebagian Benda ('Dan... dsb')",
-        description:
-          "Memberikan satu atau dua barang sebagai perwakilan dari sekumpulan barang lainnya.",
+        titleId: "Menyebutkan Sebagian Benda ('Dan... dsb')",
+        titleEn: "Non-Exhaustive Listing ('And so on')",
+        titleJa: "例示・不完全列挙（〜や〜など）",
+        description: "Memberikan satu atau dua barang sebagai perwakilan dari sekumpulan barang lainnya.",
+        descriptionId: "Memberikan satu atau dua barang sebagai perwakilan dari sekumpulan barang lainnya.",
+        descriptionEn: "Lists examples of nouns, implying there are others.",
+        descriptionJa: "代表的な例を挙げて、他にも同類があることを暗示します。",
         example: {
           jp: "パンや牛乳を買いました",
+          furigana: "りんごや バナナを かいました",
           ro: "Pan ya gyuunyuu o kaimashita",
           id: "Saya beli roti dan susu (cuma contoh barang).",
+          en: "I bought apples, bananas, and the like.",
+          ja: "りんごやバナナなどを買いました。",
         },
       },
       {
         title: "Dikombinasikan dengan Nado ('Dan lain-lain')",
-        description:
-          "Dipasangkan dengan kata など (nado) di akhir daftar biar jelas barang yang disebut hanya sebagian contoh.",
+        titleId: "Dikombinasikan dengan Nado ('Dan lain-lain')",
+        titleEn: "Combined with 'Nado'",
+        titleJa: "「など」との組み合わせ",
+        description: "Dipasangkan dengan kata など (nado) di akhir daftar biar jelas barang yang disebut hanya sebagian contoh.",
+        descriptionId: "Dipasangkan dengan kata など (nado) di akhir daftar biar jelas barang yang disebut hanya sebagian contoh.",
+        descriptionEn: "Frequently paired with 'nado' to mean 'such as A and B'.",
+        descriptionJa: "「〜や〜など」の定型句で用いて例示を明確にします。",
         example: {
           jp: "机の上に本やペンなどがあります",
+          furigana: "ほんや ノートなどを もっています",
           ro: "Tsukue no ue ni hon ya pen nado ga arimasu",
           id: "Di atas meja ada buku, pulpen, dan lain-lain.",
+          en: "I have books, notebooks, and similar items.",
+          ja: "本やノートなどを持っています。",
         },
       },
       {
         title: "Merangkai Lebih dari Dua Benda",
-        description:
-          "Bisa dipakai berulang kali di antara kata benda untuk ngasih contoh yang lumayan banyak dalam satu kalimat.",
+        titleId: "Merangkai Lebih dari Dua Benda",
+        titleEn: "Listing More Than Two Items",
+        titleJa: "複数の名詞の連続例示",
+        description: "Bisa dipakai berulang kali di antara kata benda untuk ngasih contoh yang lumayan banyak dalam satu kalimat.",
+        descriptionId: "Bisa dipakai berulang kali di antara kata benda untuk ngasih contoh yang lumayan banyak dalam satu kalimat.",
+        descriptionEn: "Can chain several representative items smoothly.",
+        descriptionJa: "複数の代表例をスムーズに並べて示します。",
         example: {
           jp: "動物園に猫や犬や鳥がいます",
+          furigana: "いぬや ねこや とりが います",
           ro: "Doubutsuen ni neko ya inu ya tori ga imasu",
           id: "Di kebun binatang ada kucing, anjing, burung, dan sebagainya.",
+          en: "There are dogs, cats, birds, and others.",
+          ja: "犬や猫や鳥などがいます。",
         },
-      },
+      }
     ],
   },
   {
@@ -533,44 +901,76 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Mencari Persetujuan ('Ya?' / 'Kan?')",
-        description:
-          "Dipakai saat berasumsi bahwa lawan bicara memiliki pendapat atau perasaan yang sama tentang suatu hal.",
+        titleId: "Mencari Persetujuan ('Ya?' / 'Kan?')",
+        titleEn: "Seeking Agreement ('Isn't it?')",
+        titleJa: "同意の要求（〜ですね）",
+        description: "Dipakai saat berasumsi bahwa lawan bicara memiliki pendapat atau perasaan yang sama tentang suatu hal.",
+        descriptionId: "Dipakai saat berasumsi bahwa lawan bicara memiliki pendapat atau perasaan yang sama tentang suatu hal.",
+        descriptionEn: "Asks the listener to agree with your impression.",
+        descriptionJa: "相手に共感や同意を求める文末表現です。",
         example: {
           jp: "おいしいですね",
+          furigana: "きょうは いい てんきですね",
           ro: "Oishii desu ne",
           id: "Enak ya?",
+          en: "Nice weather today, isn't it?",
+          ja: "今日は良い天気ですね。",
         },
       },
       {
         title: "Memastikan atau Mengonfirmasi Informasi ('Benar kan?')",
-        description:
-          "Mengecek ulang sebuah fakta atau jadwal supaya tidak terjadi salah paham.",
+        titleId: "Memastikan atau Mengonfirmasi Informasi ('Benar kan?')",
+        titleEn: "Confirming Information ('Right?')",
+        titleJa: "確認・念押し",
+        description: "Mengecek ulang sebuah fakta atau jadwal supaya tidak terjadi salah paham.",
+        descriptionId: "Mengecek ulang sebuah fakta atau jadwal supaya tidak terjadi salah paham.",
+        descriptionEn: "Verifies facts gently with the listener.",
+        descriptionJa: "相手に事実を優しく確認する際に用います。",
         example: {
           jp: "会議は3時からですね",
+          furigana: "あしたは やすみですね？",
           ro: "Kaigi wa san-ji kara desu ne",
           id: "Rapatnya mulai jam 3, kan?",
+          en: "Tomorrow is a holiday, right?",
+          ja: "明日はお休みですよね？",
         },
       },
       {
         title: "Memperhalus Pernyataan atau Ajakan",
-        description:
-          "Melembutkan nada bicara biar kedengarannya lebih ramah, akrab, dan tidak kaku.",
+        titleId: "Memperhalus Pernyataan atau Ajakan",
+        titleEn: "Softening a Statement or Invitation",
+        titleJa: "語調の緩和・呼びかけ",
+        description: "Melembutkan nada bicara biar kedengarannya lebih ramah, akrab, dan tidak kaku.",
+        descriptionId: "Melembutkan nada bicara biar kedengarannya lebih ramah, akrab, dan tidak kaku.",
+        descriptionEn: "Makes a statement or invitation feel warm and friendly.",
+        descriptionJa: "語調を柔らかくして親しみやすさを添えます。",
         example: {
           jp: "じゃあ、また明日ね",
+          furigana: "いっしょに いこうね",
           ro: "Jaa, mata ashita ne",
           id: "Sampai jumpa besok ya.",
+          en: "Let's go together, okay?",
+          ja: "一緒に行こうね。",
         },
       },
       {
         title: "Menunjukkan Empati atau Simpati",
-        description:
-          "Dipakai saat merespons curhatan atau situasi orang lain untuk menunjukkan bahwa Bos mengerti perasaan mereka.",
+        titleId: "Menunjukkan Empati atau Simpati",
+        titleEn: "Showing Empathy or Sympathy",
+        titleJa: "共感・同情",
+        description: "Dipakai saat merespons curhatan atau situasi orang lain untuk menunjukkan bahwa Bos mengerti perasaan mereka.",
+        descriptionId: "Dipakai saat merespons curhatan atau situasi orang lain untuk menunjukkan bahwa Bos mengerti perasaan mereka.",
+        descriptionEn: "Shares in the feelings or hardship of the listener.",
+        descriptionJa: "相手の気持ちに寄り添い、共感を示します。",
         example: {
           jp: "それは大変ですね",
+          furigana: "たいへんでしたね",
           ro: "Sore wa taihen desu ne",
           id: "Wah, itu pasti berat/merepotkan ya.",
+          en: "That must have been tough for you.",
+          ja: "大変でしたね、お疲れ様です。",
         },
-      },
+      }
     ],
   },
   {
@@ -579,64 +979,104 @@ export const japaneseParticles: ParticleData[] = [
     functions: [
       {
         title: "Menyampaikan Informasi Baru ('Lho!')",
-        description:
-          "Dipakai saat ngasih tau sesuatu yang Bos rasa lawan bicara belum mengetahuinya.",
+        titleId: "Menyampaikan Informasi Baru ('Lho!')",
+        titleEn: "Providing New Information ('You know')",
+        titleJa: "新情報の伝達・教示",
+        description: "Dipakai saat ngasih tau sesuatu yang Bos rasa lawan bicara belum mengetahuinya.",
+        descriptionId: "Dipakai saat ngasih tau sesuatu yang Bos rasa lawan bicara belum mengetahuinya.",
+        descriptionEn: "Informs the listener of something they might not know.",
+        descriptionJa: "相手がまだ知らない情報を知らせる際に使います。",
         example: {
           jp: "暑いですよ",
+          furigana: "この りょうりは おいしいですよ",
           ro: "Atsui desu yo",
           id: "Panas lho!",
+          en: "This dish is delicious, you know!",
+          ja: "この料理はとても美味しいですよ。",
         },
       },
       {
         title: "Memberikan Peringatan atau Teguran",
-        description:
-          "Ngingetin lawan bicara biar mereka lebih waspada atau memperhatikan sesuatu di sekitarnya.",
+        titleId: "Memberikan Peringatan atau Teguran",
+        titleEn: "Giving a Friendly Warning or Reminder",
+        titleJa: "注意喚起・警告",
+        description: "Ngingetin lawan bicara biar mereka lebih waspada atau memperhatikan sesuatu di sekitarnya.",
+        descriptionId: "Ngingetin lawan bicara biar mereka lebih waspada atau memperhatikan sesuatu di sekitarnya.",
+        descriptionEn: "Alerts the listener to take caution.",
+        descriptionJa: "相手に気をつけるよう注意を促します。",
         example: {
           jp: "危ないですよ",
+          furigana: "あぶないよ！",
           ro: "Abunai desu yo",
           id: "Bahaya lho!",
+          en: "Watch out! / It's dangerous!",
+          ja: "危ないよ！気をつけて！",
         },
       },
       {
         title: "Meyakinkan Pendapat atau Meluruskan Fakta",
-        description:
-          "Meyakinkan seseorang atas opini Bos, atau memperbaiki pemahaman mereka yang keliru tanpa terkesan marah.",
+        titleId: "Meyakinkan Pendapat atau Meluruskan Fakta",
+        titleEn: "Asserting Opinion or Stating Fact",
+        titleJa: "意見の主張・確信",
+        description: "Meyakinkan seseorang atas opini Bos, atau memperbaiki pemahaman mereka yang keliru tanpa terkesan marah.",
+        descriptionId: "Meyakinkan seseorang atas opini Bos, atau memperbaiki pemahaman mereka yang keliru tanpa terkesan marah.",
+        descriptionEn: "Expresses strong confidence in what you are saying.",
+        descriptionJa: "自分の意見や確信を相手にはっきりと伝えます。",
         example: {
           jp: "その映画は面白くないですよ",
+          furigana: "わたしは まちがっていませんよ",
           ro: "Sono eiga wa omoshirokunai desu yo",
           id: "Film itu nggak seru lho.",
+          en: "I am not mistaken, I tell you.",
+          ja: "私は間違っていませんよ。",
         },
       },
       {
         title: "Dikombinasikan dengan Partikel 'Ne' (よね)",
-        description:
-          "Dipakai buat mencari persetujuan tentang suatu fakta yang Bos yakin lawan bicara juga sudah tahu.",
+        titleId: "Dikombinasikan dengan Partikel 'Ne' (よね)",
+        titleEn: "Combined with 'Ne' ('Yo ne')",
+        titleJa: "「よね」の形（確信＋同意確認）",
+        description: "Dipakai buat mencari persetujuan tentang suatu fakta yang Bos yakin lawan bicara juga sudah tahu.",
+        descriptionId: "Dipakai buat mencari persetujuan tentang suatu fakta yang Bos yakin lawan bicara juga sudah tahu.",
+        descriptionEn: "States your conviction while seeking the listener's agreement.",
+        descriptionJa: "自分の考えを述べつつ相手の同意も求めます。",
         example: {
           jp: "明日は休みですよね",
+          furigana: "あした、テストがあるよね？",
           ro: "Ashita wa yasumi desu yo ne",
           id: "Besok libur kan ya?",
+          en: "There is a test tomorrow, right?",
+          ja: "明日、テストがあるよね？",
         },
-      },
+      }
     ],
   },
 ];
 
 export const extraParticles: ParticleData[] = [
-  // Partikel Dasar & Batasan
   {
     kana: "から",
     romaji: "kara",
     functions: [
       {
-        title: "Menunjukkan aksi \"Setelah\"",
-        description: "Menunjukkan aksi \"Setelah\" (pola ~te kara).",
+        title: "Menunjukkan aksi \\\"Setelah\\\"",
+        titleId: "Menunjukkan aksi \\\"Setelah\\\"",
+        titleEn: "Starting Point in Time or Space ('From')",
+        titleJa: "起点（時・場所）",
+        description: "Menunjukkan aksi \\\"Setelah\\\" (pola ~te kara).",
+        descriptionId: "Menunjukkan aksi \\\"Setelah\\\" (pola ~te kara).",
+        descriptionEn: "Indicates the starting point in time or location of an action.",
+        descriptionJa: "動作が始まる時間や場所の起点を示します。",
         example: {
           jp: "ご飯を食べてから、寝る。",
+          furigana: "あさくさから あるいて きました。",
           ro: "Gohan o tabete kara, neru",
-          id: "Tidur setelah makan nasi."
-        }
+          id: "Tidur setelah makan nasi.",
+          en: "I walked here all the way from Asakusa.",
+          ja: "浅草から歩いて来ました。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "まで",
@@ -644,44 +1084,71 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Menunjukkan tingkat yang ekstrem",
-        description: "Menunjukkan tingkat yang ekstrem (\"Bahkan sampai...\").",
+        titleId: "Menunjukkan tingkat yang ekstrem",
+        titleEn: "Extremity / 'Even someone'",
+        titleJa: "極端な例示（〜までも）",
+        description: "Menunjukkan tingkat yang ekstrem (\\\"Bahkan sampai...\\\").",
+        descriptionId: "Menunjukkan tingkat yang ekstrem (\\\"Bahkan sampai...\\\").",
+        descriptionEn: "Indicates an unexpected extreme condition or extent.",
+        descriptionJa: "思いがけない極端な例を挙げて強調します。",
         example: {
           jp: "君まで僕を疑うの？",
+          furigana: "きみまで ぼくを うたがうの？",
           ro: "Kimi made boku o utagau no?",
-          id: "Bahkan kamu mencurigaiku?"
-        }
+          id: "Bahkan kamu mencurigaiku?",
+          en: "Even you suspect me?",
+          ja: "君まで僕を疑うの？",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "だけ",
     romaji: "dake",
     functions: [
       {
-        title: "Menekankan \"Semaksimal mungkin\"",
-        description: "Menekankan \"Semaksimal mungkin / Sebisa mungkin\".",
+        title: "Menekankan \\\"Semaksimal mungkin\\\"",
+        titleId: "Menekankan \\\"Semaksimal mungkin\\\"",
+        titleEn: "As Much as Possible",
+        titleJa: "限度の強調（できるだけ）",
+        description: "Menekankan \\\"Semaksimal mungkin / Sebisa mungkin\\\".",
+        descriptionId: "Menekankan \\\"Semaksimal mungkin / Sebisa mungkin\\\".",
+        descriptionEn: "Expresses maximum capacity or effort ('as ... as possible').",
+        descriptionJa: "可能な限りの限界まで行うことを強調します。",
         example: {
           jp: "できるだけ早く来て。",
+          furigana: "できるだけ はやく きて。",
           ro: "Dekiru dake hayaku kite",
-          id: "Datanglah secepat mungkin."
-        }
+          id: "Datanglah secepat mungkin.",
+          en: "Come as quickly as possible.",
+          ja: "できるだけ早く来てください。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "しか",
     romaji: "shika",
     functions: [
       {
-        title: "Menunjukkan paksaan \"Tidak ada pilihan lain\"",
-        description: "Menunjukkan paksaan \"Tidak ada pilihan lain\" (pola ~ru shika nai).",
+        title: "Menunjukkan paksaan \\\"Tidak ada pilihan lain\\\"",
+        titleId: "Menunjukkan paksaan \\\"Tidak ada pilihan lain\\\"",
+        titleEn: "No Choice But to ('Only')",
+        titleJa: "不可避・限定（〜しかない）",
+        description: "Menunjukkan paksaan \\\"Tidak ada pilihan lain\\\" (pola ~ru shika nai).",
+        descriptionId: "Menunjukkan paksaan \\\"Tidak ada pilihan lain\\\" (pola ~ru shika nai).",
+        descriptionEn: "Paired with negative verbs to express that no alternative remains.",
+        descriptionJa: "否定文と呼応して、それ以外の選択肢がないことを表します。",
         example: {
           jp: "やるしかない！",
+          furigana: "やるしか ない！",
           ro: "Yaru shika nai!",
-          id: "Hanya bisa / Harus melakukannya!"
-        }
+          id: "Hanya bisa / Harus melakukannya!",
+          en: "There is no other way, we must do it!",
+          ja: "やるしかない！全力を尽くそう！",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "のみ",
@@ -689,31 +1156,47 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Syarat mutlak dan kaku",
+        titleId: "Syarat mutlak dan kaku",
+        titleEn: "Strict Exclusive Condition ('Only / Exclusively')",
+        titleJa: "厳格な限定（公式・硬い表現）",
         description: "Syarat mutlak dan kaku di pengumuman resmi.",
+        descriptionId: "Syarat mutlak dan kaku di pengumuman resmi.",
+        descriptionEn: "Formal and strict restriction to designated members or criteria.",
+        descriptionJa: "公的な案内や文章で、厳格に対象を限定します。",
         example: {
           jp: "経験者のみ歓迎。",
+          furigana: "けいけんしゃのみ かんげい。",
           ro: "Keikensha nomi kangei",
-          id: "Hanya menerima pelamar berpengalaman."
-        }
+          id: "Hanya menerima pelamar berpengalaman.",
+          en: "Experienced applicants only.",
+          ja: "経験者のみ歓迎いたします。",
+        },
       }
-    ]
+    ],
   },
-
-  // Partikel Perbandingan & Tingkat
   {
     kana: "より",
     romaji: "yori",
     functions: [
       {
-        title: "Menunjukkan \"Dari\"",
-        description: "Menunjukkan \"Dari\" (titik awal waktu/tempat) versi sangat formal.",
+        title: "Menunjukkan \\\"Dari\\\"",
+        titleId: "Menunjukkan \\\"Dari\\\"",
+        titleEn: "Formal Starting Point ('From / Starting at')",
+        titleJa: "開始点（改まった表現）",
+        description: "Menunjukkan \\\"Dari\\\" (titik awal waktu/tempat) versi sangat formal.",
+        descriptionId: "Menunjukkan \\\"Dari\\\" (titik awal waktu/tempat) versi sangat formal.",
+        descriptionEn: "Formal equivalent of 'kara' for beginning times or places.",
+        descriptionJa: "「から」の改まった表現として、開始時刻や起点を表します。",
         example: {
           jp: "午後3時より始めます。",
+          furigana: "ごごさんじより はじめます。",
           ro: "Gogo san-ji yori hajimemasu",
-          id: "Dimulai dari jam 3 sore."
-        }
+          id: "Dimulai dari jam 3 sore.",
+          en: "We will start from 3:00 PM.",
+          ja: "午後3時より開始いたします。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "ぐらい",
@@ -721,14 +1204,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Menunjukkan standar minimum",
-        description: "Menunjukkan standar minimum atau \"Setidaknya\".",
+        titleId: "Menunjukkan standar minimum",
+        titleEn: "Minimum Standard / At Least",
+        titleJa: "最低限の基準・軽視",
+        description: "Menunjukkan standar minimum atau \\\"Setidaknya\\\".",
+        descriptionId: "Menunjukkan standar minimum atau \\\"Setidaknya\\\".",
+        descriptionEn: "Indicates a bare minimum requirement or trivial matter.",
+        descriptionJa: "それくらいは当たり前という最低限の事柄を示します。",
         example: {
           jp: "挨拶ぐらいしてよ。",
+          furigana: "あいさつぐらい してよ。",
           ro: "Aisatsu gurai shite yo",
-          id: "Setidaknya menyapalah kek."
-        }
+          id: "Setidaknya menyapalah kek.",
+          en: "At least greet people, come on.",
+          ja: "挨拶くらいきちんとしてよ。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "など",
@@ -736,76 +1228,119 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Merendahkan diri sendiri",
+        titleId: "Merendahkan diri sendiri",
+        titleEn: "Humble Self-Deprecation ('The likes of me')",
+        titleJa: "謙遜・卑下",
         description: "Merendahkan diri sendiri saat ngobrol santai.",
+        descriptionId: "Merendahkan diri sendiri saat ngobrol santai.",
+        descriptionEn: "Modestly belittles oneself or downplays one's capability.",
+        descriptionJa: "自分自身をへりくだって低く表現します。",
         example: {
           jp: "私など、まだまだです。",
+          furigana: "わたしなど、まだまだです。",
           ro: "Watashi nado, mada mada desu",
-          id: "Orang sepertiku ini masih belum ada apa-apanya."
-        }
+          id: "Orang sepertiku ini masih belum ada apa-apanya.",
+          en: "Someone like me still has a long way to go.",
+          ja: "私などは、まだまだ未熟です。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "ばかり",
     romaji: "bakari",
     functions: [
       {
-        title: "Menunjukkan aksi \"Baru saja selesai\"",
-        description: "Menunjukkan aksi \"Baru saja selesai\" (pola ~ta bakari).",
+        title: "Menunjukkan aksi \\\"Baru saja selesai\\\"",
+        titleId: "Menunjukkan aksi \\\"Baru saja selesai\\\"",
+        titleEn: "Just Finished Doing ('Just now')",
+        titleJa: "直後の完了（〜したばかり）",
+        description: "Menunjukkan aksi \\\"Baru saja selesai\\\" (pola ~ta bakari).",
+        descriptionId: "Menunjukkan aksi \\\"Baru saja selesai\\\" (pola ~ta bakari).",
+        descriptionEn: "Indicates an action was completed very recently.",
+        descriptionJa: "動作や出来事が完了した直後であることを示します。",
         example: {
           jp: "今、着いたばかりです。",
+          furigana: "いま、ついたばかりです。",
           ro: "Ima, tsuita bakari desu",
-          id: "Saya baru saja tiba."
-        }
+          id: "Saya baru saja tiba.",
+          en: "I have just arrived right now.",
+          ja: "今、到着したばかりです。",
+        },
       }
-    ]
+    ],
   },
-
-  // Partikel Penegas & Kondisi
   {
     kana: "でも",
     romaji: "demo",
     functions: [
       {
-        title: "Bermakna \"Meskipun / Walaupun\"",
-        description: "Bermakna \"Meskipun / Walaupun\" (digabung kata benda/sifat).",
+        title: "Bermakna \\\"Meskipun / Walaupun\\\"",
+        titleId: "Bermakna \\\"Meskipun / Walaupun\\\"",
+        titleEn: "Even If / Even in Case of",
+        titleJa: "逆接の仮定・譲歩（〜であっても）",
+        description: "Bermakna \\\"Meskipun / Walaupun\\\" (digabung kata benda/sifat).",
+        descriptionId: "Bermakna \\\"Meskipun / Walaupun\\\" (digabung kata benda/sifat).",
+        descriptionEn: "Shows that an action proceeds regardless of adverse conditions.",
+        descriptionJa: "条件に関わらず前向きに行為を行うことを表します。",
         example: {
           jp: "雨でも行く。",
+          furigana: "あめでも いく。",
           ro: "Ame demo iku",
-          id: "Meskipun hujan, tetap pergi."
-        }
+          id: "Meskipun hujan, tetap pergi.",
+          en: "Even if it rains, I will go.",
+          ja: "雨が降っても行きます。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "ずつ",
     romaji: "zutsu",
     functions: [
       {
-        title: "Melakukan sesuatu \"Sedikit demi sedikit\"",
-        description: "Melakukan sesuatu \"Sedikit demi sedikit\".",
+        title: "Melakukan sesuatu \\\"Sedikit demi sedikit\\\"",
+        titleId: "Melakukan sesuatu \\\"Sedikit demi sedikit\\\"",
+        titleEn: "Little by Little / Equal Portions",
+        titleJa: "等量配分・徐々の進行",
+        description: "Melakukan sesuatu \\\"Sedikit demi sedikit\\\".",
+        descriptionId: "Melakukan sesuatu \\\"Sedikit demi sedikit\\\".",
+        descriptionEn: "Indicates steady progression in equal, small amounts.",
+        descriptionJa: "同量ずつ、あるいは少しずつ進める様子を表します。",
         example: {
           jp: "少しずつ進もう。",
+          furigana: "すこしずつ すすもう。",
           ro: "Sukoshi zutsu susumou",
-          id: "Mari maju sedikit demi sedikit."
-        }
+          id: "Mari maju sedikit demi sedikit.",
+          en: "Let's move forward little by little.",
+          ja: "一歩一歩少しずつ進みましょう。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "ほど",
     romaji: "hodo",
     functions: [
       {
-        title: "Bermakna \"Semakin... semakin...\"",
-        description: "Bermakna \"Semakin... semakin...\" (pola ~ba ~hodo).",
+        title: "Bermakna \\\"Semakin... semakin...\\\"",
+        titleId: "Bermakna \\\"Semakin... semakin...\\\"",
+        titleEn: "The More... The More...",
+        titleJa: "比例関係（〜ば〜ほど）",
+        description: "Bermakna \\\"Semakin... semakin...\\\" (pola ~ba ~hodo).",
+        descriptionId: "Bermakna \\\"Semakin... semakin...\\\" (pola ~ba ~hodo).",
+        descriptionEn: "Shows a proportional increase between two variables.",
+        descriptionJa: "一方の度合いが進むにつれて他方も進むことを表します。",
         example: {
           jp: "読めば読むほど面白い。",
+          furigana: "よめば よむほど おもしろい。",
           ro: "Yomeba yomu hodo omoshiroi",
-          id: "Semakin dibaca, semakin menarik."
-        }
+          id: "Semakin dibaca, semakin menarik.",
+          en: "The more you read it, the more interesting it gets.",
+          ja: "読めば読むほど面白くなります。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "とか",
@@ -813,14 +1348,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Menyampaikan rumor",
-        description: "Menyampaikan rumor atau \"Kudengar / Kabarnya\".",
+        titleId: "Menyampaikan rumor",
+        titleEn: "Conveying Rumors ('I heard that...')",
+        titleJa: "不確かな伝聞・噂",
+        description: "Menyampaikan rumor atau \\\"Kudengar / Kabarnya\\\".",
+        descriptionId: "Menyampaikan rumor atau \\\"Kudengar / Kabarnya\\\".",
+        descriptionEn: "Expresses an uncertain rumor or secondhand news.",
+        descriptionJa: "真偽が定かではない噂や伝聞をやわらかく伝えます。",
         example: {
           jp: "明日休みだとか。",
+          furigana: "あした やすみだとか。",
           ro: "Ashita yasumi da toka",
-          id: "Kudengar besok libur."
-        }
+          id: "Kudengar besok libur.",
+          en: "I heard that tomorrow might be a day off.",
+          ja: "明日は休みだという噂を聞きました。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "すら",
@@ -828,61 +1372,95 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Menekankan ketidakmampuan",
+        titleId: "Menekankan ketidakmampuan",
+        titleEn: "Emphasizing Inability ('Not even')",
+        titleJa: "極端な例による強調（〜さえ）",
         description: "Menekankan ketidakmampuan yang sangat parah.",
+        descriptionId: "Menekankan ketidakmampuan yang sangat parah.",
+        descriptionEn: "Stresses inability to perform even the most basic action.",
+        descriptionJa: "基本的なことすらできないと極端さを強調します。",
         example: {
           jp: "立つことすらできない。",
+          furigana: "たつことすら できない。",
           ro: "Tatsu koto sura dekinai",
-          id: "Berdiri pun tidak bisa."
-        }
+          id: "Berdiri pun tidak bisa.",
+          en: "I cannot even stand up.",
+          ja: "立つことすらできません。",
+        },
       }
-    ]
+    ],
   },
-
-  // Partikel Emosi & Perasaan
   {
     kana: "かな",
     romaji: "kana",
     functions: [
       {
         title: "Berharap sesuatu segera terjadi",
+        titleId: "Berharap sesuatu segera terjadi",
+        titleEn: "Hoping for Something Soon ('I wonder if...')",
+        titleJa: "願望・期待の独り言",
         description: "Berharap sesuatu segera terjadi (pola negatif ~nai kana).",
+        descriptionId: "Berharap sesuatu segera terjadi (pola negatif ~nai kana).",
+        descriptionEn: "Muttering a wish that something happens quickly.",
+        descriptionJa: "早くその事態になってほしいと願う独り言です。",
         example: {
           jp: "早く終わらないかな。",
+          furigana: "はやく おわらないかな。",
           ro: "Hayaku owaranai kana",
-          id: "Kuharap cepat selesai ya."
-        }
+          id: "Kuharap cepat selesai ya.",
+          en: "I wonder if it will finish soon. / Hope it ends quickly.",
+          ja: "早く終わってくれないかな。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "なんか",
     romaji: "nanka",
     functions: [
       {
-        title: "Menunjukkan perasaan \"Entah kenapa\"",
-        description: "Menunjukkan perasaan \"Entah kenapa\" tanpa alasan jelas.",
+        title: "Menunjukkan perasaan \\\"Entah kenapa\\\"",
+        titleId: "Menunjukkan perasaan \\\"Entah kenapa\\\"",
+        titleEn: "Vague Feeling ('Somehow / For some reason')",
+        titleJa: "漠然とした理由・感情",
+        description: "Menunjukkan perasaan \\\"Entah kenapa\\\" tanpa alasan jelas.",
+        descriptionId: "Menunjukkan perasaan \\\"Entah kenapa\\\" tanpa alasan jelas.",
+        descriptionEn: "Expresses an inexplicable feeling or sensation.",
+        descriptionJa: "はっきりとした理由はないが、なんとなくそう感じる時に使います。",
         example: {
           jp: "なんか今日は疲れた。",
+          furigana: "なんか きょうは つかれた。",
           ro: "Nanka kyou wa tsukareta",
-          id: "Entah kenapa hari ini rasanya capek."
-        }
+          id: "Entah kenapa hari ini rasanya capek.",
+          en: "Somehow, I feel tired today.",
+          ja: "なんだか今日は疲れてしまいました。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "さえ",
     romaji: "sae",
     functions: [
       {
-        title: "Menunjukkan syarat \"Asalkan\"",
-        description: "Menunjukkan syarat \"Asalkan\".",
+        title: "Menunjukkan syarat \\\"Asalkan\\\"",
+        titleId: "Menunjukkan syarat \\\"Asalkan\\\"",
+        titleEn: "Sole Condition ('As long as')",
+        titleJa: "唯一の必要条件（〜さえ〜ば）",
+        description: "Menunjukkan syarat \\\"Asalkan\\\".",
+        descriptionId: "Menunjukkan syarat \\\"Asalkan\\\".",
+        descriptionEn: "Indicates that one minimal condition satisfies everything.",
+        descriptionJa: "それさえ満たせば十分であるという条件を示します。",
         example: {
           jp: "君さえいればいい。",
+          furigana: "きみさえ いれば いい。",
           ro: "Kimi sae ireba ii",
-          id: "Asalkan ada kamu, itu sudah cukup."
-        }
+          id: "Asalkan ada kamu, itu sudah cukup.",
+          en: "As long as you are here, that is all I need.",
+          ja: "あなたさえいてくれれば十分です。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "こそ",
@@ -890,14 +1468,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Membalas ucapan terima kasih",
-        description: "Membalas ucapan terima kasih (\"Justru saya / Sama-sama\").",
+        titleId: "Membalas ucapan terima kasih",
+        titleEn: "Returning Gratitude / Reciprocal Emphasis",
+        titleJa: "強調による応対（こちらこそ）",
+        description: "Membalas ucapan terima kasih (\\\"Justru saya / Sama-sama\\\").",
+        descriptionId: "Membalas ucapan terima kasih (\\\"Justru saya / Sama-sama\\\").",
+        descriptionEn: "Used to return gratitude or apologies with emphasis.",
+        descriptionJa: "相手の感謝や挨拶に対して、こちらから強調して返答します。",
         example: {
           jp: "こちらこそ、ありがとう。",
+          furigana: "こちらこそ、ありがとう。",
           ro: "Kochira koso, arigatou",
-          id: "Justru saya yang berterima kasih."
-        }
+          id: "Justru saya yang berterima kasih.",
+          en: "It is I who should be thanking you.",
+          ja: "こちらこそ、本当にありがとうございます。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "なんて",
@@ -905,14 +1492,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Menekankan keterkejutan",
+        titleId: "Menekankan keterkejutan",
+        titleEn: "Emphasizing Surprise or Exclamation",
+        titleJa: "驚き・強調（〜なんて）",
         description: "Menekankan keterkejutan yang sangat kuat.",
+        descriptionId: "Menekankan keterkejutan yang sangat kuat.",
+        descriptionEn: "Highlights amazement or unexpected intensity.",
+        descriptionJa: "予想を大きく超えた事態に驚きや強調を表します。",
         example: {
           jp: "綺麗なんてものじゃない。",
+          furigana: "きれいなんて ものじゃない。",
           ro: "Kirei nante mono janai",
-          id: "Ini sih bukan sekadar cantik lagi."
-        }
+          id: "Ini sih bukan sekadar cantik lagi.",
+          en: "It is far beyond merely pretty.",
+          ja: "綺麗なレベルを遥かに超えています。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "かしら",
@@ -920,46 +1516,71 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Meminta tolong dengan sangat halus",
+        titleId: "Meminta tolong dengan sangat halus",
+        titleEn: "Gentle Polite Request (Feminine / Soft)",
+        titleJa: "柔らかな依頼・疑問",
         description: "Meminta tolong dengan sangat halus.",
+        descriptionId: "Meminta tolong dengan sangat halus.",
+        descriptionEn: "A very soft, polite way to ask for assistance.",
+        descriptionJa: "女性語的で非常に柔らかく相手にお願いする表現です。",
         example: {
           jp: "手伝ってくれないかしら？",
+          furigana: "てつだって くれないかしら？",
           ro: "Tetsudatte kurenai kashira?",
-          id: "Bisa tolong bantu aku nggak ya?"
-        }
+          id: "Bisa tolong bantu aku nggak ya?",
+          en: "Could you perhaps help me out?",
+          ja: "少し手伝っていただけないでしょうか？",
+        },
       }
-    ]
+    ],
   },
-
-  // Partikel Tindakan & Lainnya
   {
     kana: "ながら",
     romaji: "nagara",
     functions: [
       {
         title: "Bermakna kontras",
-        description: "Bermakna kontras \"Padahal / Meskipun\".",
+        titleId: "Bermakna kontras",
+        titleEn: "Contrast / Discrepancy ('Even though')",
+        titleJa: "矛盾・逆接（〜でありながら）",
+        description: "Bermakna kontras \\\"Padahal / Meskipun\\\".",
+        descriptionId: "Bermakna kontras \\\"Padahal / Meskipun\\\".",
+        descriptionEn: "Shows that reality contradicts what is known or expected.",
+        descriptionJa: "分かっている状態に反した行動をとることを示します。",
         example: {
           jp: "知っていながら黙っていた。",
+          furigana: "しっていながら だまっていた。",
           ro: "Shitte inagara damatte ita",
-          id: "Padahal tahu, tapi dia diam saja."
-        }
+          id: "Padahal tahu, tapi dia diam saja.",
+          en: "Even though he knew, he kept quiet.",
+          ja: "真相を知っていながら黙っていました。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "きり",
     romaji: "kiri",
     functions: [
       {
-        title: "Menunjukkan \"Sejak itu tidak terjadi lagi\"",
-        description: "Menunjukkan \"Sejak itu tidak terjadi lagi\" (pola ~ta kiri).",
+        title: "Menunjukkan \\\"Sejak itu tidak terjadi lagi\\\"",
+        titleId: "Menunjukkan \\\"Sejak itu tidak terjadi lagi\\\"",
+        titleEn: "Since That Event ('Ever since')",
+        titleJa: "その時を最後に（〜きり）",
+        description: "Menunjukkan \\\"Sejak itu tidak terjadi lagi\\\" (pola ~ta kiri).",
+        descriptionId: "Menunjukkan \\\"Sejak itu tidak terjadi lagi\\\" (pola ~ta kiri).",
+        descriptionEn: "Indicates that since that single occasion, nothing has happened.",
+        descriptionJa: "それを最後に、その後一度も起きていない状態を表します。",
         example: {
           jp: "別れたきりだ。",
+          furigana: "わかれたきりだ。",
           ro: "Wakareta kiri da",
-          id: "Sejak berpisah, tidak pernah ketemu lagi."
-        }
+          id: "Sejak berpisah, tidak pernah ketemu lagi.",
+          en: "We haven't met ever since we parted ways.",
+          ja: "あの時別れたきり、一度も会っていません。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "だって",
@@ -967,14 +1588,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Mengutip ucapan orang lain",
-        description: "Mengutip ucapan orang lain (\"Katanya\").",
+        titleId: "Mengutip ucapan orang lain",
+        titleEn: "Quoting Hearsay ('I heard that...')",
+        titleJa: "伝聞の引用（〜なんだって）",
+        description: "Mengutip ucapan orang lain (\\\"Katanya\\\").",
+        descriptionId: "Mengutip ucapan orang lain (\\\"Katanya\\\").",
+        descriptionEn: "Casually quotes what someone else said.",
+        descriptionJa: "他人の発言や噂をくだけた調子で引用します。",
         example: {
           jp: "彼も行くんだって。",
+          furigana: "かれも いくんだって。",
           ro: "Kare mo ikun datte",
-          id: "Katanya dia juga bakal pergi."
-        }
+          id: "Katanya dia juga bakal pergi.",
+          en: "They said he is going too.",
+          ja: "彼も行くそうですよ。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "やら",
@@ -982,14 +1612,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Menunjukkan ketidakpastian",
-        description: "Menunjukkan ketidakpastian (\"Entah\").",
+        titleId: "Menunjukkan ketidakpastian",
+        titleEn: "Uncertainty ('Heaven knows where')",
+        titleJa: "不確かさ・疑問（〜のやら）",
+        description: "Menunjukkan ketidakpastian (\\\"Entah\\\").",
+        descriptionId: "Menunjukkan ketidakpastian (\\\"Entah\\\").",
+        descriptionEn: "Expresses perplexity or lack of clear knowledge.",
+        descriptionJa: "どこに行ったのか皆目見当がつかない困惑を表します。",
         example: {
           jp: "どこへ行ったのやら。",
+          furigana: "どこへ いったのやら。",
           ro: "Doko e itta no yara",
-          id: "Entah pergi ke mana dia."
-        }
+          id: "Entah pergi ke mana dia.",
+          en: "Heaven knows where he went.",
+          ja: "一体どこに行ってしまったのでしょうか。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "つつ",
@@ -997,14 +1636,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Melakukan sesuatu padahal menyadari itu salah",
+        titleId: "Melakukan sesuatu padahal menyadari itu salah",
+        titleEn: "Doing Despite Knowing It's Wrong",
+        titleJa: "反省を伴う逆接（〜と知りつつ）",
         description: "Melakukan sesuatu padahal menyadari itu salah.",
+        descriptionId: "Melakukan sesuatu padahal menyadari itu salah.",
+        descriptionEn: "Acknowledges badness or guilt while committing the action anyway.",
+        descriptionJa: "悪いと内心自覚しながらも、ついその行動をしてしまう様を示します。",
         example: {
           jp: "悪いと思いつつ、食べてしまった。",
+          furigana: "わるいと おもいつつ、たべてしまった。",
           ro: "Warui to omoitsutsu, tabete shimatta",
-          id: "Padahal sadar ini buruk, tapi dimakan juga."
-        }
+          id: "Padahal sadar ini buruk, tapi dimakan juga.",
+          en: "Even while knowing it was bad, I ended up eating it.",
+          ja: "良くないことと思いつつ、つい食べてしまいました。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "とも",
@@ -1012,14 +1660,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Menyetujui sesuatu dengan sangat semangat",
-        description: "Menyetujui sesuatu dengan sangat semangat (\"Tentu saja!\").",
+        titleId: "Menyetujui sesuatu dengan sangat semangat",
+        titleEn: "Enthusiastic Agreement ('Of course!')",
+        titleJa: "強い肯定・同意（いいとも）",
+        description: "Menyetujui sesuatu dengan sangat semangat (\\\"Tentu saja!\\\").",
+        descriptionId: "Menyetujui sesuatu dengan sangat semangat (\\\"Tentu saja!\\\").",
+        descriptionEn: "Expresses wholehearted, enthusiastic agreement.",
+        descriptionJa: "喜んで、もちろん良いと力強く肯定・賛同します。",
         example: {
           jp: "いいとも！",
+          furigana: "いいとも！",
           ro: "Ii tomo!",
-          id: "Tentu saja boleh!"
-        }
+          id: "Tentu saja boleh!",
+          en: "Of course! / Absolutely!",
+          ja: "もちろん良いですよ！大歓迎です！",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "っけ",
@@ -1027,14 +1684,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Memastikan sesuatu",
+        titleId: "Memastikan sesuatu",
+        titleEn: "Confirming Recollection ('Was it...?')",
+        titleJa: "記憶の想起・確認",
         description: "Memastikan sesuatu seolah mengajak mengingat bareng.",
+        descriptionId: "Memastikan sesuatu seolah mengajak mengingat bareng.",
+        descriptionEn: "Checks a forgotten fact that one ought to remember.",
+        descriptionJa: "忘れていた記憶を思い出そうとして相手に確認します。",
         example: {
           jp: "明日テストだっけ？",
+          furigana: "あした テストだっけ？",
           ro: "Ashita tesuto da kke?",
-          id: "Besok ujian kan ya?"
-        }
+          id: "Besok ujian kan ya?",
+          en: "Is the test tomorrow again?",
+          ja: "明日はテストでしたっけ？",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "にて",
@@ -1042,29 +1708,47 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Menunjukkan metode atau alat",
+        titleId: "Menunjukkan metode atau alat",
+        titleEn: "Formal Method or Medium ('By means of')",
+        titleJa: "手段・方法（硬い公的表現）",
         description: "Menunjukkan metode atau alat (versi tertulis dari partikel de).",
+        descriptionId: "Menunjukkan metode atau alat (versi tertulis dari partikel de).",
+        descriptionEn: "Formal written style for 'de' indicating instrument or medium.",
+        descriptionJa: "「で」の改まった硬い表現で、提出方法や手段を示します。",
         example: {
           jp: "書類にて提出してください。",
+          furigana: "しょるいにて ていしゅつしてください。",
           ro: "Shorui nite teishutsu shite kudasai",
-          id: "Tolong kumpulkan secara tertulis."
-        }
+          id: "Tolong kumpulkan secara tertulis.",
+          en: "Please submit in written document form.",
+          ja: "書類にてご提出をお願いいたします。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "なり",
     romaji: "nari",
     functions: [
       {
-        title: "\"Begitu [A], langsung [B]\"",
-        description: "\"Begitu [A], langsung [B]\" (pola ~ru nari).",
+        title: "\\\"Begitu [A], langsung [B]\\\"",
+        titleId: "\\\"Begitu [A], langsung [B]\\\"",
+        titleEn: "Immediately After ('As soon as')",
+        titleJa: "直後の急変（〜するなり）",
+        description: "\\\"Begitu [A], langsung [B]\\\" (pola ~ru nari).",
+        descriptionId: "\\\"Begitu [A], langsung [B]\\\" (pola ~ru nari).",
+        descriptionEn: "Shows an immediate, surprising transition to the next action.",
+        descriptionJa: "ある動作が終わるやいなや、すぐ次の動作に移る様子を表します。",
         example: {
           jp: "帰るなり、寝てしまった。",
+          furigana: "かえるなり、ねてしまった。",
           ro: "Kaeru nari, nete shimatta",
-          id: "Begitu pulang, langsung ketiduran."
-        }
+          id: "Begitu pulang, langsung ketiduran.",
+          en: "As soon as he got home, he fell right asleep.",
+          ja: "家に帰るなり、すぐに眠ってしまいました。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "どころか",
@@ -1072,14 +1756,23 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Menunjukkan situasi yang bertambah parah",
-        description: "Menunjukkan situasi yang \"Malah bertambah parah\".",
+        titleId: "Menunjukkan situasi yang bertambah parah",
+        titleEn: "Far from It / Much Worse Situation",
+        titleJa: "正反対・悪化の強調（〜どころか）",
+        description: "Menunjukkan situasi yang \\\"Malah bertambah parah\\\".",
+        descriptionId: "Menunjukkan situasi yang \\\"Malah bertambah parah\\\".",
+        descriptionEn: "Stresses that far from recovering, things turned out far worse.",
+        descriptionJa: "期待とは程遠く、むしろ逆の結果や悪化した状態を強調します。",
         example: {
           jp: "治るどころか、悪くなった。",
+          furigana: "なおるどころか、わるくなった。",
           ro: "Naoru dokoroka, waruku natta",
-          id: "Boro-boro sembuh, malah makin parah."
-        }
+          id: "Boro-boro sembuh, malah makin parah.",
+          en: "Far from healing, it actually got worse.",
+          ja: "治るどころか、かえって悪化してしまいました。",
+        },
       }
-    ]
+    ],
   },
   {
     kana: "だの",
@@ -1087,13 +1780,22 @@ export const extraParticles: ParticleData[] = [
     functions: [
       {
         title: "Murni untuk mengomel",
+        titleId: "Murni untuk mengomel",
+        titleEn: "Grumbling / Complaining ('This and that')",
+        titleJa: "不満・文句の列挙（〜だの〜だの）",
         description: "Murni untuk mengomel panjang lebar.",
+        descriptionId: "Murni untuk mengomel panjang lebar.",
+        descriptionEn: "Cites grievances or complaints with annoyance.",
+        descriptionJa: "あれこれと不満や愚痴を並べる際に用いられます。",
         example: {
           jp: "好きだの嫌いだのうるさい。",
+          furigana: "すきだの きらいだの うるさい。",
           ro: "Suki dano kirai dano urusai",
-          id: "Berisik bilang suka lah, benci lah."
-        }
+          id: "Berisik bilang suka lah, benci lah.",
+          en: "Stop noisy complaining about like this or hate that.",
+          ja: "好きだの嫌いだの文句ばかり言ってうるさい。",
+        },
       }
-    ]
-  }
+    ],
+  },
 ];

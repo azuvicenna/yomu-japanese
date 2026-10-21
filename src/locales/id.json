@@ -22,8 +22,20 @@
         "title": "Penghubung Kalimat",
         "subtitle": "Partikel ibarat \"lem\" yang menyatukan kata-kata menjadi kalimat utuh.",
         "extra_particles": "Partikel Penting Lainnya",
-        "button": "Lihat Selengkapnya"
-
+        "button": "Lihat Selengkapnya",
+        "not_found": "Data partikel tidak ditemukan"
+      },
+      "kanyouku": {
+        "tab_kanyouku": "Kanyouku (慣用句)",
+        "tab_yojijukugo": "Yojijukugo (四字熟語)",
+        "literal": "Arti Harfiah",
+        "meaning": "Makna Asli",
+        "example": "Contoh Kalimat",
+        "not_available_title": "Materi Belum Tersedia",
+        "not_available_desc": "Materi idiom kategori ini sedang disiapkan."
+      },
+      "haiku": {
+        "meaning": "Makna"
       }
     }
   },

@@ -22,7 +22,20 @@
         "title": "Sentence Connectors",
         "subtitle": "Particles are like 'glue' that bind words together into a complete sentence.",
         "extra_particles": "Other Important Particles",
-        "button": "See More"
+        "button": "See More",
+        "not_found": "Particle data not found"
+      },
+      "kanyouku": {
+        "tab_kanyouku": "Kanyouku (Idioms)",
+        "tab_yojijukugo": "Yojijukugo (4-Kanji Idioms)",
+        "literal": "Literal Meaning",
+        "meaning": "Actual Meaning",
+        "example": "Example Sentence",
+        "not_available_title": "Content Not Available",
+        "not_available_desc": "Idiom content for this category is currently in preparation."
+      },
+      "haiku": {
+        "meaning": "Meaning"
       }
     }
   },

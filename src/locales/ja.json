@@ -22,8 +22,20 @@
         "title": "助詞 (文のつなぎ)",
         "subtitle": "助詞は言葉をつなぎ合わせて一文にする「接着剤」のようなものです。",
         "extra_particles": "その他の重要な助詞",
-        "button": "詳細を見る"
-
+        "button": "詳細を見る",
+        "not_found": "助詞データが見つかりません"
+      },
+      "kanyouku": {
+        "tab_kanyouku": "慣用句 (Kanyouku)",
+        "tab_yojijukugo": "四字熟語 (Yojijukugo)",
+        "literal": "直訳",
+        "meaning": "本来の意味",
+        "example": "例文",
+        "not_available_title": "準備中",
+        "not_available_desc": "このカテゴリーの慣用句は現在準備中です。"
+      },
+      "haiku": {
+        "meaning": "現代語訳・意味"
       }
     }
   },

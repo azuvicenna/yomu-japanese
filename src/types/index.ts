@@ -95,18 +95,29 @@ export interface JoshiItem {
   };
 }
 
+export interface ParticleFunction {
+  title: string;
+  titleId?: string;
+  titleEn?: string;
+  titleJa?: string;
+  description: string;
+  descriptionId?: string;
+  descriptionEn?: string;
+  descriptionJa?: string;
+  example: {
+    jp: string;
+    furigana?: string;
+    ro: string;
+    id: string;
+    en?: string;
+    ja?: string;
+  };
+}
+
 export interface ParticleData {
   kana: string;
   romaji: string;
-  functions: {
-    title: string;
-    description: string;
-    example: {
-      jp: string;
-      ro: string;
-      id: string;
-    };
-  }[];
+  functions: ParticleFunction[];
 }
 
 export interface JoshiExtraItem {
@@ -202,12 +213,23 @@ export interface FlashcardItem {
 export interface IdiomData {
   id: string;
   kanji: string;
+  furigana: string;
   romaji: string;
-  literal: string;
-  meaning: string;
+  literal?: string;
+  literalId: string;
+  literalEn: string;
+  literalJa?: string;
+  meaning?: string;
+  meaningId: string;
+  meaningEn: string;
+  meaningJa?: string;
   example: {
     jp: string;
+    furigana?: string;
+    ro?: string;
     id: string;
+    en: string;
+    ja?: string;
   };
   icon: string;
   theme: string;
